@@ -299,11 +299,45 @@
     }
     exBody.appendChild(exLeft);
 
-    var exText = el("div", "prose");
-    exText.appendChild(el("p", null, t("teaching.exhibition.desc")));
+    var exText = el("div");
+    var intro = el("div", "prose");
+    intro.appendChild(el("p", null, t("teaching.exhibition.desc")));
+    exText.appendChild(intro);
+
+    var E = T.exhibition;
+    if (E) {
+      var meta = el("dl", "ex-meta");
+      [["teaching.ex.venue", E.venue],
+       ["teaching.ex.curated", E.curated],
+       ["teaching.ex.support", E.support],
+       ["teaching.ex.scale", E.scale]].forEach(function (pair) {
+        if (!pair[1]) return;
+        meta.appendChild(el("dt", null, t(pair[0])));
+        meta.appendChild(el("dd", null, f(pair[1])));
+      });
+      exText.appendChild(meta);
+    }
     exBody.appendChild(exText);
 
     ex.appendChild(exBody);
+
+    /* the ten works, full width under the photo and the details */
+    if (E && E.works && E.works.length) {
+      var worksWrap = el("div", "ex-works-wrap");
+      worksWrap.appendChild(el("h4", "ex-works-title", t("teaching.ex.works")));
+
+      var list = el("ol", "ex-works");
+      E.works.forEach(function (w) {
+        var li = el("li");
+        li.appendChild(el("span", "w-title", f(w.title)));
+        li.appendChild(el("span", "w-credit", f(w.credit)));
+        list.appendChild(li);
+      });
+      worksWrap.appendChild(list);
+      worksWrap.appendChild(el("p", "note", t("teaching.ex.source")));
+      ex.appendChild(worksWrap);
+    }
+
     host.appendChild(ex);
 
     /* link out to the full archive */

@@ -503,7 +503,9 @@ html[lang="ko"] .link-video { letter-spacing: 0.05em; }
   .bio { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); }
 }
 
-.bio-portrait img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+/* The frame widened without growing taller, so a wider crop of the same
+   photograph shows rather than the whole image scaling up. */
+.bio-portrait img { width: 100%; aspect-ratio: 9 / 10; object-fit: cover; }
 
 /* Inside the bio the column is the measure, so the paragraphs fill it —
    a ch-based cap leaves Hangul lines looking cramped. */
@@ -703,6 +705,75 @@ p.note {
   color: var(--fg-faint);
   max-width: 68ch;
 }
+
+/* exhibition details */
+
+.ex-meta {
+  display: grid;
+  grid-template-columns: 108px 1fr;
+  gap: 10px 22px;
+  margin: 26px 0 0;
+  font-size: 13.5px;
+}
+
+.ex-meta dt {
+  color: var(--fg-faint);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding-top: 3px;
+}
+html[lang="ko"] .ex-meta dt { letter-spacing: 0.08em; font-size: 12.5px; text-transform: none; }
+
+.ex-meta dd { margin: 0; color: #cfcfd2; }
+
+.ex-works-wrap { margin-top: clamp(30px, 4vw, 52px); }
+
+.ex-works-title {
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--fg-faint);
+  font-weight: 500;
+  margin: 0 0 4px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+html[lang="ko"] .ex-works-title { letter-spacing: 0.14em; }
+
+.ex-works {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: 0 clamp(20px, 3vw, 44px);
+  counter-reset: exwork;
+}
+
+.ex-works li {
+  counter-increment: exwork;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 2px 10px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: baseline;
+}
+
+.ex-works li::before {
+  content: counter(exwork, decimal-leading-zero);
+  grid-row: span 2;
+  font-size: 11px;
+  color: var(--fg-faint);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.06em;
+}
+
+.w-title { color: var(--fg); font-size: 15px; }
+html[lang="ko"] .w-title { font-weight: 500; }
+
+.w-credit { font-size: 12.5px; color: var(--fg-faint); grid-column: 2; }
 
 /* -------------------------------------------------------------- contact  */
 

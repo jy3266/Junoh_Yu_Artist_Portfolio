@@ -103,6 +103,16 @@ window.SITE = (function () {
       ko: "세 강좌에서 나온 인터랙티브 설치 10점을 모아 무료 공개 전시로 선보였습니다. 개막 7월 4일 19:00–21:00, 전시 7월 5일 11:00–17:00.",
       en: "Ten interactive installations from the three courses, shown as a free public exhibition. Opening 4 July, 19:00–21:00; exhibition 5 July, 11:00–17:00."
     },
+    "teaching.ex.venue": { ko: "장소", en: "Venue" },
+    "teaching.ex.curated": { ko: "기획", en: "Curated by" },
+    "teaching.ex.support": { ko: "주최 · 지원", en: "Supported by" },
+    "teaching.ex.scale": { ko: "규모", en: "Scale" },
+    "teaching.ex.works": { ko: "출품작 10점", en: "Ten works" },
+    "teaching.ex.source": {
+      ko: "작품 정보는 각 팀이 제출한 발표 자료에서 옮긴 것입니다.",
+      en: "Work details are drawn from each team’s own submitted presentation."
+    },
+
     "teaching.photocap": {
       ko: "학생 작업 기록 · 사진을 클릭하면 다음 장으로 넘어갑니다",
       en: "Student work from the archive · click the photo for the next one"
@@ -497,6 +507,41 @@ window.SITE = (function () {
     archive: "https://jy3266.github.io/Teaching_Portfolio/",
     period: "2025—2026",
     exhibitionPhotos: { slug: "nima", count: 6 },
+
+    exhibition: {
+      venue: {
+        ko: "성균갤러리 1F, 성균관대학교 경영관 (서울 종로구 성균관로 25-2)",
+        en: "Sungkyun Gallery, 1F, SKK Business School (25-2 Sungkyunkwan-ro, Jongno-gu, Seoul)"
+      },
+      curated: { ko: "유준오 · 황민협", en: "Junoh Yu · MinHyub Hwang" },
+      support: {
+        ko: "성균관대학교 영상학과",
+        en: "Sungkyunkwan University, Dept. of Film, Television and Multimedia"
+      },
+      scale: { ko: "참여 작가 19명 · 출품작 10점", en: "19 artists · 10 works" },
+      works: [
+        { title: { ko: "숨", en: "Breath" },
+          credit: { ko: "임예지 · 양호림 · 주이페이", en: "Lin Ruitian, Liang Haolin, Zhu Yifei" } },
+        { title: { ko: "Whorl: A Meditation", en: "Whorl: A Meditation" },
+          credit: { ko: "팽지현 · 정기찬 · 최성윤", en: "Paeng Jihyun, Chung Gichan, Choi Sungyun" } },
+        { title: { ko: "비밀의 못", en: "Pond" },
+          credit: { ko: "배주영 · 황민협", en: "Bae Jooyoung, Hwang Minhyub" } },
+        { title: { ko: "집에 가는 길", en: "Way Back Home" },
+          credit: { ko: "오세령 · 이용길", en: "Oh Seryung, Lee Yonggil" } },
+        { title: { ko: "Will you walk with ____?", en: "Will you walk with ____?" },
+          credit: { ko: "김윤서 · 조단비", en: "Kim Yunseo, Cho Danbi" } },
+        { title: { ko: "Overlap", en: "Overlap" },
+          credit: { ko: "팽지현 · 홍준서", en: "Paeng Jihyun, Hong Junseo" } },
+        { title: { ko: "잔을 기울이면", en: "When You Tilt the Glass" },
+          credit: { ko: "윤이나 · 한민택", en: "Yoon Yina, Han Mintaek" } },
+        { title: { ko: "계절의 변곡점", en: "Inflection Point of Seasons" },
+          credit: { ko: "박호윤", en: "Park Hoyoon" } },
+        { title: { ko: "등", en: "Back to Back" },
+          credit: { ko: "강윤경 · 오세령", en: "Kang Yunkyung, Oh Seryung" } },
+        { title: { ko: "Josh", en: "Josh" },
+          credit: { ko: "김민채", en: "Kim Min Chae" } }
+      ]
+    },
     schools: [
       {
         name: { ko: "성균관대학교 영상학부 & 게임디자인학부", en: "Sungkyunkwan University — Film & Game Design" },
