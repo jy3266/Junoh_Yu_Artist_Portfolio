@@ -14,6 +14,7 @@ installation.html     Installation (2014—)
 performance.html      Performance (2014—)
 vr.html               VR-Hotline trilogy (2021—)
 art-tech.html         Rebreathe (리브리드) — art & tech platform work
+teaching.html         Teaching (교육) — courses, student teams, N.I.M.A
 about.html            Full artist statement
 cv.html               Curriculum vitae
 contact.html          Contact
@@ -95,9 +96,16 @@ Every page links those files with a `?v=N` stamp. After an edit, bump the
 number everywhere:
 
 ```bash
-# from 2 to 3, for example
-sed -i 's/?v=2/?v=3/g' *.html
+# from 3 to 4, for example
+sed -i 's/?v=3/?v=4/g' *.html
 ```
 
 Then commit and push. Image files never need this — a new artwork goes in a
 new folder, so its path is new anyway.
+
+## Editing the Teaching page
+
+`teaching.html` is driven by the `teaching` object in `assets/js/data.js` —
+the archive URL, each university, its courses, and the team counts. The
+headline figures (universities / courses / teams) are computed from that
+object, so they stay correct on their own when you add a course.

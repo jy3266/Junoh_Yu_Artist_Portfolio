@@ -16,6 +16,7 @@ window.SITE = (function () {
     "nav.performance": { ko: "퍼포먼스", en: "Performance" },
     "nav.vr": { ko: "VR 핫라인", en: "VR-Hotline" },
     "nav.arttech": { ko: "리브리드", en: "Rebreathe" },
+    "nav.teaching": { ko: "교육", en: "Teaching" },
     "nav.about": { ko: "작가 소개", en: "About" },
     "nav.cv": { ko: "이력", en: "CV" },
     "nav.contact": { ko: "연락처", en: "Contact" },
@@ -83,6 +84,31 @@ window.SITE = (function () {
       en: "REBREATHE began inside the artistic practice and grew into a multimodal, AI-based platform for youth mental health and suicide prevention."
     },
 
+    "page.teaching.intro": {
+      ko: "성균관대학교와 청주대학교에서 진행한 강의 기록입니다. 학생들은 화면 안에서 끝나는 결과물 대신, 언리얼 엔진과 아두이노 센서, 프로젝션 매핑으로 실제 공간에 설치되는 작업을 만듭니다. 강의계획서에서 전시장 바닥까지의 과정을 팀별로 남겨두었습니다.",
+      en: "A record of courses taught at Sungkyunkwan University and Cheongju University. Rather than screen-based deliverables, students build work that is installed in real space — Unreal Engine, Arduino sensors, and projection mapping. The archive follows each team from syllabus to gallery floor."
+    },
+    "teaching.eyebrow": { ko: "교육", en: "Teaching" },
+    "teaching.stats.schools": { ko: "개 대학", en: "universities" },
+    "teaching.stats.courses": { ko: "개 강좌", en: "courses" },
+    "teaching.stats.teams": { ko: "개 팀", en: "student teams" },
+    "teaching.courses": { ko: "강좌", en: "Courses" },
+    "teaching.teams": { ko: "팀", en: "teams" },
+    "teaching.exhibition.title": { ko: "제1회 N.I.M.A", en: "1st N.I.M.A" },
+    "teaching.exhibition.sub": {
+      ko: "New Interfaces for Moving Arts · 2026년 7월 4–5일",
+      en: "New Interfaces for Moving Arts · 4–5 July 2026"
+    },
+    "teaching.exhibition.desc": {
+      ko: "세 강좌에서 나온 인터랙티브 설치 10점을 모아 무료 공개 전시로 선보였습니다. 개막 7월 4일 19:00–21:00, 전시 7월 5일 11:00–17:00.",
+      en: "Ten interactive installations from the three courses, shown as a free public exhibition. Opening 4 July, 19:00–21:00; exhibition 5 July, 11:00–17:00."
+    },
+    "teaching.archive": { ko: "티칭 아카이브 전체 보기", en: "Open the full teaching archive" },
+    "teaching.cvnote": {
+      ko: "한양대학교, 중앙대학교, 동양대학교를 포함한 전체 강의 및 재직 이력은 이력 페이지에 정리되어 있습니다.",
+      en: "Full teaching and professional appointments — including Hanyang, Chung-Ang, and Dongyang University — are listed on the CV."
+    },
+
     "about.eyebrow": { ko: "작가 소개", en: "About the artist" },
     "about.cta": { ko: "이력 보기", en: "View CV" },
 
@@ -111,6 +137,7 @@ window.SITE = (function () {
     "lb.dimensions": { ko: "크기", en: "Dimensions" },
     "lb.materials": { ko: "재료", en: "Materials" },
     "lb.watch": { ko: "영상 보기", en: "Watch video" },
+    "lb.visit": { ko: "사이트 보기", en: "Visit site" },
     "lb.close": { ko: "닫기", en: "Close" },
     "lb.prev": { ko: "이전", en: "Previous" },
     "lb.next": { ko: "다음", en: "Next" },
@@ -455,9 +482,45 @@ window.SITE = (function () {
         ko: "자녀 전용 앱 — 언리얼 엔진, 멀티모달 AI, 디지털 크리처",
         en: "Companion app for children — Unreal Engine, multimodal AI, digital creatures"
       },
-      link: "https://www.rebreathe.net/"
+      link: "https://jy3266.github.io/Rebreathe_Proposal/",
+      linkLabel: { ko: "리브리드 소개 보기", en: "View the Rebreathe proposal" }
     }
   ];
+
+  /* ----------------------------------------------------------- teaching  */
+
+  var teaching = {
+    archive: "https://jy3266.github.io/Teaching_Portfolio/",
+    period: "2025—2026",
+    schools: [
+      {
+        name: { ko: "성균관대학교 영상학부 & 게임디자인학부", en: "Sungkyunkwan University — Film & Game Design" },
+        role: { ko: "겸임교수", en: "Adjunct Professor" },
+        since: "2026.03—",
+        courses: [
+          { title: { ko: "캡스톤 디자인", en: "Capstone Design" }, teams: 5,
+            note: { ko: "환경 디자인, 내러티브 시퀀싱, 센서 연동을 거쳐 설치 가능한 프로토타입까지 (15주 집중)",
+                    en: "Environment design, narrative sequencing, and sensor integration, ending in an installable prototype (15 sessions)" } },
+          { title: { ko: "몰입형 내러티브 & 인터랙션", en: "Immersive Narrative & Interaction" }, teams: 9,
+            note: { ko: "이야기를 걸어 들어갈 수 있는 공간으로 옮기고, 아두이노와 프로젝션 매핑으로 확장",
+                    en: "Moving stories into walkable space, extended with Arduino and projection mapping" } },
+          { title: { ko: "AI 기반 인터랙티브 영상", en: "AI-Driven Interactive Video" }, teams: 7,
+            note: { ko: "학생을 ‘가상 건축가’로 두고, 가상 공간을 배경이 아닌 장소로 설계",
+                    en: "Students as “virtual architects” — designing virtual space as a place, not a backdrop" } }
+        ]
+      },
+      {
+        name: { ko: "청주대학교 예술학부 디지털미디어디자인학과", en: "Cheongju University — Digital Media Design" },
+        role: { ko: "객원교수", en: "Visiting Professor" },
+        since: "2025.08—",
+        courses: [
+          { title: { ko: "인터랙션 디자인 (Q1 · Q2)", en: "Interaction Design (Q1 · Q2)" }, teams: 20,
+            note: { ko: "감정표현불능증, 확증 편향, 제주 4·3, 그린워싱, 온라인 폭력 등 사회적 주제를 소리·촉각·움직임 기반 입력으로, 화면 밖의 인터페이스로 풀어낸 프로젝트 (Q1 9팀 · Q2 11팀)",
+                    en: "Alexithymia, confirmation bias, Jeju 4·3, greenwashing, and online cruelty — worked out through audio, touch, and motion input, in interfaces beyond the screen (Q1 9 teams · Q2 11 teams)" } }
+        ]
+      }
+    ]
+  };
 
   /* ---------------------------------------------------------------- bio  */
 
@@ -569,5 +632,5 @@ window.SITE = (function () {
     ]
   };
 
-  return { ui: ui, categories: categories, works: works, bio: bio, cv: cv };
+  return { ui: ui, categories: categories, works: works, teaching: teaching, bio: bio, cv: cv };
 })();

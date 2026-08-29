@@ -86,6 +86,7 @@
     renderTitle();
     renderCategories();
     renderGrids();
+    renderTeaching();
     renderBio();
     renderCV();
     if (lb.open) lb.refresh();
@@ -168,6 +169,80 @@
       host.innerHTML = "";
       list.forEach(function (w) { host.appendChild(makeCard(w)); });
     });
+  }
+
+  function renderTeaching() {
+    var host = document.querySelector("[data-teaching]");
+    if (!host) return;
+
+    var T = S.teaching;
+    host.innerHTML = "";
+
+    /* headline counts: 2 universities · 4 courses · 41 teams */
+    var courseCount = 0;
+    var teamCount = 0;
+    T.schools.forEach(function (s) {
+      courseCount += s.courses.length;
+      s.courses.forEach(function (c) { teamCount += c.teams; });
+    });
+
+    var stats = el("div", "stat-row reveal");
+    [[T.schools.length, "teaching.stats.schools"],
+     [courseCount, "teaching.stats.courses"],
+     [teamCount, "teaching.stats.teams"]].forEach(function (pair) {
+      var s = el("div", "stat");
+      s.appendChild(el("span", "stat-n", String(pair[0])));
+      s.appendChild(el("span", "stat-l", t(pair[1])));
+      stats.appendChild(s);
+    });
+    host.appendChild(stats);
+
+    T.schools.forEach(function (school) {
+      var block = el("section", "cv-block reveal");
+
+      var head = el("div", "school-head");
+      head.appendChild(el("h3", "school-name", f(school.name)));
+      head.appendChild(el("p", "school-meta", [f(school.role), school.since].join("  ·  ")));
+      block.appendChild(head);
+
+      school.courses.forEach(function (c) {
+        var row = el("div", "cv-row");
+        row.appendChild(el("span", "cv-year", c.teams + " " + t("teaching.teams")));
+
+        var what = el("div", "cv-what");
+        what.appendChild(document.createTextNode(f(c.title)));
+        if (c.note) what.appendChild(el("small", null, f(c.note)));
+        row.appendChild(what);
+
+        row.appendChild(el("span", "cv-where", ""));
+        block.appendChild(row);
+      });
+
+      host.appendChild(block);
+    });
+
+    /* N.I.M.A exhibition */
+    var ex = el("section", "cv-block reveal");
+    ex.appendChild(el("h3", "cv-title", t("teaching.exhibition.title")));
+    var exBody = el("div", "prose");
+    exBody.appendChild(el("p", "lead", t("teaching.exhibition.sub")));
+    exBody.appendChild(el("p", null, t("teaching.exhibition.desc")));
+    ex.appendChild(exBody);
+    host.appendChild(ex);
+
+    /* link out to the full archive */
+    var row = el("div", "btn-row reveal");
+    var a = el("a", "btn", t("teaching.archive") + "  ↗");
+    a.href = T.archive;
+    a.target = "_blank";
+    a.rel = "noopener";
+    row.appendChild(a);
+    var cvLink = el("a", "btn", t("nav.cv"));
+    cvLink.href = "cv.html";
+    row.appendChild(cvLink);
+    host.appendChild(row);
+
+    host.appendChild(el("p", "note reveal", t("teaching.cvnote")));
   }
 
   function renderBio() {
@@ -342,7 +417,9 @@
 
       var url = w.video || w.link;
       if (url) {
-        var a = el("a", "link-video", (w.video ? t("lb.watch") : "REBREATHE.NET") + "  ↗");
+        var label = w.video ? t("lb.watch")
+                            : (w.linkLabel ? f(w.linkLabel) : t("lb.visit"));
+        var a = el("a", "link-video", label + "  ↗");
         a.href = url;
         a.target = "_blank";
         a.rel = "noopener";
