@@ -496,6 +496,7 @@ window.SITE = (function () {
   var teaching = {
     archive: "https://jy3266.github.io/Teaching_Portfolio/",
     period: "2025—2026",
+    exhibitionPhotos: { slug: "nima", count: 6 },
     schools: [
       {
         name: { ko: "성균관대학교 영상학부 & 게임디자인학부", en: "Sungkyunkwan University — Film & Game Design" },

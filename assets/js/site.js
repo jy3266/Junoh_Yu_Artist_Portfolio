@@ -172,9 +172,9 @@
   }
 
   /** Photo panel that steps to the next image on each click. */
-  function makeSchoolPhoto(school) {
-    var slug = school.photos.slug;
-    var count = school.photos.count;
+  function makePhotoPanel(photos, altText) {
+    var slug = photos.slug;
+    var count = photos.count;
     var path = function (n) {
       return "assets/img/teaching/" + slug + "/" + (n < 10 ? "0" + n : n) + ".jpg";
     };
@@ -185,10 +185,16 @@
     btn.type = "button";
 
     var img = el("img");
-    img.src = path(1);
-    img.alt = f(school.name);
+    img.alt = altText;
     img.loading = "lazy";
     img.decoding = "async";
+
+    /* a portrait image (an exhibition poster, say) is letterboxed rather
+       than cropped to the landscape frame */
+    img.addEventListener("load", function () {
+      img.classList.toggle("is-portrait", img.naturalHeight > img.naturalWidth * 1.05);
+    });
+    img.src = path(1);
     btn.appendChild(img);
 
     var counter = el("span", "photo-count", "1 / " + count);
@@ -256,7 +262,7 @@
       var body = el("div", "school-body");
 
       var left = el("div");
-      if (school.photos) left.appendChild(makeSchoolPhoto(school));
+      if (school.photos) left.appendChild(makePhotoPanel(school.photos, f(school.name)));
       body.appendChild(left);
 
       var right = el("div");
@@ -279,10 +285,24 @@
 
     /* N.I.M.A exhibition */
     var ex = el("section", "cv-block reveal");
-    ex.appendChild(el("h3", "cv-title", t("teaching.exhibition.title")));
-    var exBody = el("div", "prose");
-    exBody.appendChild(el("p", "lead", t("teaching.exhibition.sub")));
-    exBody.appendChild(el("p", null, t("teaching.exhibition.desc")));
+
+    var exHead = el("div", "school-head");
+    exHead.appendChild(el("h3", "school-name", t("teaching.exhibition.title")));
+    exHead.appendChild(el("p", "school-meta", t("teaching.exhibition.sub")));
+    ex.appendChild(exHead);
+
+    var exBody = el("div", "school-body");
+
+    var exLeft = el("div");
+    if (T.exhibitionPhotos) {
+      exLeft.appendChild(makePhotoPanel(T.exhibitionPhotos, t("teaching.exhibition.title")));
+    }
+    exBody.appendChild(exLeft);
+
+    var exText = el("div", "prose");
+    exText.appendChild(el("p", null, t("teaching.exhibition.desc")));
+    exBody.appendChild(exText);
+
     ex.appendChild(exBody);
     host.appendChild(ex);
 

@@ -500,7 +500,7 @@ html[lang="ko"] .link-video { letter-spacing: 0.05em; }
 
 .bio { display: grid; grid-template-columns: 1fr; gap: clamp(28px, 4vw, 56px); }
 @media (min-width: 900px) {
-  .bio { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); }
+  .bio { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); }
 }
 
 .bio-portrait img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
@@ -653,7 +653,14 @@ html[lang="ko"] .school-name { font-family: var(--font-sans); font-weight: 500; 
   opacity: 0.94;
   transition: opacity 0.35s var(--ease), transform 1.1s var(--ease);
 }
+/* a taller-than-wide image (a poster) is shown whole, not cropped */
+.school-photo img.is-portrait {
+  object-fit: contain;
+  background: #0d0d0f;
+}
+
 .school-photo:hover img { opacity: 1; transform: scale(1.03); }
+.school-photo:hover img.is-portrait { transform: none; }
 .school-photo.is-swapping img { opacity: 0; }
 .school-photo:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
 
