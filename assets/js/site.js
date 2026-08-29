@@ -361,6 +361,15 @@
         var what = el("div", "cv-what");
         what.appendChild(document.createTextNode(f(r.what)));
         if (r.note) what.appendChild(el("small", null, f(r.note)));
+
+        if (r.link) {
+          var link = el("a", "cv-link", f(r.linkLabel) + "  ↗");
+          link.href = r.link;
+          link.target = "_blank";
+          link.rel = "noopener";
+          what.appendChild(link);
+        }
+
         row.appendChild(what);
 
         row.appendChild(el("span", "cv-where", f(r.where)));

@@ -632,7 +632,9 @@ window.SITE = (function () {
     ],
 
     publications: [
-      { year: "2022.05", what: { ko: "석사 논문 — The Weight of Sigh / The Limitation of Time", en: "Master’s thesis — The Weight of Sigh / The Limitation of Time" }, note: { ko: "지도교수: Stephen Downs", en: "Advisor: Stephen Downs" }, where: { ko: "New York University", en: "New York University" } },
+      { year: "2022.05", what: { ko: "석사 논문 — The Weight of Sigh / The Limitation of Time", en: "Master’s thesis — The Weight of Sigh / The Limitation of Time" }, note: { ko: "지도교수: Stephen Downs", en: "Advisor: Stephen Downs" }, where: { ko: "New York University", en: "New York University" },
+        link: "https://itp.nyu.edu/thesis/2022/?junoh-yu",
+        linkLabel: { ko: "NYU ITP 논문 페이지", en: "NYU ITP thesis page" } },
       { year: "2024.02", what: { ko: "특허 출원 — 액티브 시니어를 위한 마인드 테크 및 교육 플랫폼 개발", en: "Patent — Mind-tech and education platform for active seniors" }, note: { ko: "특허번호 10-2023-0169867", en: "Application no. 10-2023-0169867" }, where: { ko: "특허청", en: "KIPO" } },
       { year: "2025.07", what: { ko: "상표권 출원 — 리브리드", en: "Trademark — 리브리드" }, note: { ko: "출원번호 40-2025-0124304", en: "Application no. 40-2025-0124304" }, where: { ko: "특허청", en: "KIPO" } },
       { year: "2025.07", what: { ko: "상표권 출원 — REBREATHE", en: "Trademark — REBREATHE" }, note: { ko: "출원번호 40-2025-0124305", en: "Application no. 40-2025-0124305" }, where: { ko: "특허청", en: "KIPO" } }
