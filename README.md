@@ -97,7 +97,7 @@ number everywhere:
 
 ```bash
 # from 7 to 8, for example
-sed -i 's/?v=7/?v=8/g' *.html
+sed -i 's/?v=8/?v=9/g' *.html
 ```
 
 Then commit and push. Image files never need this — a new artwork goes in a

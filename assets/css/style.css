@@ -304,6 +304,22 @@ h2.section-title {
 }
 .page-head p { color: var(--fg-dim); max-width: 62ch; margin: 0; }
 
+/* the section's own site, sitting above the intro paragraph */
+.head-link {
+  margin: -4px 0 18px;
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+  word-break: break-all;
+}
+.head-link a {
+  color: var(--fg-dim);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 3px;
+  transition: color 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+.head-link a:hover { color: var(--fg); border-color: var(--fg); }
+.head-link .arw { margin-left: 6px; font-size: 11px; }
+
 /* ------------------------------------------------------------ work grid  */
 
 .grid {
@@ -503,8 +519,10 @@ html[lang="ko"] .link-video { letter-spacing: 0.05em; }
   .bio { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); }
 }
 
-/* The frame widened without growing taller, so a wider crop of the same
-   photograph shows rather than the whole image scaling up. */
+/* The frame is taller than wide but the source photograph (2500x1667) is
+   landscape, so cover fills the height uncropped and takes the middle 60%
+   of the width -- the head and the hand both sit inside that window. Cropping,
+   never squeezing. */
 .bio-portrait img { width: 100%; aspect-ratio: 9 / 10; object-fit: cover; }
 
 /* Inside the bio the column is the measure, so the paragraphs fill it —
@@ -801,6 +819,8 @@ html[lang="ko"] .contact-item .label { letter-spacing: 0.12em; }
   word-break: break-word;
 }
 html[lang="ko"] .contact-item .value { font-family: var(--font-sans); font-weight: 400; font-size: clamp(17px, 1.7vw, 21px); }
+
+.contact-item .value + .value { margin-top: 10px; }
 
 .contact-item a { border-bottom: 1px solid var(--line); transition: border-color 0.3s var(--ease); }
 .contact-item a:hover { border-color: var(--fg); }
