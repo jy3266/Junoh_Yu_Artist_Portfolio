@@ -86,3 +86,18 @@ from branch → `main` / root). `.nojekyll` is present so no files are skipped.
 
 © 2026 Junoh Yu. All rights reserved.
 Artwork images and text are the property of the artist.
+
+## After editing CSS or JS — bump the version stamp
+
+GitHub Pages tells browsers to cache assets for 10 minutes, so an edit to
+`data.js`, `site.js`, or `style.css` may not show up for returning visitors.
+Every page links those files with a `?v=N` stamp. After an edit, bump the
+number everywhere:
+
+```bash
+# from 2 to 3, for example
+sed -i 's/?v=2/?v=3/g' *.html
+```
+
+Then commit and push. Image files never need this — a new artwork goes in a
+new folder, so its path is new anyway.
