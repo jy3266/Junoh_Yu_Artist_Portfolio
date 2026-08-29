@@ -498,10 +498,17 @@ html[lang="ko"] .link-video { letter-spacing: 0.05em; }
 
 /* ------------------------------------------------------------------ bio  */
 
-.bio { display: grid; grid-template-columns: 1fr; gap: clamp(32px, 5vw, 72px); }
-@media (min-width: 900px) { .bio { grid-template-columns: 5fr 7fr; } }
+.bio { display: grid; grid-template-columns: 1fr; gap: clamp(28px, 4vw, 56px); }
+@media (min-width: 900px) {
+  .bio { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); }
+}
 
 .bio-portrait img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+
+/* Inside the bio the column is the measure, so the paragraphs fill it —
+   a ch-based cap leaves Hangul lines looking cramped. */
+.bio .prose { font-size: 16px; line-height: 1.85; }
+.bio .prose p { max-width: none; }
 
 .prose p { margin: 0 0 1.35em; color: #cfcfd2; max-width: 68ch; }
 .prose p:last-child { margin-bottom: 0; }
@@ -617,6 +624,59 @@ html[lang="ko"] .stat-l { letter-spacing: 0.04em; font-size: 14px; text-transfor
 html[lang="ko"] .school-name { font-family: var(--font-sans); font-weight: 500; font-size: clamp(18px, 2vw, 24px); }
 
 .school-meta { margin: 0; font-size: 12.5px; color: var(--fg-faint); letter-spacing: 0.05em; }
+
+.school-body { display: grid; grid-template-columns: 1fr; gap: clamp(20px, 3vw, 44px); }
+@media (min-width: 900px) {
+  .school-body { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: start; }
+}
+
+.school-photo {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  margin: 14px 0 0;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-elev);
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+}
+
+.school-photo img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  opacity: 0.94;
+  transition: opacity 0.35s var(--ease), transform 1.1s var(--ease);
+}
+.school-photo:hover img { opacity: 1; transform: scale(1.03); }
+.school-photo.is-swapping img { opacity: 0; }
+.school-photo:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
+
+.photo-count {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--fg);
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-variant-numeric: tabular-nums;
+}
+
+.photo-cap {
+  margin: 9px 0 0;
+  font-size: 12px;
+  color: var(--fg-faint);
+  letter-spacing: 0.03em;
+}
 
 p.note {
   margin: 26px 0 0;

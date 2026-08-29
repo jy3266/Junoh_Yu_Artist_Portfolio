@@ -96,8 +96,8 @@ Every page links those files with a `?v=N` stamp. After an edit, bump the
 number everywhere:
 
 ```bash
-# from 3 to 4, for example
-sed -i 's/?v=3/?v=4/g' *.html
+# from 4 to 5, for example
+sed -i 's/?v=4/?v=5/g' *.html
 ```
 
 Then commit and push. Image files never need this — a new artwork goes in a

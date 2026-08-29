@@ -171,6 +171,54 @@
     });
   }
 
+  /** Photo panel that steps to the next image on each click. */
+  function makeSchoolPhoto(school) {
+    var slug = school.photos.slug;
+    var count = school.photos.count;
+    var path = function (n) {
+      return "assets/img/teaching/" + slug + "/" + (n < 10 ? "0" + n : n) + ".jpg";
+    };
+
+    var wrap = el("div");
+
+    var btn = el("button", "school-photo");
+    btn.type = "button";
+
+    var img = el("img");
+    img.src = path(1);
+    img.alt = f(school.name);
+    img.loading = "lazy";
+    img.decoding = "async";
+    btn.appendChild(img);
+
+    var counter = el("span", "photo-count", "1 / " + count);
+    btn.appendChild(counter);
+    wrap.appendChild(btn);
+    wrap.appendChild(el("p", "photo-cap", t("teaching.photocap")));
+
+    /* preload the rest so the swap never flashes an empty frame */
+    for (var n = 2; n <= count; n++) { new Image().src = path(n); }
+
+    var index = 1;
+    var busy = false;
+
+    btn.addEventListener("click", function () {
+      if (busy || count < 2) return;
+      busy = true;
+      index = index < count ? index + 1 : 1;
+
+      btn.classList.add("is-swapping");
+      setTimeout(function () {
+        img.src = path(index);
+        counter.textContent = index + " / " + count;
+        btn.classList.remove("is-swapping");
+        busy = false;
+      }, 220);
+    });
+
+    return wrap;
+  }
+
   function renderTeaching() {
     var host = document.querySelector("[data-teaching]");
     if (!host) return;
@@ -205,6 +253,13 @@
       head.appendChild(el("p", "school-meta", [f(school.role), school.since].join("  ·  ")));
       block.appendChild(head);
 
+      var body = el("div", "school-body");
+
+      var left = el("div");
+      if (school.photos) left.appendChild(makeSchoolPhoto(school));
+      body.appendChild(left);
+
+      var right = el("div");
       school.courses.forEach(function (c) {
         var row = el("div", "cv-row");
         row.appendChild(el("span", "cv-year", c.teams + " " + t("teaching.teams")));
@@ -214,10 +269,11 @@
         if (c.note) what.appendChild(el("small", null, f(c.note)));
         row.appendChild(what);
 
-        row.appendChild(el("span", "cv-where", ""));
-        block.appendChild(row);
+        right.appendChild(row);
       });
+      body.appendChild(right);
 
+      block.appendChild(body);
       host.appendChild(block);
     });
 

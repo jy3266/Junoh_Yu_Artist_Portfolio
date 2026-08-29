@@ -103,6 +103,10 @@ window.SITE = (function () {
       ko: "세 강좌에서 나온 인터랙티브 설치 10점을 모아 무료 공개 전시로 선보였습니다. 개막 7월 4일 19:00–21:00, 전시 7월 5일 11:00–17:00.",
       en: "Ten interactive installations from the three courses, shown as a free public exhibition. Opening 4 July, 19:00–21:00; exhibition 5 July, 11:00–17:00."
     },
+    "teaching.photocap": {
+      ko: "학생 작업 기록 · 사진을 클릭하면 다음 장으로 넘어갑니다",
+      en: "Student work from the archive · click the photo for the next one"
+    },
     "teaching.archive": { ko: "티칭 아카이브 전체 보기", en: "Open the full teaching archive" },
     "teaching.cvnote": {
       ko: "한양대학교, 중앙대학교, 동양대학교를 포함한 전체 강의 및 재직 이력은 이력 페이지에 정리되어 있습니다.",
@@ -497,6 +501,7 @@ window.SITE = (function () {
         name: { ko: "성균관대학교 영상학부 & 게임디자인학부", en: "Sungkyunkwan University — Film & Game Design" },
         role: { ko: "겸임교수", en: "Adjunct Professor" },
         since: "2026.03—",
+        photos: { slug: "skku", count: 6 },
         courses: [
           { title: { ko: "캡스톤 디자인", en: "Capstone Design" }, teams: 5,
             note: { ko: "환경 디자인, 내러티브 시퀀싱, 센서 연동을 거쳐 설치 가능한 프로토타입까지 (15주 집중)",
@@ -513,6 +518,7 @@ window.SITE = (function () {
         name: { ko: "청주대학교 예술학부 디지털미디어디자인학과", en: "Cheongju University — Digital Media Design" },
         role: { ko: "객원교수", en: "Visiting Professor" },
         since: "2025.08—",
+        photos: { slug: "cju", count: 5 },
         courses: [
           { title: { ko: "인터랙션 디자인 (Q1 · Q2)", en: "Interaction Design (Q1 · Q2)" }, teams: 20,
             note: { ko: "감정표현불능증, 확증 편향, 제주 4·3, 그린워싱, 온라인 폭력 등 사회적 주제를 소리·촉각·움직임 기반 입력으로, 화면 밖의 인터페이스로 풀어낸 프로젝트 (Q1 9팀 · Q2 11팀)",
