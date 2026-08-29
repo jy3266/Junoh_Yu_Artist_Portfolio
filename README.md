@@ -13,7 +13,7 @@ interactive.html      Interactive Media (2021—)
 installation.html     Installation (2014—)
 performance.html      Performance (2014—)
 vr.html               VR-Hotline trilogy (2021—)
-art-tech.html         Art & Tech — REBREATHE
+art-tech.html         Rebreathe (리브리드) — art & tech platform work
 about.html            Full artist statement
 cv.html               Curriculum vitae
 contact.html          Contact

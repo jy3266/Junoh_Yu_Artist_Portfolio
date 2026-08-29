@@ -15,7 +15,7 @@ window.SITE = (function () {
     "nav.installation": { ko: "설치", en: "Installation" },
     "nav.performance": { ko: "퍼포먼스", en: "Performance" },
     "nav.vr": { ko: "VR 핫라인", en: "VR-Hotline" },
-    "nav.arttech": { ko: "아트 & 테크", en: "Art & Tech" },
+    "nav.arttech": { ko: "리브리드", en: "Rebreathe" },
     "nav.about": { ko: "작가 소개", en: "About" },
     "nav.cv": { ko: "이력", en: "CV" },
     "nav.contact": { ko: "연락처", en: "Contact" },
@@ -58,8 +58,8 @@ window.SITE = (function () {
       en: "A virtual reality trilogy on trauma, survival, and return. Since 2021."
     },
     "cat.arttech.desc": {
-      ko: "예술 실천에서 출발한 정신건강 및 자살예방 플랫폼, 리브리드.",
-      en: "Rebreathe — a mental-health and suicide-prevention platform grown from the practice."
+      ko: "예술 실천에서 출발한 청소년·유소년 정신건강 및 자살예방 플랫폼.",
+      en: "A youth mental-health and suicide-prevention platform grown from the practice."
     },
 
     "page.interactive.intro": {
@@ -126,7 +126,7 @@ window.SITE = (function () {
     { id: "installation", page: "installation.html", label: { ko: "설치", en: "Installation" }, range: "2014—" },
     { id: "performance", page: "performance.html", label: { ko: "퍼포먼스", en: "Performance" }, range: "2014—" },
     { id: "vr", page: "vr.html", label: { ko: "VR 핫라인", en: "VR-Hotline" }, range: "2021—" },
-    { id: "arttech", page: "art-tech.html", label: { ko: "아트 & 테크", en: "Art & Tech" }, range: "2025—" }
+    { id: "arttech", page: "art-tech.html", label: { ko: "리브리드", en: "Rebreathe" }, range: "2025—" }
   ];
 
   /* -------------------------------------------------------------- works  */
