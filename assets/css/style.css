@@ -304,12 +304,11 @@ h2.section-title {
 }
 .page-head p { color: var(--fg-dim); max-width: 62ch; margin: 0; }
 
-/* the section's own site, sitting above the intro paragraph */
+/* the section's own site as a named link, above the intro paragraph */
 .head-link {
   margin: -4px 0 18px;
   font-size: 12.5px;
   letter-spacing: 0.02em;
-  word-break: break-all;
 }
 .head-link a {
   color: var(--fg-dim);
