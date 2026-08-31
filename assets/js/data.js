@@ -64,7 +64,7 @@ window.SITE = (function () {
     },
 
     "page.interactive.intro": {
-      ko: "아두이노와 각종 센서, 라즈베리파이, 언리얼 엔진을 매개로 관객의 호흡과 심박, 거리와 무게에 반응하는 설치 작업입니다. 기술은 여기서 도구가 아니라, 감정이 공명하고 돌봄이 일어나는 장치가 됩니다.",
+      ko: "아두이노와 각종 센서, 언리얼 엔진, 터치디자이너 등을 매개로 관객의 신체 변화 데이터와 물리적 조건에 반응하는 설치 작업을 합니다. 여기서 기술을 도구가 아니라, 감정이 공명하고 공동체적 치유가 일어나는 장치가 됩니다.",
       en: "Installations built with Arduino and sensor arrays, Raspberry Pi, and Unreal Engine, responding to a visitor's breath, heartbeat, distance, and weight. Technology here is less a tool than an apparatus for emotional resonance and communal care."
     },
     "page.installation.intro": {
@@ -72,7 +72,7 @@ window.SITE = (function () {
       en: "Water, light, glass, sand, bone ash, incense. Small structures built from disappearing materials, making a place where memory can settle and scatter."
     },
     "page.performance.intro": {
-      ko: "금박과 검은 비닐, 물과 소음. 의례의 형식을 빌려 수치심과 폭력의 기억을 함께 통과하는 집단적 신체 작업입니다.",
+      ko: "다양한 형태의 의례의 형식을 통해서 수치심과 폭력의 개인적 경험부터 커뮤니티 빌딩 그리고 집단적 치유까지 다양한 연구적 시도들을 작품화 합니다.",
       en: "Gold foil, black plastic, water, and noise. Collective bodily works that borrow the form of ritual to move through shame and remembered violence together."
     },
     "page.vr.intro": {
@@ -580,9 +580,9 @@ window.SITE = (function () {
 
   var bio = {
     ko: [
-      "유준오는 의례, 치유, 기계적 매체를 융합하는 트랜스디서플리너리 시각·설치 작가이자 교육자이며 크리에이티브 테크놀로지스트이다.",
+      "작가는 의례, 치유, 기계적 매체를 융합하는 트랜스디서플리너리 시각·설치 작가이자 교육자이며 크리에이티브 테크놀로지스트이다.",
       "그의 작업은 어린 시절과 청소년기에 장기간 겪은 집단 괴롭힘으로부터 비롯된 심리적·신체적 고통을 출발점으로 삼지만, 동시에 한국 사회와 세계 곳곳에 존재하는 폭력, 차별, 역사적 상처의 구조까지 확장된다. 그러나 그는 고통의 어두움 자체에 머무르기보다, 그 안에서 드러나는 전환, 회복, 그리고 빛의 가능성에 주목한다.",
-      "유준오는 억압되고 소외된 존재들의 경험을 작업의 중심에 놓으며, 명상적이고 영적이며 의례적인 퍼포먼스와 설치 작업을 통해 관객이 함께 목격하고 감각하며 치유의 가능성에 접근할 수 있는 장을 만든다. 그의 작업은 공유된 경험을 통해 공간을 정화하고 새롭게 사유하는 실천이며, 트라우마와 생존, 회복의 이야기를 말할 수 있는 통로를 여는 데 목적이 있다.",
+      "작가는 또한 억압되고 소외된 존재들의 경험을 작업의 중심에 놓으며, 명상적이고 영적인 의례적인 퍼포먼스와 설치 작업을 통해 관객이 함께 목격하고 감각하며 집단적 치유와 공동체 형성의 가능성에 접근할 수 있는 장을 만든다. 그의 작업은 공유된 경험을 통해 공간을 정화하고 새롭게 사유하는 실천이며, 트라우마와 생존, 회복의 이야기를 말할 수 있는 통로를 여는 데 목적이 있다.",
       "설치, 퍼포먼스, VR, AR, 디지털 트윈, 게임 엔진, 피지컬 컴퓨팅을 넘나드는 그의 작업은 시공간의 물리적 한계를 넘어서는 몰입형 예술 경험을 구축한다. 그는 실시간 상호작용과 감각적 서사를 결합하여, 기술이 정서적 공명과 공동체적 돌봄, 감각적 전환을 위한 매개가 될 수 있는 가능성을 탐구한다.",
       "그는 Virginia Museum of Fine Arts, The Anderson Gallery, 고색뉴지엄, 아트코리아랩, 서울디자인재단, 포항문화재단, 충주문화재단, 달성대구현대미술제 등 한국과 미국의 다양한 기관에서 작품을 발표해왔다. Vermont Studio Center 펠로우로 선정되었으며, apexart와 Vermont Studio Center의 심사위원으로 참여했고, MIT Media Lab의 HackMIT에서는 멘토 및 심사 역할을 맡았다. 또한 Whitney Museum과 Bronx Museum에서 Guadalupe Maravilla의 퍼포먼스에 비디오그래퍼이자 퍼포머로 참여하였다.",
       "동시에 그는 ㈜리브리드와 ㈜스타그라운드의 창립자로 활동하고 있으며, ㈜프로눔에서 Chief Creative Officer를 역임했다. 또한 성균관대학교, 청주대학교, 중앙대학교, 동양대학교에서 인터랙티브 미디어, 언리얼 엔진, AI 기반 영상, 게임 관련 창작기술을 교육하고 멘토링하며 예술과 기술을 잇는 교육 실천을 이어가고 있다.",
@@ -624,7 +624,7 @@ window.SITE = (function () {
     ],
 
     teaching: [
-      { year: "2026.09—", what: { ko: "한양대학교 소프트웨어융합대학 ICT융합학부 — 인터랙티브 멀티미디어", en: "Hanyang University, ICT Convergence — Interactive Multimedia" }, note: { ko: "객원교수 (예정)", en: "Visiting Professor (forthcoming)" }, where: { ko: "서울", en: "Seoul" } },
+      { year: "2026.09—", what: { ko: "한양대학교 소프트웨어융합대학 ICT융합학부", en: "Hanyang University, ICT Convergence" }, note: { ko: "객원교수 (예정) — 인터랙티브 멀티미디어", en: "Visiting Professor (forthcoming) — Interactive Multimedia" }, where: { ko: "서울", en: "Seoul" } },
       { year: "2026.03—", what: { ko: "성균관대학교 영상학부 & 게임디자인학부", en: "Sungkyunkwan University, Film & Game Design" }, note: { ko: "겸임교수 — AI 기반 인터랙티브 영상 및 아트 / 몰입형 내러티브 / 언리얼 기반 실감 콘텐츠 제작 / 캡스톤 디자인", en: "Adjunct Professor — AI-based interactive moving image, immersive narrative, Unreal-based experiential content, capstone design" }, where: { ko: "서울", en: "Seoul" } },
       { year: "2025.08—", what: { ko: "청주대학교 예술학부 디지털미디어디자인학과", en: "Cheongju University, Digital Media Design" }, note: { ko: "객원교수 — 인터랙션 디자인 / 디지털 조형 실습 I, II", en: "Visiting Professor — Interaction design, digital form studio I & II" }, where: { ko: "청주", en: "Cheongju" } },
       { year: "2025.08—", what: { ko: "중앙대학교 예술공학부", en: "Chung-Ang University, Art & Technology" }, note: { ko: "객원교수 (기술멘토) — 캡스톤 디자인 (언리얼 엔진 & 아두이노)", en: "Visiting Professor / technical mentor — capstone design (Unreal Engine & Arduino)" }, where: { ko: "서울", en: "Seoul" } },
