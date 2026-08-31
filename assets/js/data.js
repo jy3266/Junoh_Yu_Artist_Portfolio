@@ -87,7 +87,7 @@ window.SITE = (function () {
     "arttech.link": { ko: "리브리드 소개 보기", en: "View the Rebreathe proposal" },
 
     "page.teaching.intro": {
-      ko: "성균관대학교와 청주대학교에서 진행한 강의 기록입니다. 학생들은 화면 안에서 끝나는 결과물 대신, 언리얼 엔진과 아두이노 센서, 프로젝션 매핑으로 실제 공간에 설치되는 작업을 만듭니다. 강의계획서에서 전시장 바닥까지의 과정을 팀별로 남겨두었습니다.",
+      ko: "성균관대학교와 청주대학교에서 진행한 강의 기록입니다. 학생들은 화면 안에서 끝나는 결과물 대신, 언리얼 엔진과 아두이노 센서, 프로젝션 매핑을 활용하여 실제 공간에서의 “경험”으로 만듭니다. 강의실에서 전시장까지의 과정을 팀별로 남겨두었습니다.",
       en: "A record of courses taught at Sungkyunkwan University and Cheongju University. Rather than screen-based deliverables, students build work that is installed in real space — Unreal Engine, Arduino sensors, and projection mapping. The archive follows each team from syllabus to gallery floor."
     },
     "teaching.eyebrow": { ko: "교육", en: "Teaching" },
