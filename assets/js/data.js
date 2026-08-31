@@ -72,7 +72,7 @@ window.SITE = (function () {
       en: "Water, light, glass, sand, bone ash, incense. Small structures built from disappearing materials, making a place where memory can settle and scatter."
     },
     "page.performance.intro": {
-      ko: "다양한 형태의 의례의 형식을 통해서 수치심과 폭력의 개인적 경험부터 커뮤니티 빌딩 그리고 집단적 치유까지 다양한 연구적 시도들을 작품화 합니다.",
+      ko: "다양한 형태의 의례의 형식을 통해서 수치심과 폭력에 대한 개인적 경험부터 커뮤니티 빌딩 그리고 집단적 치유까지 다양한 연구적 시도들을 작품화 합니다.",
       en: "Gold foil, black plastic, water, and noise. Collective bodily works that borrow the form of ritual to move through shame and remembered violence together."
     },
     "page.vr.intro": {
