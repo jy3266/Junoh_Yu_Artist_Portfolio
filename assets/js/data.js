@@ -64,7 +64,7 @@ window.SITE = (function () {
     },
 
     "page.interactive.intro": {
-      ko: "아두이노와 각종 센서, 언리얼 엔진, 터치디자이너 등을 매개로 관객의 신체 변화 데이터와 물리적 조건에 반응하는 설치 작업을 합니다. 여기서 기술을 도구가 아니라, 감정이 공명하고 공동체적 치유가 일어나는 장치가 됩니다.",
+      ko: "언리얼 엔진, 아두이노, 터치디자이너 등을 매개로 관객 또는 작가의 물리적 행위에 따라 변화하는 신체 및 바이오 데이터의 반응을 연구합니다. 여기서 기술을 도구가 아니라, 감정이 공명하고 공동체적 치유가 일어나는 장치가 됩니다.",
       en: "Installations built with Arduino and sensor arrays, Raspberry Pi, and Unreal Engine, responding to a visitor's breath, heartbeat, distance, and weight. Technology here is less a tool than an apparatus for emotional resonance and communal care."
     },
     "page.installation.intro": {
