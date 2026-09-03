@@ -11,13 +11,17 @@ window.SITE = (function () {
     "site.name": { ko: "유준오", en: "Junoh Yu" },
     "site.role": { ko: "시각 및 설치 작가", en: "Visual & Installation Artist" },
 
+    "nav.artist": { ko: "Artist", en: "Artist" },
+    "nav.virtualreality": { ko: "Virtual Reality", en: "Virtual Reality" },
+    "nav.tab.teaching": { ko: "Teaching", en: "Teaching" },
+
     "nav.interactive": { ko: "인터랙티브 미디어", en: "Interactive Media" },
     "nav.installation": { ko: "설치", en: "Installation" },
     "nav.performance": { ko: "퍼포먼스", en: "Performance" },
     "nav.vr": { ko: "VR 핫라인", en: "VR-Hotline" },
     "nav.arttech": { ko: "리브리드", en: "Rebreathe" },
     "nav.teaching": { ko: "교육", en: "Teaching" },
-    "nav.about": { ko: "작가 소개", en: "About" },
+    "nav.about": { ko: "소개", en: "About" },
     "nav.cv": { ko: "이력", en: "CV" },
     "nav.contact": { ko: "연락처", en: "Contact" },
 
@@ -121,12 +125,13 @@ window.SITE = (function () {
     },
     "teaching.archive": { ko: "티칭 아카이브 전체 보기", en: "Open the full teaching archive" },
     "teaching.cvnote": {
-      ko: "한양대학교와 중앙대학교를 포함한 전체 강의 및 재직 이력은 이력 페이지에 정리되어 있습니다.",
-      en: "Full teaching and professional appointments — including Hanyang and Chung-Ang University — are listed on the CV."
+      ko: "한양대학교와 중앙대학교를 포함한 전체 강의 및 재직 이력은 소개 페이지의 이력 항목에 정리되어 있습니다.",
+      en: "Full teaching and professional appointments — including Hanyang and Chung-Ang University — are listed under CV on the About page."
     },
 
     "about.eyebrow": { ko: "작가 소개", en: "About the artist" },
     "about.cta": { ko: "이력 보기", en: "View CV" },
+    "about.sec.bio": { ko: "작가 소개", en: "About" },
 
     "cv.eyebrow": { ko: "이력", en: "Curriculum Vitae" },
     "cv.download": { ko: "이력서 내려받기 (PDF)", en: "Download CV (PDF)" },

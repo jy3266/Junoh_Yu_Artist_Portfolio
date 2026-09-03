@@ -95,7 +95,12 @@ a { color: inherit; text-decoration: none; }
   gap: clamp(14px, 1.7vw, 26px);
 }
 
-.nav a {
+/* a top-level item is either a link or the button that opens a group */
+.nav-top {
+  appearance: none;
+  background: none;
+  border: 0;
+  font: inherit;
   font-size: 12px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -103,11 +108,15 @@ a { color: inherit; text-decoration: none; }
   white-space: nowrap;
   padding: 6px 0;
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
   transition: color 0.3s var(--ease);
 }
-html[lang="ko"] .nav a { letter-spacing: 0.06em; font-size: 13px; }
+html[lang="ko"] .nav-top { letter-spacing: 0.06em; font-size: 13px; }
 
-.nav a::after {
+.nav-top::after {
   content: "";
   position: absolute;
   left: 0;
@@ -119,10 +128,72 @@ html[lang="ko"] .nav a { letter-spacing: 0.06em; font-size: 13px; }
   transform-origin: right;
   transition: transform 0.4s var(--ease);
 }
-.nav a:hover { color: var(--fg); }
-.nav a:hover::after { transform: scaleX(1); transform-origin: left; }
-.nav a.is-active { color: var(--fg); }
-.nav a.is-active::after { transform: scaleX(1); }
+.nav-top:hover { color: var(--fg); }
+.nav-top:hover::after { transform: scaleX(1); transform-origin: left; }
+.nav-top.is-active { color: var(--fg); }
+.nav-top.is-active::after { transform: scaleX(1); }
+.nav-top:focus-visible { outline: 1px solid var(--fg); outline-offset: 4px; }
+
+.caret {
+  width: 5px;
+  height: 5px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.3s var(--ease);
+  flex: none;
+}
+.nav-group[data-open="true"] .caret { transform: translateY(1px) rotate(225deg); }
+
+.nav-group { position: relative; }
+/* keeps the pointer inside the group while it crosses the gap to the menu */
+.nav-group::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 16px;
+}
+
+.nav-menu {
+  position: absolute;
+  top: calc(100% + 15px);
+  left: -18px;
+  min-width: 210px;
+  padding: 9px 0;
+  display: flex;
+  flex-direction: column;
+  background: rgba(10, 10, 11, 0.96);
+  backdrop-filter: saturate(160%) blur(14px);
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
+  border: 1px solid var(--line);
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition: opacity 0.28s var(--ease), transform 0.28s var(--ease);
+  z-index: 110;
+}
+.nav-group:hover .nav-menu,
+.nav-group:focus-within .nav-menu,
+.nav-group[data-open="true"] .nav-menu {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.nav-menu a {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+  white-space: nowrap;
+  padding: 9px 18px;
+  transition: color 0.25s var(--ease), background 0.25s var(--ease);
+}
+html[lang="ko"] .nav-menu a { letter-spacing: 0.03em; font-size: 13.5px; text-transform: none; }
+.nav-menu a:hover { color: var(--fg); background: rgba(255, 255, 255, 0.045); }
+.nav-menu a.is-active { color: var(--fg); }
 
 /* language toggle */
 
@@ -194,7 +265,39 @@ html[lang="ko"] .nav a { letter-spacing: 0.06em; font-size: 13px; }
     transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
   }
   .nav.is-open { opacity: 1; transform: none; pointer-events: auto; }
-  .nav a { font-size: 15px; padding: 12px 0; width: 100%; }
+  .nav-top { font-size: 15px; padding: 12px 0; width: 100%; }
+
+  .nav-group { position: static; width: 100%; }
+  .nav-group::after { display: none; }
+  .caret { display: none; }
+
+  .nav-parent {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--fg-faint);
+    padding: 20px 0 4px;
+    cursor: default;
+  }
+  .nav-parent::after { display: none; }
+  .nav-parent:hover { color: var(--fg-faint); }
+  .nav-parent.is-active { color: var(--fg-faint); }
+  html[lang="ko"] .nav-parent { letter-spacing: 0.2em; font-size: 11px; }
+
+  .nav-menu {
+    position: static;
+    min-width: 0;
+    width: 100%;
+    padding: 0 0 0 14px;
+    border: 0;
+    background: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+  .nav-menu a { font-size: 15px; padding: 10px 0; text-transform: none; letter-spacing: 0.02em; }
+  html[lang="ko"] .nav-menu a { font-size: 15px; }
 }
 
 /* ----------------------------------------------------------------- hero  */
@@ -294,7 +397,8 @@ h2.section-title {
   font-size: 14px;
 }
 
-.page-head { padding: clamp(56px, 8vw, 108px) 0 clamp(28px, 4vw, 52px); }
+/* padding-block, not padding — the shorthand would drop .wrap's side gutter */
+.page-head { padding-block: clamp(56px, 8vw, 108px) clamp(28px, 4vw, 52px); }
 .page-head h1 {
   font-family: var(--font-serif);
   font-weight: 300;
@@ -303,6 +407,28 @@ h2.section-title {
   margin: 0 0 18px;
 }
 .page-head p { color: var(--fg-dim); max-width: 62ch; margin: 0; }
+
+/* section links on a page that gathers several sections (About) */
+.page-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(18px, 2.6vw, 38px);
+  margin-top: 24px;
+}
+.page-tabs a {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--fg-faint);
+  padding-bottom: 5px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+html[lang="ko"] .page-tabs a { letter-spacing: 0.06em; font-size: 13px; text-transform: none; }
+.page-tabs a:hover { color: var(--fg); border-bottom-color: var(--line); }
+
+/* clears the sticky header when an in-page link jumps to a section */
+.section[id] { scroll-margin-top: 88px; }
 
 /* the section's own site as a named link, above the intro paragraph */
 .head-link {

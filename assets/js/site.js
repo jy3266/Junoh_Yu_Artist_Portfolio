@@ -389,7 +389,7 @@
     a.rel = "noopener";
     row.appendChild(a);
     var cvLink = el("a", "btn", t("nav.cv"));
-    cvLink.href = "cv.html";
+    cvLink.href = "about.html#cv";
     row.appendChild(cvLink);
     host.appendChild(row);
 
@@ -651,11 +651,63 @@
       });
     }
 
+    initNavGroups();
+
     var page = document.body.dataset.page;
     if (page) {
-      var active = document.querySelector('.nav a[data-page="' + page + '"]');
-      if (active) active.classList.add("is-active");
+      var active = document.querySelector('.nav [data-page="' + page + '"]');
+      if (active) {
+        active.classList.add("is-active");
+        /* a child page also lights up the group it sits in */
+        var group = active.closest(".nav-group");
+        if (group) {
+          var parent = group.querySelector(".nav-parent");
+          if (parent) parent.classList.add("is-active");
+        }
+      }
     }
+  }
+
+  /** Grouped nav items open on hover; click and Escape work without a pointer. */
+  function initNavGroups() {
+    var groups = Array.prototype.slice.call(document.querySelectorAll(".nav-group"));
+    if (!groups.length) return;
+
+    function close(g) {
+      g.removeAttribute("data-open");
+      var b = g.querySelector(".nav-parent");
+      if (b) b.setAttribute("aria-expanded", "false");
+    }
+
+    function closeAll(except) {
+      groups.forEach(function (g) { if (g !== except) close(g); });
+    }
+
+    groups.forEach(function (g) {
+      var btn = g.querySelector(".nav-parent");
+      if (!btn) return;
+
+      btn.addEventListener("click", function () {
+        var opening = g.getAttribute("data-open") !== "true";
+        closeAll(g);
+        if (opening) {
+          g.setAttribute("data-open", "true");
+          btn.setAttribute("aria-expanded", "true");
+        } else {
+          close(g);
+        }
+      });
+
+      g.addEventListener("mouseleave", function () { close(g); });
+    });
+
+    document.addEventListener("click", function (ev) {
+      if (!ev.target.closest(".nav-group")) closeAll(null);
+    });
+
+    document.addEventListener("keydown", function (ev) {
+      if (ev.key === "Escape") closeAll(null);
+    });
   }
 
   /** Open a work directly from #slug on load. */
