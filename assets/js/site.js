@@ -225,12 +225,53 @@
     return wrap;
   }
 
+  /** The teaching statement: a label column beside the prose it introduces. */
+  function makeStatement(st) {
+    var sec = el("section", "statement reveal");
+
+    var side = el("div", "statement-side");
+    side.appendChild(el("p", "eyebrow", f(st.label)));
+    sec.appendChild(side);
+
+    var body = el("div", "prose statement-body");
+
+    st.blocks.forEach(function (b) {
+      var v = f(b);
+
+      if (b.t === "q") {
+        var ul = el("ul", "statement-q");
+        v.forEach(function (line) { ul.appendChild(el("li", null, line)); });
+        body.appendChild(ul);
+        return;
+      }
+
+      if (b.t === "pull") {
+        var q = el("blockquote", "statement-pull");
+        v.forEach(function (line) { q.appendChild(el("p", null, line)); });
+        body.appendChild(q);
+        return;
+      }
+
+      if (b.t === "chain") {
+        body.appendChild(el("p", "statement-chain", v));
+        return;
+      }
+
+      body.appendChild(el("p", b.t === "lead" ? "lead" : null, v));
+    });
+
+    sec.appendChild(body);
+    return sec;
+  }
+
   function renderTeaching() {
     var host = document.querySelector("[data-teaching]");
     if (!host) return;
 
     var T = S.teaching;
     host.innerHTML = "";
+
+    if (T.statement) host.appendChild(makeStatement(T.statement));
 
     /* headline counts: 3 universities · 6 courses · 67 teams */
     var courseCount = 0;

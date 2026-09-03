@@ -607,6 +607,72 @@ html[lang="ko"] .btn { letter-spacing: 0.05em; }
 
 /* ------------------------------------------------------------- teaching  */
 
+/* the statement opens the page: a label column, then the prose itself */
+.statement {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(14px, 2vw, 40px);
+  padding-bottom: clamp(40px, 5vw, 72px);
+  margin-bottom: clamp(34px, 4.5vw, 60px);
+  border-bottom: 1px solid var(--line);
+}
+@media (min-width: 900px) {
+  .statement { grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); }
+  .statement-side { position: sticky; top: 104px; align-self: start; }
+}
+.statement-side .eyebrow { margin: 0; }
+
+.statement-body { font-size: 15.5px; line-height: 1.85; }
+
+.statement-q {
+  list-style: none;
+  margin: 0 0 1.5em;
+  padding: 2px 0 2px clamp(16px, 2vw, 26px);
+  border-left: 1px solid var(--line);
+  max-width: 68ch;
+}
+.statement-q li {
+  font-family: var(--font-serif);
+  font-size: clamp(18px, 1.8vw, 23px);
+  line-height: 1.45;
+  font-weight: 300;
+  color: var(--fg);
+}
+.statement-q li + li { margin-top: 0.5em; }
+html[lang="ko"] .statement-q li {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: clamp(15px, 1.5vw, 18px);
+  line-height: 1.6;
+}
+
+.statement-chain {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--fg-faint);
+}
+
+.statement-pull {
+  margin: clamp(28px, 3.5vw, 46px) 0 0;
+  padding-top: clamp(22px, 3vw, 34px);
+  border-top: 1px solid var(--line);
+  max-width: 68ch;
+}
+.statement-pull p {
+  font-family: var(--font-serif);
+  font-size: clamp(19px, 2.1vw, 27px);
+  line-height: 1.4;
+  font-weight: 300;
+  color: var(--fg);
+  margin: 0;
+  max-width: none;
+  text-wrap: balance;
+}
+.statement-pull p + p { margin-top: 0.4em; }
+
 .stat-row {
   display: flex;
   flex-wrap: wrap;
