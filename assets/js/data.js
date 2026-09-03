@@ -11,9 +11,8 @@ window.SITE = (function () {
     "site.name": { ko: "유준오", en: "Junoh Yu" },
     "site.role": { ko: "시각 및 설치 작가", en: "Visual & Installation Artist" },
 
-    "nav.artist": { ko: "Artist", en: "Artist" },
-    "nav.virtualreality": { ko: "Virtual Reality", en: "Virtual Reality" },
-    "nav.tab.teaching": { ko: "Teaching", en: "Teaching" },
+    "nav.artist": { ko: "예술", en: "Artist" },
+    "nav.virtualreality": { ko: "가상현실", en: "Virtual Reality" },
 
     "nav.interactive": { ko: "인터랙티브 미디어", en: "Interactive Media" },
     "nav.installation": { ko: "설치", en: "Installation" },

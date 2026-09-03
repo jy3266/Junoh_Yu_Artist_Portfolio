@@ -225,14 +225,35 @@
     return wrap;
   }
 
-  /** The teaching statement: a label column beside the prose it introduces. */
+  /* the statement is long, so it stays folded away until asked for; the
+     choice survives a language switch, which rebuilds the whole section */
+  var statementOpen = false;
+
+  /** The teaching statement, behind a disclosure its label opens. */
   function makeStatement(st) {
     var sec = el("section", "statement reveal");
+    if (statementOpen) sec.classList.add("is-open");
 
-    var side = el("div", "statement-side");
-    side.appendChild(el("p", "eyebrow", f(st.label)));
-    sec.appendChild(side);
+    var btn = el("button", "statement-toggle");
+    btn.type = "button";
+    btn.id = "statement-toggle";
+    btn.setAttribute("aria-expanded", String(statementOpen));
+    btn.setAttribute("aria-controls", "statement-panel");
+    btn.appendChild(el("span", "statement-label", f(st.label)));
+    btn.appendChild(el("span", "statement-sign"));
+    sec.appendChild(btn);
 
+    btn.addEventListener("click", function () {
+      statementOpen = sec.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", String(statementOpen));
+    });
+
+    var panel = el("div", "statement-panel");
+    panel.id = "statement-panel";
+    panel.setAttribute("role", "region");
+    panel.setAttribute("aria-labelledby", "statement-toggle");
+
+    var clip = el("div", "statement-clip");
     var body = el("div", "prose statement-body");
 
     st.blocks.forEach(function (b) {
@@ -260,7 +281,9 @@
       body.appendChild(el("p", b.t === "lead" ? "lead" : null, v));
     });
 
-    sec.appendChild(body);
+    clip.appendChild(body);
+    panel.appendChild(clip);
+    sec.appendChild(panel);
     return sec;
   }
 
@@ -699,6 +722,11 @@
       });
 
       g.addEventListener("mouseleave", function () { close(g); });
+
+      /* focus keeps a keyboard-opened menu up, but only while it is inside */
+      g.addEventListener("focusout", function (ev) {
+        if (!g.contains(ev.relatedTarget)) close(g);
+      });
     });
 
     document.addEventListener("click", function (ev) {
