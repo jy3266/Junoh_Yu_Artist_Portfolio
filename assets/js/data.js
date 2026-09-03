@@ -87,8 +87,8 @@ window.SITE = (function () {
     "arttech.link": { ko: "리브리드 소개 보기", en: "View the Rebreathe proposal" },
 
     "page.teaching.intro": {
-      ko: "성균관대학교와 청주대학교에서 진행한 강의 기록입니다. 학생들은 화면 안에서 끝나는 결과물 대신, 언리얼 엔진과 아두이노 센서, 프로젝션 매핑을 활용하여 실제 공간에서의 “경험”으로 만듭니다. 강의실에서 전시장까지의 과정을 팀별로 남겨두었습니다.",
-      en: "A record of courses taught at Sungkyunkwan University and Cheongju University. Rather than screen-based deliverables, students build work that is installed in real space — Unreal Engine, Arduino sensors, and projection mapping. The archive follows each team from syllabus to gallery floor."
+      ko: "성균관대학교, 청주대학교, 동양대학교에서 진행한 강의 기록입니다. 학생들은 화면 안에서 끝나는 결과물 대신, 언리얼 엔진과 아두이노 센서, 프로젝션 매핑을 활용하여 실제 공간에서의 “경험”으로 만듭니다. 강의실에서 전시장까지의 과정을 팀별로 남겨두었습니다.",
+      en: "A record of courses taught at Sungkyunkwan University, Cheongju University, and Dongyang University. Rather than screen-based deliverables, students build work that is installed in real space — Unreal Engine, Arduino sensors, and projection mapping. The archive follows each team from syllabus to gallery floor."
     },
     "teaching.eyebrow": { ko: "교육", en: "Teaching" },
     "teaching.stats.schools": { ko: "개 대학", en: "universities" },
@@ -121,8 +121,8 @@ window.SITE = (function () {
     },
     "teaching.archive": { ko: "티칭 아카이브 전체 보기", en: "Open the full teaching archive" },
     "teaching.cvnote": {
-      ko: "한양대학교, 중앙대학교, 동양대학교를 포함한 전체 강의 및 재직 이력은 이력 페이지에 정리되어 있습니다.",
-      en: "Full teaching and professional appointments — including Hanyang, Chung-Ang, and Dongyang University — are listed on the CV."
+      ko: "한양대학교와 중앙대학교를 포함한 전체 강의 및 재직 이력은 이력 페이지에 정리되어 있습니다.",
+      en: "Full teaching and professional appointments — including Hanyang and Chung-Ang University — are listed on the CV."
     },
 
     "about.eyebrow": { ko: "작가 소개", en: "About the artist" },
@@ -571,6 +571,20 @@ window.SITE = (function () {
           { title: { ko: "인터랙션 디자인 (Q1 · Q2)", en: "Interaction Design (Q1 · Q2)" }, teams: 20,
             note: { ko: "감정표현불능증, 확증 편향, 제주 4·3, 그린워싱, 온라인 폭력 등 사회적 주제를 소리·촉각·움직임 기반 입력으로, 화면 밖의 인터페이스로 풀어낸 프로젝트 (Q1 9팀 · Q2 11팀)",
                     en: "Alexithymia, confirmation bias, Jeju 4·3, greenwashing, and online cruelty — worked out through audio, touch, and motion input, in interfaces beyond the screen (Q1 9 teams · Q2 11 teams)" } }
+        ]
+      },
+      {
+        name: { ko: "동양대학교 웹툰애니메이션학과 & 게임학부", en: "Dongyang University — Webtoon & Animation / Game Studies" },
+        role: { ko: "겸임교수", en: "Adjunct Professor" },
+        since: "2025.03—",
+        photos: { slug: "dyu", count: 5 },
+        courses: [
+          { title: { ko: "애니메이션 스튜디오", en: "Animation Studio" }, teams: 8,
+            note: { ko: "〈Reality Threshold〉 — 서로 독립된 두 공간을 통로가 아닌 ‘전환의 임계 공간’으로 잇는 작업. 거리 · 연결 · 서사 · 긴장감을 설계 변수로 두고 언리얼로 구축 (개인 과제 8명)",
+                    en: "⟨Reality Threshold⟩ — joining two independent spaces with a threshold rather than a passage, built in Unreal around distance, connection, narrative, and tension (8 individual projects)" } },
+          { title: { ko: "레벨 디자인", en: "Level Design" }, teams: 18,
+            note: { ko: "〈Simulated Experience〉 — 치유, 기다림, 숭고함, 향수, 어둠, 리듬, 환영, 정체성 중 하나를 골라, 설명 없이도 무엇을 해야 할지 알 수 있는 공간으로 최소 요소만 남겨 재구성 (이틀에 걸친 최종 크리틱 · 20명)",
+                    en: "⟨Simulated Experience⟩ — healing, waiting, the sublime, nostalgia, darkness, rhythm, illusion, or identity, rebuilt from the fewest possible elements into a space a user can read without being told (two-day final critique · 20 students)" } }
         ]
       }
     ]

@@ -232,7 +232,7 @@
     var T = S.teaching;
     host.innerHTML = "";
 
-    /* headline counts: 2 universities · 4 courses · 41 teams */
+    /* headline counts: 3 universities · 6 courses · 67 teams */
     var courseCount = 0;
     var teamCount = 0;
     T.schools.forEach(function (s) {
