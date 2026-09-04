@@ -20,6 +20,10 @@ window.SITE = (function () {
     "nav.vr": { ko: "VR 핫라인", en: "VR-Hotline" },
     "nav.arttech": { ko: "리브리드", en: "Rebreathe" },
     "nav.teaching": { ko: "교육", en: "Teaching" },
+    "nav.teaching.overview": { ko: "교육 전체", en: "Teaching Overview" },
+    "nav.school.skku": { ko: "성균관대학교", en: "Sungkyunkwan Univ." },
+    "nav.school.cju": { ko: "청주대학교", en: "Cheongju Univ." },
+    "nav.school.dyu": { ko: "동양대학교", en: "Dongyang Univ." },
     "nav.about": { ko: "소개", en: "About" },
     "nav.cv": { ko: "이력", en: "CV" },
     "nav.contact": { ko: "연락처", en: "Contact" },
@@ -123,6 +127,14 @@ window.SITE = (function () {
       en: "Student work from the archive · click the photo for the next one"
     },
     "teaching.archive": { ko: "티칭 아카이브 전체 보기", en: "Open the full teaching archive" },
+    "teaching.open": { ko: "이 학교의 강의 기록 보기", en: "Open this university’s record" },
+    "teaching.back": { ko: "교육 전체로 돌아가기", en: "Back to teaching" },
+    "teaching.courselist": { ko: "이 페이지의 강의", en: "On this page" },
+    "teaching.source": {
+      ko: "이 페이지의 내용과 이미지는 티칭 아카이브에서 옮겨 온 것입니다.",
+      en: "The text and images on this page are carried over from the teaching archive."
+    },
+    "archive.now": { ko: "진행 중", en: "Now" },
     "teaching.cvnote": {
       ko: "한양대학교와 중앙대학교를 포함한 전체 강의 및 재직 이력은 소개 페이지의 이력 항목에 정리되어 있습니다.",
       en: "Full teaching and professional appointments — including Hanyang and Chung-Ang University — are listed under CV on the About page."
@@ -646,43 +658,49 @@ window.SITE = (function () {
     },
     schools: [
       {
+        slug: "skku",
+        page: "teaching-skku.html",
         name: { ko: "성균관대학교 영상학부 & 게임디자인학부", en: "Sungkyunkwan University — Film & Game Design" },
         role: { ko: "겸임교수", en: "Adjunct Professor" },
         since: "2026.03—",
         photos: { slug: "skku", count: 6 },
         courses: [
-          { title: { ko: "캡스톤 디자인", en: "Capstone Design" }, teams: 5,
+          { title: { ko: "캡스톤 디자인", en: "Capstone Design" }, teams: 5, tab: "capstone",
             note: { ko: "환경 디자인, 내러티브 시퀀싱, 센서 연동을 거쳐 설치 가능한 프로토타입까지 (15주 집중)",
                     en: "Environment design, narrative sequencing, and sensor integration, ending in an installable prototype (15 sessions)" } },
-          { title: { ko: "몰입형 내러티브 & 인터랙션", en: "Immersive Narrative & Interaction" }, teams: 9,
+          { title: { ko: "몰입형 내러티브 & 인터랙션", en: "Immersive Narrative & Interaction" }, teams: 9, tab: "immersive",
             note: { ko: "이야기를 걸어 들어갈 수 있는 공간으로 옮기고, 아두이노와 프로젝션 매핑으로 확장",
                     en: "Moving stories into walkable space, extended with Arduino and projection mapping" } },
-          { title: { ko: "AI 기반 인터랙티브 영상", en: "AI-Driven Interactive Video" }, teams: 7,
+          { title: { ko: "AI 기반 인터랙티브 영상", en: "AI-Driven Interactive Video" }, teams: 7, tab: "ai",
             note: { ko: "학생을 ‘가상 건축가’로 두고, 가상 공간을 배경이 아닌 장소로 설계",
                     en: "Students as “virtual architects” — designing virtual space as a place, not a backdrop" } }
         ]
       },
       {
+        slug: "cju",
+        page: "teaching-cju.html",
         name: { ko: "청주대학교 예술학부 디지털미디어디자인학과", en: "Cheongju University — Digital Media Design" },
         role: { ko: "객원교수", en: "Visiting Professor" },
         since: "2025.08—",
         photos: { slug: "cju", count: 5 },
         courses: [
-          { title: { ko: "인터랙션 디자인 (Q1 · Q2)", en: "Interaction Design (Q1 · Q2)" }, teams: 20,
+          { title: { ko: "인터랙션 디자인 (Q1 · Q2)", en: "Interaction Design (Q1 · Q2)" }, teams: 20, tab: "cju-q1",
             note: { ko: "감정표현불능증, 확증 편향, 제주 4·3, 그린워싱, 온라인 폭력 등 사회적 주제를 소리·촉각·움직임 기반 입력으로, 화면 밖의 인터페이스로 풀어낸 프로젝트 (Q1 9팀 · Q2 11팀)",
                     en: "Alexithymia, confirmation bias, Jeju 4·3, greenwashing, and online cruelty — worked out through audio, touch, and motion input, in interfaces beyond the screen (Q1 9 teams · Q2 11 teams)" } }
         ]
       },
       {
+        slug: "dyu",
+        page: "teaching-dyu.html",
         name: { ko: "동양대학교 웹툰애니메이션학과 & 게임학부", en: "Dongyang University — Webtoon & Animation / Game Studies" },
         role: { ko: "겸임교수", en: "Adjunct Professor" },
         since: "2025.03—",
         photos: { slug: "dyu", count: 5 },
         courses: [
-          { title: { ko: "애니메이션 스튜디오", en: "Animation Studio" }, teams: 8,
+          { title: { ko: "애니메이션 스튜디오", en: "Animation Studio" }, teams: 8, tab: "dyu-anim",
             note: { ko: "〈Reality Threshold〉 — 서로 독립된 두 공간을 통로가 아닌 ‘전환의 임계 공간’으로 잇는 작업. 거리 · 연결 · 서사 · 긴장감을 설계 변수로 두고 언리얼로 구축 (개인 과제 8명)",
                     en: "⟨Reality Threshold⟩ — joining two independent spaces with a threshold rather than a passage, built in Unreal around distance, connection, narrative, and tension (8 individual projects)" } },
-          { title: { ko: "레벨 디자인", en: "Level Design" }, teams: 18,
+          { title: { ko: "레벨 디자인", en: "Level Design" }, teams: 18, tab: "dyu-ld",
             note: { ko: "〈Simulated Experience〉 — 치유, 기다림, 숭고함, 향수, 어둠, 리듬, 환영, 정체성 중 하나를 골라, 설명 없이도 무엇을 해야 할지 알 수 있는 공간으로 최소 요소만 남겨 재구성 (이틀에 걸친 최종 크리틱 · 20명)",
                     en: "⟨Simulated Experience⟩ — healing, waiting, the sublime, nostalgia, darkness, rhythm, illusion, or identity, rebuilt from the fewest possible elements into a space a user can read without being told (two-day final critique · 20 students)" } }
         ]

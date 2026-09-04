@@ -87,9 +87,10 @@
     renderCategories();
     renderGrids();
     renderTeaching();
+    renderArchive();
     renderBio();
     renderCV();
-    if (lb.open) lb.refresh();
+    if (lb.open && lb.work) lb.refresh();
     observeReveals();
   }
 
@@ -319,7 +320,21 @@
       var block = el("section", "cv-block reveal");
 
       var head = el("div", "school-head");
-      head.appendChild(el("h3", "school-name", f(school.name)));
+
+      /* the name is a link when the school has a page of its own */
+      var nameText = f(school.name);
+      if (school.page) {
+        var h3 = el("h3", "school-name");
+        var link = el("a", "school-link");
+        link.href = school.page;
+        link.appendChild(document.createTextNode(nameText));
+        link.appendChild(el("span", "arw", "\u2197"));
+        h3.appendChild(link);
+        head.appendChild(h3);
+      } else {
+        head.appendChild(el("h3", "school-name", nameText));
+      }
+
       head.appendChild(el("p", "school-meta", [f(school.role), school.since].join("  ·  ")));
       block.appendChild(head);
 
@@ -331,7 +346,8 @@
 
       var right = el("div");
       school.courses.forEach(function (c) {
-        var row = el("div", "cv-row");
+        var row = el(school.page ? "a" : "div", "cv-row" + (school.page ? " cv-row-link" : ""));
+        if (school.page) row.href = school.page + (c.tab ? "#" + c.tab : "");
         row.appendChild(el("span", "cv-year", c.teams + " " + t("teaching.teams")));
 
         var what = el("div", "cv-what");
@@ -341,6 +357,15 @@
 
         right.appendChild(row);
       });
+
+      if (school.page) {
+        var open = el("a", "school-open");
+        open.href = school.page;
+        open.appendChild(document.createTextNode(t("teaching.open")));
+        open.appendChild(el("span", "arw", "\u2192"));
+        right.appendChild(open);
+      }
+
       body.appendChild(right);
 
       block.appendChild(body);
@@ -351,7 +376,13 @@
     var ex = el("section", "cv-block reveal");
 
     var exHead = el("div", "school-head");
-    exHead.appendChild(el("h3", "school-name", t("teaching.exhibition.title")));
+    var exTitle = el("h3", "school-name");
+    var exLink = el("a", "school-link");
+    exLink.href = "teaching-skku.html#nima";
+    exLink.appendChild(document.createTextNode(t("teaching.exhibition.title")));
+    exLink.appendChild(el("span", "arw", "↗"));
+    exTitle.appendChild(exLink);
+    exHead.appendChild(exTitle);
     exHead.appendChild(el("p", "school-meta", t("teaching.exhibition.sub")));
     ex.appendChild(exHead);
 
@@ -419,6 +450,350 @@
     host.appendChild(el("p", "note reveal", t("teaching.cvnote")));
   }
 
+  /* ---------------------------------------------------------- archive */
+
+  /* The per-university pages are carried over from the teaching archive.
+     Emphasis the source held mid-sentence survives as a \u0001…\u0002 pair. */
+
+  /** Appends text to `node`, turning the emphasis marks into <b>. */
+  function rich(node, value) {
+    var parts = String(value == null ? "" : value).split(/[\u0001\u0002]/);
+    parts.forEach(function (part, i) {
+      if (part === "") return;
+      /* odd slices sat between the marks */
+      var target = i % 2 ? node.appendChild(el("b")) : node;
+      part.split("\n").forEach(function (line, n) {
+        if (n) target.appendChild(el("br"));
+        target.appendChild(document.createTextNode(line));
+      });
+    });
+    return node;
+  }
+
+  function richEl(tag, cls, value) {
+    return rich(el(tag, cls), value);
+  }
+
+  function chipRow(items) {
+    var row = el("div", "a-chips");
+    items.forEach(function (c) {
+      var a = el("a", "a-chip a-chip-" + (c.kind || "link"));
+      a.href = c.href;
+      a.target = "_blank";
+      a.rel = "noopener";
+      rich(a, f(c.label));
+      row.appendChild(a);
+    });
+    return row;
+  }
+
+  function mediaRow(items) {
+    var row = el("div", "a-media");
+    items.forEach(function (m) {
+      var a = el("a", "a-card");
+      a.href = m.href;
+      a.target = "_blank";
+      a.rel = "noopener";
+
+      var thumb = el("span", "a-thumb" + (m.kind ? " a-thumb-" + m.kind : ""));
+      if (m.img) {
+        var img = el("img");
+        img.src = m.img;
+        img.alt = m.alt || "";
+        img.loading = "lazy";
+        img.decoding = "async";
+        thumb.appendChild(img);
+      }
+      a.appendChild(thumb);
+
+      var meta = el("span", "a-card-meta");
+      if (m.label) rich(meta.appendChild(el("b")), f(m.label));
+      if (m.type) meta.appendChild(el("em", null, m.type));
+      a.appendChild(meta);
+
+      row.appendChild(a);
+    });
+    return row;
+  }
+
+  function shotRow(shots) {
+    var row = el("div", "a-shots");
+    shots.forEach(function (sh, i) {
+      var btn = el("button", "a-shot");
+      btn.type = "button";
+      var img = el("img");
+      img.src = sh.src;
+      img.alt = sh.alt || "";
+      img.loading = "lazy";
+      img.decoding = "async";
+      btn.appendChild(img);
+      btn.addEventListener("click", function () { lb.showShots(shots, i + 1); });
+      row.appendChild(btn);
+    });
+    return row;
+  }
+
+  function factList(items) {
+    var dl = el("dl", "ex-meta a-facts");
+    items.forEach(function (it) {
+      dl.appendChild(richEl("dt", null, f(it.label)));
+      var dd = el("dd");
+      if (it.href) {
+        var a = el("a", "a-inline-link");
+        a.href = it.href;
+        a.target = "_blank";
+        a.rel = "noopener";
+        rich(a, f(it.value));
+        a.appendChild(el("span", "arw", "↗"));
+        dd.appendChild(a);
+      } else {
+        rich(dd, f(it.value));
+      }
+      dl.appendChild(dd);
+    });
+    return dl;
+  }
+
+  function blockHead(text) {
+    return richEl("h3", "a-block-title", f(text));
+  }
+
+  function renderBlock(b) {
+    if (b.k === "live") {
+      return richEl("p", "a-live", f(b.text));
+    }
+
+    if (b.k === "title") {
+      return richEl("h2", "a-title", f(b.text));
+    }
+
+    if (b.k === "p") {
+      return richEl("p", "a-p", f(b.text));
+    }
+
+    if (b.k === "poster") {
+      var fig = el("div", "a-poster");
+      var btn = el("button", "a-shot a-shot-poster");
+      btn.type = "button";
+      var img = el("img");
+      img.src = b.src;
+      img.alt = b.alt || "";
+      btn.appendChild(img);
+      btn.addEventListener("click", function () { lb.showShots([{ src: b.src, alt: b.alt }], 1); });
+      fig.appendChild(btn);
+      return fig;
+    }
+
+    if (b.k === "facts") {
+      return factList(b.items);
+    }
+
+    if (b.k === "files") {
+      return chipRow(b.items);
+    }
+
+    if (b.k === "meter") {
+      var sec = el("section", "a-sec reveal");
+      if (b.heading) sec.appendChild(blockHead(b.heading));
+      var grid = el("div", "a-meters");
+      b.items.forEach(function (it) {
+        var cell = el("div", "a-meter");
+        var top = el("div", "a-meter-top");
+        if (it.label) rich(top.appendChild(el("b")), f(it.label));
+        if (it.value) top.appendChild(el("em", null, it.value));
+        cell.appendChild(top);
+
+        var bar = el("div", "a-bar");
+        var fill = el("i");
+        fill.style.width = (it.pct == null ? 100 : it.pct) + "%";
+        bar.appendChild(fill);
+        cell.appendChild(bar);
+
+        if (it.note) cell.appendChild(richEl("p", "a-meter-note", f(it.note)));
+        grid.appendChild(cell);
+      });
+      sec.appendChild(grid);
+      if (b.note) sec.appendChild(richEl("p", "note", f(b.note)));
+      return sec;
+    }
+
+    if (b.k === "plan") {
+      var planSec = el("section", "a-sec reveal");
+      if (b.heading) planSec.appendChild(blockHead(b.heading));
+      var list = el("ol", "a-plan");
+      b.items.forEach(function (it) {
+        var li = el("li", it.key ? "is-key" : null);
+        li.appendChild(el("span", "a-when", it.when));
+        li.appendChild(richEl("div", "a-what", f(it.text)));
+        list.appendChild(li);
+      });
+      planSec.appendChild(list);
+      return planSec;
+    }
+
+    if (b.k === "lists") {
+      var listSec = el("section", "a-sec reveal");
+      if (b.heading) listSec.appendChild(blockHead(b.heading));
+      var cols = el("div", "a-lists");
+      b.items.forEach(function (it) {
+        var col = el("div", "a-list");
+        if (it.label) col.appendChild(richEl("h4", null, f(it.label)));
+        var ul = el("ul");
+        (it.lines || []).forEach(function (line) { ul.appendChild(richEl("li", null, f(line))); });
+        col.appendChild(ul);
+        cols.appendChild(col);
+      });
+      listSec.appendChild(cols);
+      return listSec;
+    }
+
+    if (b.k === "text") {
+      var textSec = el("section", "a-sec reveal");
+      if (b.heading) textSec.appendChild(blockHead(b.heading));
+      (b.text || []).forEach(function (para) { textSec.appendChild(richEl("p", "a-p", f(para))); });
+      if (b.media) textSec.appendChild(mediaRow(b.media));
+      if (b.files) textSec.appendChild(chipRow(b.files));
+      return textSec;
+    }
+
+    if (b.k === "works") {
+      var worksSec = el("section", "a-sec reveal");
+      if (b.heading) worksSec.appendChild(blockHead(b.heading));
+      var wrap = el("div", "a-works");
+      b.items.forEach(function (w) { wrap.appendChild(renderWork(w)); });
+      worksSec.appendChild(wrap);
+      return worksSec;
+    }
+
+    return null;
+  }
+
+  function renderWork(w) {
+    var art = el("article", "a-work");
+
+    var head = el("div", "a-work-head");
+    if (w.tag) head.appendChild(el("span", "a-tag", w.tag));
+    if (w.title) head.appendChild(richEl("h4", null, f(w.title)));
+    if (w.people) head.appendChild(richEl("p", "a-people", f(w.people)));
+    art.appendChild(head);
+
+    if (w.credit) art.appendChild(richEl("p", "a-credit", f(w.credit)));
+
+    /* a note that points onward ("→ later shown at …") belongs with the
+       heading; a note about the source recording reads better at the end */
+    var notes = w.notes || [];
+    var lead = notes.filter(function (n) { return /^→/.test(n.ko); });
+    var trail = notes.filter(function (n) { return !/^→/.test(n.ko); });
+    lead.forEach(function (n) { art.appendChild(richEl("p", "a-note", f(n))); });
+
+    (w.body || []).forEach(function (para) { art.appendChild(richEl("p", "a-blurb", f(para))); });
+    if (w.shots) art.appendChild(shotRow(w.shots));
+    if (w.media) art.appendChild(mediaRow(w.media));
+    if (w.files) art.appendChild(chipRow(w.files));
+    trail.forEach(function (n) { art.appendChild(richEl("p", "a-note a-note-end", f(n))); });
+
+    return art;
+  }
+
+  /* the chosen course survives a language switch, which rebuilds the page */
+  var archiveCourse = null;
+
+  function renderArchive() {
+    var host = document.querySelector("[data-archive]");
+    if (!host) return;
+
+    var A = window.ARCHIVE && window.ARCHIVE[host.getAttribute("data-archive")];
+    if (!A) return;
+    host.innerHTML = "";
+
+    var intro = el("section", "a-intro reveal");
+    if (A.title) intro.appendChild(richEl("h2", "a-uni", f(A.title)));
+    (A.intro || []).forEach(function (para) { intro.appendChild(richEl("p", "a-p", f(para))); });
+    if (A.byline) intro.appendChild(richEl("p", "a-byline", A.byline));
+    host.appendChild(intro);
+
+    var courses = A.courses || [];
+    if (!archiveCourse || !courses.filter(function (c) { return c.id === archiveCourse; }).length) {
+      var fromHash = location.hash.replace(/^#/, "");
+      archiveCourse = courses.filter(function (c) { return c.id === fromHash; }).length
+        ? fromHash : (courses[0] && courses[0].id);
+    }
+
+    var tabs = el("div", "a-tabs");
+    tabs.setAttribute("role", "tablist");
+    tabs.setAttribute("aria-label", t("teaching.courselist"));
+
+    var panel = el("div", "a-panel");
+    panel.id = "a-panel";
+    panel.setAttribute("role", "tabpanel");
+
+    function show(id, focus) {
+      archiveCourse = id;
+      var course = courses.filter(function (c) { return c.id === id; })[0];
+      if (!course) return;
+
+      tabs.querySelectorAll(".a-tab").forEach(function (b) {
+        var on = b.dataset.course === id;
+        b.classList.toggle("is-active", on);
+        b.setAttribute("aria-selected", String(on));
+        b.tabIndex = on ? 0 : -1;
+      });
+
+      panel.innerHTML = "";
+      panel.setAttribute("aria-labelledby", "a-tab-" + id);
+      course.blocks.forEach(function (b) {
+        var node = renderBlock(b);
+        if (node) panel.appendChild(node);
+      });
+      observeReveals();
+
+      if (focus) {
+        history.replaceState(null, "", location.pathname + location.search + "#" + id);
+        if (panel.scrollIntoView) panel.scrollIntoView({ block: "start", behavior: "smooth" });
+      }
+    }
+
+    courses.forEach(function (c) {
+      var btn = el("button", "a-tab");
+      btn.type = "button";
+      btn.id = "a-tab-" + c.id;
+      btn.dataset.course = c.id;
+      btn.setAttribute("role", "tab");
+      btn.setAttribute("aria-controls", "a-panel");
+      rich(btn.appendChild(el("span", "a-tab-name")), f(c.short));
+      if (c.count) {
+        btn.appendChild(el("span", "a-tab-n", c.live ? t("archive.now") : c.count));
+      }
+      btn.addEventListener("click", function () { show(c.id, true); });
+      tabs.appendChild(btn);
+    });
+
+    host.appendChild(tabs);
+    host.appendChild(panel);
+
+    if (A.foot) {
+      var foot = el("section", "a-sec a-foot reveal");
+      if (A.foot.heading) foot.appendChild(blockHead(A.foot.heading));
+      (A.foot.text || []).forEach(function (para) { foot.appendChild(richEl("p", "a-p", f(para))); });
+      host.appendChild(foot);
+    }
+
+    var row = el("div", "btn-row reveal");
+    var back = el("a", "btn", t("teaching.back"));
+    back.href = "teaching.html";
+    row.appendChild(back);
+    var out = el("a", "btn", t("teaching.archive") + "  ↗");
+    out.href = S.teaching.archive;
+    out.target = "_blank";
+    out.rel = "noopener";
+    row.appendChild(out);
+    host.appendChild(row);
+
+    host.appendChild(el("p", "note reveal", t("teaching.source")));
+
+    show(archiveCourse, false);
+  }
+
   function renderBio() {
     var host = document.querySelector("[data-bio]");
     if (!host) return;
@@ -483,6 +858,7 @@
   var lb = {
     open: false,
     work: null,
+    shots: null,
     index: 1,
     root: null,
 
@@ -526,6 +902,22 @@
     show: function (work, index) {
       this.build();
       this.work = work;
+      this.shots = null;
+      this.index = index || 1;
+      this.open = true;
+
+      document.body.style.overflow = "hidden";
+      this.root.classList.add("is-open");
+      requestAnimationFrame(function () { lb.root.classList.add("is-visible"); });
+
+      this.refresh();
+    },
+
+    /* the archive pages hand over a plain list of {src, alt} */
+    showShots: function (shots, index) {
+      this.build();
+      this.work = null;
+      this.shots = shots;
       this.index = index || 1;
       this.open = true;
 
@@ -552,19 +944,28 @@
       }
     },
 
+    count: function () {
+      if (this.shots) return this.shots.length;
+      return this.work ? this.work.images : 0;
+    },
+
     prev: function () {
-      if (!this.work) return;
-      this.index = this.index > 1 ? this.index - 1 : this.work.images;
+      var n = this.count();
+      if (!n) return;
+      this.index = this.index > 1 ? this.index - 1 : n;
       this.refresh();
     },
 
     next: function () {
-      if (!this.work) return;
-      this.index = this.index < this.work.images ? this.index + 1 : 1;
+      var n = this.count();
+      if (!n) return;
+      this.index = this.index < n ? this.index + 1 : 1;
       this.refresh();
     },
 
     refresh: function () {
+      if (this.shots) return this.refreshShots();
+
       var w = this.work;
       if (!w) return;
       var r = this.root;
@@ -609,6 +1010,32 @@
         d.appendChild(a);
       }
 
+      this.labels();
+    },
+
+    refreshShots: function () {
+      var r = this.root;
+      var list = this.shots;
+      var shot = list[this.index - 1];
+
+      r.querySelector(".lb-title").textContent = shot.alt || "";
+      r.querySelector(".lb-sub").textContent = "";
+
+      var img = r.querySelector(".lb-stage img");
+      img.src = shot.src;
+      img.alt = shot.alt || "";
+
+      var many = list.length > 1;
+      r.querySelector(".lb-prev").hidden = !many;
+      r.querySelector(".lb-next").hidden = !many;
+      r.querySelector(".lb-counter").textContent = many ? this.index + " / " + list.length : "";
+      r.querySelector(".lb-details").innerHTML = "";
+
+      this.labels();
+    },
+
+    labels: function () {
+      var r = this.root;
       r.querySelector(".lb-close").setAttribute("aria-label", t("lb.close"));
       r.querySelector(".lb-prev").setAttribute("aria-label", t("lb.prev"));
       r.querySelector(".lb-next").setAttribute("aria-label", t("lb.next"));
