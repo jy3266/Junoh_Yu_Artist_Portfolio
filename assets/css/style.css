@@ -260,10 +260,23 @@ html[lang="ko"] .nav-menu a { letter-spacing: 0.03em; font-size: 13.5px; text-tr
     padding: 8px var(--pad) 28px;
     transform: translateY(-8px);
     opacity: 0;
+    /* the closed panel is a full-width sheet lying over the page, so it must
+       leave hit-testing altogether: opacity and pointer-events alone are not
+       enough, because a descendant that sets pointer-events back to auto
+       (the menus below) stays tappable through the invisible panel */
+    visibility: hidden;
     pointer-events: none;
-    transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+    transition: opacity 0.3s var(--ease), transform 0.3s var(--ease),
+                visibility 0s linear 0.3s;
   }
-  .nav.is-open { opacity: 1; transform: none; pointer-events: auto; }
+  .nav.is-open {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 0.3s var(--ease), transform 0.3s var(--ease),
+                visibility 0s;
+  }
   .nav-top { font-size: 15px; padding: 12px 0; width: 100%; }
 
   .nav-group { position: static; width: 100%; }
@@ -293,8 +306,11 @@ html[lang="ko"] .nav-menu a { letter-spacing: 0.03em; font-size: 13.5px; text-tr
     -webkit-backdrop-filter: none;
     opacity: 1;
     transform: none;
-    pointer-events: auto;
+    /* the menus sit open inside the panel, so they follow it rather than
+       re-enabling pointer events on their own */
+    pointer-events: none;
   }
+  .nav.is-open .nav-menu { pointer-events: auto; }
   .nav-menu a { font-size: 15px; padding: 10px 0; text-transform: none; letter-spacing: 0.02em; }
   html[lang="ko"] .nav-menu a { font-size: 15px; }
 }
