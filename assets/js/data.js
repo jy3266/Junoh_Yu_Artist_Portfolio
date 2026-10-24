@@ -774,7 +774,7 @@ window.SITE = (function () {
     ],
 
     teaching: [
-      { year: "2026.09—", what: { ko: "한양대학교 소프트웨어융합대학 ICT융합학부", en: "Hanyang University, ICT Convergence" }, note: { ko: "객원교수 (예정) — 인터랙티브 멀티미디어", en: "Visiting Professor (forthcoming) — Interactive Multimedia" }, where: { ko: "서울", en: "Seoul" } },
+      { year: "2026.09—", what: { ko: "한양대학교 소프트웨어융합대학 ICT융합학부", en: "Hanyang University, ICT Convergence" }, note: { ko: "객원교수 — 인터랙티브 멀티미디어", en: "Visiting Professor — Interactive Multimedia" }, where: { ko: "서울", en: "Seoul" } },
       { year: "2026.03—", what: { ko: "성균관대학교 영상학부 & 게임디자인학부", en: "Sungkyunkwan University, Film & Game Design" }, note: { ko: "겸임교수 — AI 기반 인터랙티브 영상 및 아트 / 몰입형 내러티브 / 언리얼 기반 실감 콘텐츠 제작 / 캡스톤 디자인", en: "Adjunct Professor — AI-based interactive moving image, immersive narrative, Unreal-based experiential content, capstone design" }, where: { ko: "서울", en: "Seoul" } },
       { year: "2025.08—", what: { ko: "청주대학교 예술학부 디지털미디어디자인학과", en: "Cheongju University, Digital Media Design" }, note: { ko: "객원교수 — 인터랙션 디자인 / 디지털 조형 실습 I, II", en: "Visiting Professor — Interaction design, digital form studio I & II" }, where: { ko: "청주", en: "Cheongju" } },
       { year: "2025.08—", what: { ko: "중앙대학교 예술공학부", en: "Chung-Ang University, Art & Technology" }, note: { ko: "객원교수 (기술멘토) — 캡스톤 디자인 (언리얼 엔진 & 아두이노)", en: "Visiting Professor / technical mentor — capstone design (Unreal Engine & Arduino)" }, where: { ko: "서울", en: "Seoul" } },

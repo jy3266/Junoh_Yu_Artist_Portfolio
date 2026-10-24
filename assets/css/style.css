@@ -500,12 +500,54 @@ html[lang="ko"] .page-tabs a { letter-spacing: 0.06em; font-size: 13px; text-tra
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0;
 }
-@media (min-width: 1700px) {
-  .tiles, .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+/* on the home page each body of work opens on a heading row */
+.tiles-head {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: clamp(44px, 6vw, 88px) var(--pad) clamp(16px, 2vw, 24px);
+  scroll-margin-top: var(--header-h);
 }
-@media (max-width: 560px) {
-  .tiles, .grid { grid-template-columns: 1fr; }
+.tiles-name {
+  font-size: clamp(20px, 2.2vw, 30px);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
 }
+html[lang="ko"] .tiles-name { text-transform: none; }
+.tiles-name:hover { opacity: 0.6; }
+.tiles-range {
+  font-size: 13px;
+  color: var(--fg-faint);
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+/* the box that evens out a body with an odd number of works */
+.tile-more { background: var(--bg); transition: background 0.3s ease; }
+.tile-more:hover { background: #fff; }
+.tile-more-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: clamp(18px, 5vw, 80px) var(--pad);
+}
+.tile-more-name {
+  font-size: clamp(16px, 2vw, 28px);
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+html[lang="ko"] .tile-more-name { text-transform: none; }
+@media (max-width: 600px) { .tile-more-desc { display: none; } }
+.tile-more-desc { color: var(--fg-dim); font-size: clamp(13px, 1.1vw, 15px); max-width: 36ch; }
+.tile-more-go { margin-top: auto; font-size: clamp(13px, 1.1vw, 15px); font-weight: 500; }
 
 /* a category page keeps its heading in the gutter but lets the photos
    run to the edges */
@@ -571,6 +613,12 @@ html[lang="ko"] .tile-title { text-transform: none; }
   }
   .tile-title { font-size: 15px; }
   .tile-year { font-size: 12px; }
+}
+/* two to a row on a phone too, so the captions shrink to fit */
+@media (hover: none) and (max-width: 600px) {
+  .tile-cap { padding: 10px 11px; gap: 2px; }
+  .tile-title { font-size: 12.5px; }
+  .tile-year { font-size: 11px; }
 }
 
 /* ---------------------------------------------------------------- boxes  */

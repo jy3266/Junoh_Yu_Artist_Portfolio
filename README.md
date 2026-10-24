@@ -36,7 +36,9 @@ Everything editable lives in **`assets/js/data.js`**. Nothing else needs to chan
 ### Add a new work
 
 1. Create `assets/img/works/<slug>/` and add images named `01.jpg`, `02.jpg`, …
-   (JPEG, max 2000px on the long edge — the viewer shows them full screen).
+   (JPEG, up to 3000px on the long edge — the viewer shows them full screen).
+   Also put a 1400px copy of each at `assets/img/works/<slug>/t/01.jpg`, …:
+   the tiles load those, so a page of tiles stays light.
 2. Add an entry to the `works` array:
 
 ```js

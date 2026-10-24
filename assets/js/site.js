@@ -33,8 +33,13 @@
     return "assets/img/works/" + slug + "/" + (n < 10 ? "0" + n : n) + ".jpg";
   }
 
+  /** The smaller copy of a photo, for tiles that show many at once. */
+  function thumbPath(slug, n) {
+    return "assets/img/works/" + slug + "/t/" + (n < 10 ? "0" + n : n) + ".jpg";
+  }
+
   function coverPath(w) {
-    return imgPath(w.slug, w.cover || 1);
+    return thumbPath(w.slug, w.cover || 1);
   }
 
   function worksIn(cat) {
@@ -155,10 +160,8 @@
       var catAttr = host.getAttribute("data-grid");
 
       if (catAttr === "all") {
-        /* newest first; works from the same year keep their order */
-        list = S.works.map(function (w, i) { return [w, i]; })
-          .sort(function (a, b) { return (parseInt(b[0].year, 10) - parseInt(a[0].year, 10)) || (a[1] - b[1]); })
-          .map(function (p) { return p[0]; });
+        renderGroupedTiles(host);
+        return;
       } else if (catAttr === "selected") {
         var picks = ["a-weather-within", "breathe-again", "interspecies-water-talk",
                      "liberated-memory", "experiential-cycle", "rebreathe-v2"];
@@ -171,6 +174,39 @@
 
       host.innerHTML = "";
       list.forEach(function (w) { host.appendChild(makeCard(w)); });
+    });
+  }
+
+  /** Home: the works body by body, each under a heading row that spans the
+      grid. A body with an odd number of works ends on a box that leads to
+      its own page, so every row stays two wide. */
+  function renderGroupedTiles(host) {
+    host.innerHTML = "";
+
+    S.categories.forEach(function (c) {
+      var list = worksIn(c.id);
+      if (!list.length) return;
+
+      var head = el("div", "tiles-head");
+      head.id = "works-" + c.id;
+      var name = el("a", "tiles-name", c.label[lang]);
+      name.href = c.page;
+      head.appendChild(name);
+      head.appendChild(el("span", "tiles-range", c.range + "  ·  " + list.length));
+      host.appendChild(head);
+
+      list.forEach(function (w) { host.appendChild(makeCard(w)); });
+
+      if (list.length % 2) {
+        var more = el("a", "tile tile-more");
+        more.href = c.page;
+        var inner = el("span", "tile-more-inner");
+        inner.appendChild(el("span", "tile-more-name", c.label[lang]));
+        inner.appendChild(el("span", "tile-more-desc", t("cat." + c.id + ".desc")));
+        inner.appendChild(el("span", "tile-more-go", t("home.viewall") + " →"));
+        more.appendChild(inner);
+        host.appendChild(more);
+      }
     });
   }
 
