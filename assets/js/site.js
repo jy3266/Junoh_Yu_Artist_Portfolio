@@ -86,6 +86,7 @@
     renderTitle();
     renderCategories();
     renderGrids();
+    renderWorkPage();
     renderTeaching();
     renderArchive();
     renderBio();
@@ -102,52 +103,48 @@
                                     : t(key) + " · " + base;
   }
 
+  /** Home: one large box per body of work, two to a row. */
   function renderCategories() {
     var host = document.querySelector("[data-categories]");
     if (!host) return;
     host.innerHTML = "";
 
-    S.categories.forEach(function (c, i) {
-      var a = el("a", "cat-card");
-      a.href = c.page;
-      a.appendChild(el("span", "n", String(i + 1).padStart(2, "0") + " / " + c.range));
-      a.appendChild(el("h3", null, c.label[lang]));
-      a.appendChild(el("p", null, t("cat." + c.id + ".desc")));
-      a.appendChild(el("span", "go", t("home.viewall")));
+    var boxes = S.categories.map(function (c) {
+      return { href: c.page, label: c.label[lang], range: c.range, desc: t("cat." + c.id + ".desc") };
+    });
+    boxes.push({ href: "teaching.html", label: t("nav.teaching"), range: S.teaching.period,
+                 desc: t("cat.teaching.desc") });
+
+    boxes.forEach(function (b) {
+      var a = el("a", "box");
+      a.href = b.href;
+      a.appendChild(el("h3", null, b.label));
+      a.appendChild(el("span", "box-range", b.range));
+      a.appendChild(el("p", null, b.desc));
       host.appendChild(a);
     });
   }
 
-  function makeCard(w) {
-    var a = el("a", "card reveal");
-    a.href = "#" + w.slug;
-    a.setAttribute("role", "button");
+  function workHref(w) {
+    return "work.html?w=" + encodeURIComponent(w.slug);
+  }
 
-    var media = el("div", "card-media");
+  /** A square tile: the cover photograph, its title shown on hover. */
+  function makeCard(w) {
+    var a = el("a", "tile");
+    a.href = workHref(w);
+
     var img = el("img");
     img.src = coverPath(w);
     img.alt = f(w.title);
     img.loading = "lazy";
     img.decoding = "async";
-    media.appendChild(img);
+    a.appendChild(img);
 
-    if (w.images > 1) {
-      media.appendChild(el("span", "card-count", w.images + (lang === "ko" ? "장" : " images")));
-    }
-    a.appendChild(media);
-
-    var body = el("div", "card-body");
-    body.appendChild(el("h3", "card-title", f(w.title)));
-
-    var meta = [w.year];
-    if (w.dimensions) meta.push(f(w.dimensions));
-    body.appendChild(el("p", "card-meta", meta.join("  ·  ")));
-    a.appendChild(body);
-
-    a.addEventListener("click", function (ev) {
-      ev.preventDefault();
-      lb.show(w, 1);
-    });
+    var cap = el("span", "tile-cap");
+    cap.appendChild(el("span", "tile-title", f(w.title)));
+    cap.appendChild(el("span", "tile-year", w.year));
+    a.appendChild(cap);
 
     return a;
   }
@@ -157,7 +154,12 @@
       var list;
       var catAttr = host.getAttribute("data-grid");
 
-      if (catAttr === "selected") {
+      if (catAttr === "all") {
+        /* newest first; works from the same year keep their order */
+        list = S.works.map(function (w, i) { return [w, i]; })
+          .sort(function (a, b) { return (parseInt(b[0].year, 10) - parseInt(a[0].year, 10)) || (a[1] - b[1]); })
+          .map(function (p) { return p[0]; });
+      } else if (catAttr === "selected") {
         var picks = ["a-weather-within", "breathe-again", "interspecies-water-talk",
                      "liberated-memory", "experiential-cycle", "rebreathe-v2"];
         list = picks.map(function (s) {
@@ -170,6 +172,103 @@
       host.innerHTML = "";
       list.forEach(function (w) { host.appendChild(makeCard(w)); });
     });
+  }
+
+  /* ------------------------------------------------------------ work page */
+
+  /** The work named by ?w=slug, or null. */
+  function currentWork() {
+    var slug = new URLSearchParams(location.search).get("w") || "";
+    return S.works.filter(function (w) { return w.slug === slug; })[0] || null;
+  }
+
+  function infoLine(parent, label, value) {
+    if (!value) return;
+    var p = el("p", "work-field");
+    p.appendChild(el("span", "work-label", label));
+    p.appendChild(document.createTextNode(value));
+    parent.appendChild(p);
+  }
+
+  /** A caption column that stays put, and every photograph stacked beside it. */
+  function renderWorkPage() {
+    var host = document.querySelector("[data-work]");
+    if (!host) return;
+
+    var w = currentWork();
+    if (!w) { location.replace("index.html"); return; }
+
+    var cat = S.categories.filter(function (c) { return c.id === w.cat; })[0];
+    var siblings = worksIn(w.cat);
+    var at = siblings.indexOf(w);
+    var prev = siblings[(at - 1 + siblings.length) % siblings.length];
+    var next = siblings[(at + 1) % siblings.length];
+
+    document.title = f(w.title) + " · " + (lang === "ko" ? "유준오" : "Junoh Yu");
+    host.innerHTML = "";
+
+    var side = el("aside", "work-side");
+    var info = el("div", "work-info");
+
+    if (cat) {
+      var crumb = el("a", "work-cat", cat.label[lang]);
+      crumb.href = cat.page;
+      info.appendChild(crumb);
+    }
+    info.appendChild(el("h1", "work-title", f(w.title)));
+    if (w.subtitle) info.appendChild(el("p", "work-subtitle", f(w.subtitle)));
+    info.appendChild(el("p", "work-year", w.year));
+
+    infoLine(info, t("lb.venue"), f(w.venue));
+    infoLine(info, t("lb.dimensions"), f(w.dimensions));
+    infoLine(info, t("lb.materials"), f(w.materials));
+
+    var url = w.video || w.link;
+    if (url) {
+      var label = w.video ? t("lb.watch") : (w.linkLabel ? f(w.linkLabel) : t("lb.visit"));
+      var a = el("a", "work-link", label + " ↗");
+      a.href = url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      info.appendChild(a);
+    }
+    side.appendChild(info);
+
+    var nav = el("nav", "work-nav");
+    var p = el("a", "work-prev");
+    p.href = workHref(prev);
+    p.setAttribute("aria-label", t("work.prev") + ": " + f(prev.title));
+    p.appendChild(el("span", "arw", "←"));
+    p.appendChild(el("span", "work-nav-label", t("work.prev")));
+    var n = el("a", "work-next");
+    n.href = workHref(next);
+    n.setAttribute("aria-label", t("work.next") + ": " + f(next.title));
+    n.appendChild(el("span", "work-nav-label", t("work.next")));
+    n.appendChild(el("span", "arw", "→"));
+    nav.appendChild(p);
+    nav.appendChild(n);
+    side.appendChild(nav);
+
+    host.appendChild(side);
+
+    var shots = el("div", "work-images");
+    for (var i = 1; i <= w.images; i++) {
+      (function (n) {
+        var b = el("button", "work-shot");
+        b.type = "button";
+        b.setAttribute("aria-label", f(w.title) + " — " + n + " / " + w.images);
+        var img = el("img");
+        img.src = imgPath(w.slug, n);
+        img.alt = f(w.title) + " — " + n;
+        /* the first photo is above the fold; the rest can wait */
+        if (n > 1) img.loading = "lazy";
+        img.decoding = "async";
+        b.appendChild(img);
+        b.addEventListener("click", function () { lb.show(w, n); });
+        shots.appendChild(b);
+      })(i);
+    }
+    host.appendChild(shots);
   }
 
   /** Photo panel that steps to the next image on each click. */
@@ -855,12 +954,20 @@
 
   /* ------------------------------------------------------------ lightbox */
 
+  /* A photograph fills the whole screen. Three slides sit side by side —
+     the previous photo, this one, the next — so a finger can drag the
+     neighbour into view and let go; once the slide settles the three are
+     re-filled around the new index and the strip jumps back to the middle. */
+
   var lb = {
     open: false,
     work: null,
-    shots: null,
-    index: 1,
+    list: [],          /* [{src, alt}] */
+    index: 0,          /* zero-based into list */
     root: null,
+    track: null,
+    moving: false,
+    autoFs: false,     /* we asked for full screen, so we leave it on close */
 
     build: function () {
       if (this.root) return;
@@ -870,167 +977,287 @@
       root.setAttribute("aria-modal", "true");
 
       root.innerHTML =
-        '<div class="lb-bar">' +
-          '<div class="lb-heading">' +
-            '<h2 class="lb-title"></h2>' +
-            '<p class="lb-sub"></p>' +
-          '</div>' +
-          '<button class="lb-close" type="button">&#10005;</button>' +
-        '</div>' +
         '<div class="lb-stage">' +
-          '<button class="lb-nav lb-prev" type="button">&#8592;</button>' +
-          '<img alt="">' +
-          '<button class="lb-nav lb-next" type="button">&#8594;</button>' +
+          '<div class="lb-track">' +
+            '<figure class="lb-slide"><img alt="" draggable="false"></figure>' +
+            '<figure class="lb-slide"><img alt="" draggable="false"></figure>' +
+            '<figure class="lb-slide"><img alt="" draggable="false"></figure>' +
+          '</div>' +
         '</div>' +
-        '<div class="lb-foot">' +
-          '<div class="lb-details"></div>' +
+        '<div class="lb-top">' +
           '<span class="lb-counter"></span>' +
+          '<button class="lb-btn lb-fs" type="button"><i aria-hidden="true"></i></button>' +
+          '<button class="lb-btn lb-close" type="button">&#10005;</button>' +
+        '</div>' +
+        '<button class="lb-nav lb-prev" type="button">&#8592;</button>' +
+        '<button class="lb-nav lb-next" type="button">&#8594;</button>' +
+        '<div class="lb-cap">' +
+          '<p class="lb-title"></p>' +
+          '<p class="lb-sub"></p>' +
         '</div>';
 
       document.body.appendChild(root);
       this.root = root;
+      this.track = root.querySelector(".lb-track");
+      this.imgs = root.querySelectorAll(".lb-slide img");
 
       root.querySelector(".lb-close").addEventListener("click", this.hide.bind(this));
-      root.querySelector(".lb-prev").addEventListener("click", this.prev.bind(this));
-      root.querySelector(".lb-next").addEventListener("click", this.next.bind(this));
+      root.querySelector(".lb-prev").addEventListener("click", function () { lb.go(-1); });
+      root.querySelector(".lb-next").addEventListener("click", function () { lb.go(1); });
+      root.querySelector(".lb-fs").addEventListener("click", function () { lb.toggleFs(); });
 
-      root.addEventListener("click", function (ev) {
-        if (ev.target === root || ev.target.classList.contains("lb-stage")) lb.hide();
+      var stage = root.querySelector(".lb-stage");
+
+      /* with a mouse, the left third of the picture goes back, the rest
+         goes on; a tap from a finger is handled by the touch code below */
+      stage.addEventListener("click", function (ev) {
+        if (Date.now() - lb.lastTouch < 600) return;
+        if (lb.list.length < 2) { lb.hide(); return; }
+        lb.go(ev.clientX < window.innerWidth / 3 ? -1 : 1);
+      });
+      stage.addEventListener("mousemove", function (ev) {
+        stage.classList.toggle("is-back", ev.clientX < window.innerWidth / 3);
+      });
+
+      this.bindTouch(stage);
+
+      this.track.addEventListener("transitionend", function (ev) {
+        if (ev.target === lb.track) lb.settle();
       });
     },
 
+    /* --------------------------------------------------------- gestures */
+
+    lastTouch: 0,
+
+    bindTouch: function (stage) {
+      var x0 = 0, y0 = 0, t0 = 0, dx = 0, dy = 0, axis = null, live = false;
+
+      function zoomed() {
+        return window.visualViewport && window.visualViewport.scale > 1.01;
+      }
+
+      stage.addEventListener("touchstart", function (ev) {
+        lb.lastTouch = Date.now();
+        /* two fingers pinch, and a zoomed-in photo pans — neither swipes */
+        if (ev.touches.length !== 1 || lb.moving || zoomed()) { live = false; return; }
+        live = true;
+        axis = null;
+        dx = dy = 0;
+        x0 = ev.touches[0].clientX;
+        y0 = ev.touches[0].clientY;
+        t0 = Date.now();
+      }, { passive: true });
+
+      stage.addEventListener("touchmove", function (ev) {
+        if (!live) return;
+        if (ev.touches.length !== 1) { live = false; lb.snap(); return; }
+        dx = ev.touches[0].clientX - x0;
+        dy = ev.touches[0].clientY - y0;
+
+        if (!axis && (Math.abs(dx) > 8 || Math.abs(dy) > 8)) {
+          axis = Math.abs(dx) > Math.abs(dy) ? "x" : "y";
+        }
+        if (!axis) return;
+        ev.preventDefault();
+
+        if (axis === "x") {
+          /* a lone photo has nowhere to go, so it only gives a little */
+          lb.drag(lb.list.length > 1 ? dx : dx / 4, 0);
+        } else {
+          lb.drag(0, Math.max(0, dy));
+        }
+      }, { passive: false });
+
+      stage.addEventListener("touchend", function () {
+        lb.lastTouch = Date.now();
+        if (!live) return;
+        live = false;
+
+        var ms = Math.max(1, Date.now() - t0);
+        var w = window.innerWidth;
+
+        if (!axis) {             /* a tap shows or hides the captions */
+          lb.root.classList.toggle("is-bare");
+          return;
+        }
+        if (axis === "x" && lb.list.length > 1 &&
+            (Math.abs(dx) > w * 0.18 || (Math.abs(dx) > 30 && Math.abs(dx) / ms > 0.45))) {
+          lb.go(dx < 0 ? 1 : -1);
+          return;
+        }
+        if (axis === "y" && (dy > 120 || (dy > 40 && dy / ms > 0.5))) {
+          lb.hide();
+          return;
+        }
+        lb.snap();
+      });
+
+      stage.addEventListener("touchcancel", function () { live = false; lb.snap(); });
+    },
+
+    /** Follow the finger: sideways moves the strip, downwards lifts the photo. */
+    drag: function (x, y) {
+      this.track.style.transition = "none";
+      this.track.style.transform = "translate3d(calc(-100vw + " + x + "px), " + y + "px, 0)";
+      this.root.style.setProperty("--lb-fade", String(Math.max(0.35, 1 - y / 500)));
+    },
+
+    snap: function () {
+      this.track.style.transition = "";
+      this.track.style.transform = "";
+      this.root.style.removeProperty("--lb-fade");
+    },
+
+    /* ------------------------------------------------------ navigation */
+
+    go: function (dir) {
+      if (this.moving || this.list.length < 2) return;
+      this.moving = true;
+      this.pending = dir;
+      this.track.style.transition = "";
+      this.track.style.transform = "translate3d(" + (dir > 0 ? "-200vw" : "0px") + ", 0, 0)";
+      /* in case transitionend never fires (reduced motion, a hidden tab) */
+      clearTimeout(this.timer);
+      this.timer = setTimeout(function () { lb.settle(); }, 520);
+    },
+
+    settle: function () {
+      if (!this.moving) return;
+      clearTimeout(this.timer);
+      var n = this.list.length;
+      this.index = (this.index + this.pending + n) % n;
+      this.moving = false;
+      this.track.style.transition = "none";
+      this.track.style.transform = "";
+      this.fill();
+      /* let the jump back land before transitions return */
+      void this.track.offsetWidth;
+      this.track.style.transition = "";
+    },
+
+    prev: function () { this.go(-1); },
+    next: function () { this.go(1); },
+
+    /* --------------------------------------------------------- opening */
+
     show: function (work, index) {
-      this.build();
+      var list = [];
+      for (var i = 1; i <= work.images; i++) {
+        list.push({ src: imgPath(work.slug, i), alt: f(work.title) + " — " + i });
+      }
       this.work = work;
-      this.shots = null;
-      this.index = index || 1;
-      this.open = true;
-
-      document.body.style.overflow = "hidden";
-      this.root.classList.add("is-open");
-      requestAnimationFrame(function () { lb.root.classList.add("is-visible"); });
-
-      this.refresh();
+      this.openList(list, (index || 1) - 1);
     },
 
     /* the archive pages hand over a plain list of {src, alt} */
     showShots: function (shots, index) {
-      this.build();
       this.work = null;
-      this.shots = shots;
-      this.index = index || 1;
-      this.open = true;
+      this.openList(shots, (index || 1) - 1);
+    },
 
-      document.body.style.overflow = "hidden";
+    openList: function (list, index) {
+      this.build();
+      this.list = list;
+      this.index = Math.max(0, Math.min(index, list.length - 1));
+      this.open = true;
+      this.moving = false;
+      this.root.classList.remove("is-bare");
+      this.snap();
+
+      document.documentElement.classList.add("lb-lock");
       this.root.classList.add("is-open");
       requestAnimationFrame(function () { lb.root.classList.add("is-visible"); });
 
       this.refresh();
+      this.enterFs();
     },
 
     hide: function () {
       if (!this.open) return;
       this.open = false;
-      document.body.style.overflow = "";
+      document.documentElement.classList.remove("lb-lock");
       this.root.classList.remove("is-visible");
+      this.leaveFs();
 
       var root = this.root;
       setTimeout(function () {
-        if (!lb.open) root.classList.remove("is-open");
+        if (!lb.open) { root.classList.remove("is-open"); lb.snap(); }
       }, 300);
+    },
 
-      if (location.hash) {
-        history.replaceState(null, "", location.pathname + location.search);
+    count: function () { return this.list.length; },
+
+    /* ------------------------------------------------------ full screen */
+
+    fsElement: function () {
+      return document.fullscreenElement || document.webkitFullscreenElement || null;
+    },
+
+    canFs: function () {
+      var r = this.root;
+      return !!(r && (r.requestFullscreen || r.webkitRequestFullscreen));
+    },
+
+    enterFs: function () {
+      if (!this.canFs() || this.fsElement()) return;
+      var r = this.root;
+      var p = r.requestFullscreen ? r.requestFullscreen() : r.webkitRequestFullscreen();
+      this.autoFs = true;
+      if (p && p.catch) p.catch(function () { lb.autoFs = false; });
+    },
+
+    leaveFs: function () {
+      if (!this.fsElement()) return;
+      this.leaving = true;
+      if (document.exitFullscreen) document.exitFullscreen().catch(function () {});
+      else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+    },
+
+    toggleFs: function () {
+      if (this.fsElement()) { this.autoFs = false; this.leaveFs(); }
+      else this.enterFs();
+    },
+
+    /* ---------------------------------------------------------- drawing */
+
+    fill: function () {
+      var n = this.list.length;
+      var at = this.index;
+      var pick = [(at - 1 + n) % n, at, (at + 1) % n];
+      for (var k = 0; k < 3; k++) {
+        var shot = this.list[pick[k]];
+        var img = this.imgs[k];
+        /* a lone photo leaves its neighbours empty */
+        if (n < 2 && k !== 1) { img.removeAttribute("src"); img.alt = ""; continue; }
+        if (img.getAttribute("src") !== shot.src) img.src = shot.src;
+        img.alt = k === 1 ? (shot.alt || "") : "";
       }
-    },
 
-    count: function () {
-      if (this.shots) return this.shots.length;
-      return this.work ? this.work.images : 0;
-    },
+      var r = this.root;
+      var many = n > 1;
+      r.querySelector(".lb-prev").hidden = !many;
+      r.querySelector(".lb-next").hidden = !many;
+      r.querySelector(".lb-counter").textContent = many ? (at + 1) + " / " + n : "";
+      r.classList.toggle("is-single", !many);
 
-    prev: function () {
-      var n = this.count();
-      if (!n) return;
-      this.index = this.index > 1 ? this.index - 1 : n;
-      this.refresh();
-    },
+      if (this.work) {
+        var w = this.work;
+        r.querySelector(".lb-title").textContent = f(w.title);
+        r.querySelector(".lb-sub").textContent = [w.year, f(w.venue)].filter(Boolean).join("  ·  ");
+      } else {
+        r.querySelector(".lb-title").textContent = this.list[at].alt || "";
+        r.querySelector(".lb-sub").textContent = "";
+      }
 
-    next: function () {
-      var n = this.count();
-      if (!n) return;
-      this.index = this.index < n ? this.index + 1 : 1;
-      this.refresh();
+      /* the photo after next is fetched early, so a quick run of swipes
+         never lands on an empty frame */
+      if (n > 3) new Image().src = this.list[(at + 2) % n].src;
     },
 
     refresh: function () {
-      if (this.shots) return this.refreshShots();
-
-      var w = this.work;
-      if (!w) return;
-      var r = this.root;
-
-      r.querySelector(".lb-title").textContent = f(w.title);
-      r.querySelector(".lb-sub").textContent =
-        [w.year, f(w.venue)].filter(Boolean).join("  ·  ");
-
-      var img = r.querySelector(".lb-stage img");
-      img.src = imgPath(w.slug, this.index);
-      img.alt = f(w.title) + " — " + this.index;
-
-      var multi = w.images > 1;
-      r.querySelector(".lb-prev").hidden = !multi;
-      r.querySelector(".lb-next").hidden = !multi;
-      r.querySelector(".lb-counter").textContent = multi ? this.index + " / " + w.images : "";
-
-      var d = r.querySelector(".lb-details");
-      d.innerHTML = "";
-
-      if (w.dimensions) {
-        var dim = el("div");
-        dim.appendChild(el("b", null, t("lb.dimensions")));
-        dim.appendChild(document.createTextNode(f(w.dimensions)));
-        d.appendChild(dim);
-      }
-      if (w.materials) {
-        var mat = el("div");
-        mat.appendChild(el("b", null, t("lb.materials")));
-        mat.appendChild(document.createTextNode(f(w.materials)));
-        d.appendChild(mat);
-      }
-
-      var url = w.video || w.link;
-      if (url) {
-        var label = w.video ? t("lb.watch")
-                            : (w.linkLabel ? f(w.linkLabel) : t("lb.visit"));
-        var a = el("a", "link-video", label + "  ↗");
-        a.href = url;
-        a.target = "_blank";
-        a.rel = "noopener";
-        d.appendChild(a);
-      }
-
-      this.labels();
-    },
-
-    refreshShots: function () {
-      var r = this.root;
-      var list = this.shots;
-      var shot = list[this.index - 1];
-
-      r.querySelector(".lb-title").textContent = shot.alt || "";
-      r.querySelector(".lb-sub").textContent = "";
-
-      var img = r.querySelector(".lb-stage img");
-      img.src = shot.src;
-      img.alt = shot.alt || "";
-
-      var many = list.length > 1;
-      r.querySelector(".lb-prev").hidden = !many;
-      r.querySelector(".lb-next").hidden = !many;
-      r.querySelector(".lb-counter").textContent = many ? this.index + " / " + list.length : "";
-      r.querySelector(".lb-details").innerHTML = "";
-
+      if (!this.root) return;
+      this.fill();
       this.labels();
     },
 
@@ -1039,8 +1266,22 @@
       r.querySelector(".lb-close").setAttribute("aria-label", t("lb.close"));
       r.querySelector(".lb-prev").setAttribute("aria-label", t("lb.prev"));
       r.querySelector(".lb-next").setAttribute("aria-label", t("lb.next"));
+      var fs = r.querySelector(".lb-fs");
+      fs.setAttribute("aria-label", t("lb.fullscreen"));
+      fs.hidden = !this.canFs();
     }
   };
+
+  /* leaving full screen with the browser's own Escape also closes the photo,
+     unless it was the full-screen button that asked to leave */
+  ["fullscreenchange", "webkitfullscreenchange"].forEach(function (name) {
+    document.addEventListener(name, function () {
+      if (lb.fsElement()) return;
+      if (lb.leaving) { lb.leaving = false; return; }
+      if (lb.open && lb.autoFs) lb.hide();
+      lb.autoFs = false;
+    });
+  });
 
   document.addEventListener("keydown", function (ev) {
     if (!lb.open) return;
@@ -1165,17 +1406,31 @@
     });
   }
 
-  /** Open a work directly from #slug on load. */
+  /** Old links that opened a work as #slug now go to the work's own page. */
   function openFromHash() {
     var slug = location.hash.replace(/^#/, "");
     if (!slug) return;
     var w = S.works.filter(function (x) { return x.slug === slug; })[0];
-    if (w) lb.show(w, 1);
+    if (w) location.replace(workHref(w));
   }
 
   /* ------------------------------------------------------------------ go */
 
   lang = readStoredLang();
+
+  /* a work page lights up its own body of work in the nav */
+  if (document.body.dataset.page === "work") {
+    var shown = currentWork();
+    if (shown) document.body.dataset.page = shown.cat;
+  }
+
+  /* the header gains a backing once the page moves under it */
+  function onScroll() {
+    document.documentElement.classList.toggle("is-scrolled", window.scrollY > 40);
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
   initChrome();
   applyLang();
   openFromHash();

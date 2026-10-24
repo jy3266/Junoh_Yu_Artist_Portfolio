@@ -69,6 +69,16 @@ window.SITE = (function () {
       ko: "예술 실천에서 출발한 청소년·유소년 정신건강 및 자살예방 플랫폼.",
       en: "A youth mental-health and suicide-prevention platform grown from the practice."
     },
+    "cat.teaching.desc": {
+      ko: "성균관대·청주대·동양대 강의와 학생 팀 작업, 그리고 N.I.M.A 전시.",
+      en: "Courses at three universities, the student teams’ work, and the N.I.M.A exhibition."
+    },
+
+    "work.back": { ko: "목록으로", en: "Back to list" },
+    "work.prev": { ko: "이전 작업", en: "Previous work" },
+    "work.next": { ko: "다음 작업", en: "Next work" },
+    "lb.fullscreen": { ko: "전체 화면", en: "Full screen" },
+    "lb.swipe": { ko: "옆으로 밀어 다음 사진", en: "Swipe for the next photo" },
 
     "page.interactive.intro": {
       ko: "언리얼 엔진, 아두이노, 터치디자이너 등을 매개로 관객 또는 작가의 물리적 행위에 따라 변화하는 신체 및 바이오 데이터의 반응을 연구합니다. 여기서 기술을 도구가 아니라, 감정이 공명하고 공동체적 치유가 일어나는 장치가 됩니다.",
@@ -253,7 +263,8 @@ window.SITE = (function () {
       slug: "the-last-hope",
       cat: "interactive",
       year: "2022",
-      images: 2,
+      images: 4,
+      cover: 2,
       title: { ko: "마지막 희망", en: "The Last Hope" },
       dimensions: "78 × 63 × 50 cm",
       materials: {
@@ -265,7 +276,7 @@ window.SITE = (function () {
       slug: "limitation-of-time",
       cat: "interactive",
       year: "2022",
-      images: 3,
+      images: 10,
       title: { ko: "시간의 한계", en: "The Limitation of Time" },
       dimensions: "101 × 101 × 38 cm",
       materials: {
@@ -277,7 +288,7 @@ window.SITE = (function () {
       slug: "holding-me",
       cat: "interactive",
       year: "2021",
-      images: 3,
+      images: 6,
       title: { ko: "“Holding me..”", en: "“Holding me..”" },
       dimensions: "68 × 38 × 88 cm",
       materials: {
@@ -291,7 +302,8 @@ window.SITE = (function () {
       slug: "observation-of-time",
       cat: "installation",
       year: "2020",
-      images: 2,
+      images: 3,
+      cover: 2,
       title: { ko: "시간의 관찰", en: "Observation of Time" },
       dimensions: "83 × 63 × 116 cm",
       materials: { ko: "나무, 모래, 뼈 가루, 발열 전구", en: "Wood, sand, bone ash, heat lamp" }
@@ -300,7 +312,8 @@ window.SITE = (function () {
       slug: "sound-of-memory",
       cat: "installation",
       year: "2020",
-      images: 3,
+      images: 9,
+      cover: 3,
       title: { ko: "기억의 소리", en: "The Sound of Memory" },
       dimensions: "60 × 50 × 105 cm",
       materials: {
@@ -312,7 +325,7 @@ window.SITE = (function () {
       slug: "bridge-beyond",
       cat: "installation",
       year: "2019",
-      images: 3,
+      images: 4,
       title: { ko: "넘어선 다리", en: "The Bridge Beyond" },
       dimensions: "30 × 48 × 68 cm",
       materials: { ko: "나무, LED, 찰흙, 유리, 물, 플라스틱", en: "Wood, LED, clay, glass, water, plastic" }
@@ -321,8 +334,8 @@ window.SITE = (function () {
       slug: "prayer-of-the-heart",
       cat: "installation",
       year: "2018",
-      images: 2,
-      cover: 2,
+      images: 13,
+      cover: 3,
       title: { ko: "마음의 기도", en: "Prayer of the Heart" },
       venue: { ko: "InLight Exhibition, Virginia Museum of Fine Arts", en: "InLight Exhibition, Virginia Museum of Fine Arts" },
       dimensions: "259 × 259 × 213 cm",
@@ -332,7 +345,8 @@ window.SITE = (function () {
       slug: "forgotten-child",
       cat: "installation",
       year: "2018",
-      images: 2,
+      images: 6,
+      cover: 2,
       title: { ko: "잊혀진 아이", en: "The Forgotten Child" },
       dimensions: "22 × 38 × 55 cm",
       materials: { ko: "나무, 유리, 향초, 전구, 물", en: "Wood, glass, incense candle, light bulb, water" }
@@ -341,7 +355,7 @@ window.SITE = (function () {
       slug: "are-you-warm",
       cat: "installation",
       year: "2017",
-      images: 2,
+      images: 10,
       title: { ko: "“따뜻하니?”", en: "“Are You Warm?”" },
       dimensions: "40 × 55 × 60 cm",
       materials: {
@@ -353,7 +367,7 @@ window.SITE = (function () {
       slug: "moment-of-overcoming",
       cat: "installation",
       year: "2017",
-      images: 3,
+      images: 5,
       title: { ko: "이겨냄의 순간", en: "The Moment of Overcoming" },
       venue: { ko: "Reconnection (개인전), The Anderson Gallery", en: "Reconnection (solo), The Anderson Gallery" },
       dimensions: "53 × 76 × 45 cm",
@@ -366,7 +380,8 @@ window.SITE = (function () {
       slug: "last-station",
       cat: "installation",
       year: "2015",
-      images: 3,
+      images: 8,
+      cover: 6,
       title: { ko: "종착역", en: "The Last Station" },
       dimensions: "213 × 121 × 121 cm",
       materials: { ko: "철, 전구, 솜, 연무기", en: "Steel, light bulbs, cotton, fog machine" }
@@ -375,7 +390,7 @@ window.SITE = (function () {
       slug: "warm-loneliness",
       cat: "installation",
       year: "2015",
-      images: 1,
+      images: 2,
       title: { ko: "따스한 외로움", en: "Warm Loneliness" },
       dimensions: "187 × 144 × 187 cm",
       materials: { ko: "스티로폼, 형광등, 페인트", en: "Styrofoam, fluorescent tube, paint" }
@@ -384,7 +399,7 @@ window.SITE = (function () {
       slug: "gateway-of-chaos",
       cat: "installation",
       year: "2014",
-      images: 2,
+      images: 6,
       title: { ko: "혼돈의 출입구", en: "The Gateway of Chaos" },
       dimensions: "175 × 22 × 228 cm",
       materials: { ko: "나무, 전구, 페인트", en: "Wood, light bulbs, paint" }
@@ -395,7 +410,8 @@ window.SITE = (function () {
       slug: "in-between",
       cat: "performance",
       year: "2017",
-      images: 2,
+      images: 7,
+      cover: 7,
       title: { ko: "사이", en: "In Between" },
       materials: {
         ko: "퍼포먼스 — 금박, 검정 비닐, 로프, 드럼, 참여자 다수",
@@ -407,7 +423,8 @@ window.SITE = (function () {
       slug: "unattainable-desire",
       cat: "performance",
       year: "2017",
-      images: 2,
+      images: 4,
+      cover: 4,
       title: { ko: "가질 수 없는 욕심", en: "Unattainable Desire" },
       materials: {
         ko: "퍼포먼스 — 검정 비닐 의상, 매달린 과일, 물, 참여자 다수",
@@ -419,8 +436,8 @@ window.SITE = (function () {
       slug: "hope",
       cat: "performance",
       year: "2016",
-      images: 2,
-      cover: 2,
+      images: 10,
+      cover: 7,
       title: { ko: "희망", en: "Hope" },
       materials: {
         ko: "야외 퍼포먼스 — 목재 구조, 침대, 물, 무지개",
@@ -432,7 +449,7 @@ window.SITE = (function () {
       slug: "a-rainy-day",
       cat: "performance",
       year: "2016",
-      images: 2,
+      images: 8,
       title: { ko: "어느 비오는 날", en: "A Rainy Day" },
       dimensions: "190 × 121 × 396 cm",
       materials: { ko: "나무, 오일 페인트, 레진, 물, 펌프", en: "Wood, oil paint, resin, water, pump" },
@@ -442,7 +459,8 @@ window.SITE = (function () {
       slug: "child-trapped-in-shame",
       cat: "performance",
       year: "2019",
-      images: 1,
+      images: 6,
+      cover: 2,
       title: { ko: "수치심에 갇힌 아이", en: "The Child Trapped in Shame" },
       materials: { ko: "거리 퍼포먼스 — 플라스틱 통, 눈, 명동", en: "Street performance — plastic bucket, snow, Myeongdong, Seoul" }
     },

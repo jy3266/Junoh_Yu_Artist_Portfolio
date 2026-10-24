@@ -7,20 +7,20 @@
 <meta name="description" content="Junoh Yu (유준오) — transdisciplinary visual and installation artist bridging ritual, healing, and computational media. Installation, performance, virtual reality.">
 <meta property="og:title" content="Junoh Yu — Visual &amp; Installation Artist">
 <meta property="og:description" content="Transdisciplinary visual and installation artist bridging ritual, healing, and computational media.">
-<meta property="og:image" content="assets/img/works/site/hero.jpg">
+<meta property="og:image" content="assets/img/works/a-weather-within/02.jpg">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0a0a0b">
+<meta name="theme-color" content="#f5f5f5">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=17">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230a0a0b'/><text x='16' y='23' font-family='Georgia,serif' font-size='19' fill='%23ececec' text-anchor='middle'>J</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=18">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23f5f5f5'/><text x='16' y='23' font-family='Arial,sans-serif' font-weight='bold' font-size='18' fill='%23000' text-anchor='middle'>J</text></svg>">
 </head>
 <body data-page="home" data-title-key="home">
 
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="index.html">JUNO</a>
+    <a class="brand" href="index.html" aria-label="Junoh Yu"><span class="b-i">J</span><span class="b-r">UNOH&nbsp;</span><span class="b-i">Y</span><span class="b-r">U</span></a>
     <nav class="nav">
       <div class="nav-group">
         <button class="nav-top nav-parent" type="button" aria-expanded="false"><span data-i18n="nav.artist"></span><i class="caret" aria-hidden="true"></i></button>
@@ -60,56 +60,42 @@
 
 <main>
 
-  <section class="hero">
-    <img class="hero-img" src="assets/img/works/site/hero.jpg" alt="">
-    <div class="hero-inner">
+  <section class="intro">
+    <div class="intro-inner">
       <h1 data-i18n="site.name"></h1>
       <p data-i18n="home.tagline"></p>
     </div>
+    <a class="intro-down" href="#works" data-i18n="home.works.title"></a>
   </section>
 
-  <section class="section">
-    <div class="wrap">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow" data-i18n="home.works.eyebrow"></p>
-          <h2 class="section-title" data-i18n="home.works.title"></h2>
-        </div>
-        <p class="section-note" data-i18n="home.works.note"></p>
+  <section id="works" class="tiles-section">
+    <div class="tiles" data-grid="all"></div>
+  </section>
+
+  <section class="boxes" data-categories></section>
+
+  <section class="biodiv" id="biography">
+    <h2 class="bioname" data-i18n="home.about.eyebrow"></h2>
+    <div class="bio-cols">
+      <div class="prose" data-bio="3"></div>
+      <div class="bio-portrait">
+        <img src="assets/img/works/site/portrait.webp" alt="Junoh Yu" loading="lazy">
       </div>
-      <div class="cat-list" data-categories></div>
     </div>
+    <p class="bio-links">
+      <a href="about.html" data-i18n="home.about.more"></a>
+      <a href="about.html#cv" data-i18n="nav.cv"></a>
+      <a href="assets/docs/Junoh_Yu_Portfolio_2026.pdf" target="_blank" rel="noopener" data-i18n="cv.portfolio"></a>
+    </p>
   </section>
 
-  <section class="section">
-    <div class="wrap">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow" data-i18n="home.selected.eyebrow"></p>
-          <h2 class="section-title" data-i18n="home.selected.title"></h2>
-        </div>
-        <p class="section-note" data-i18n="home.selected.note"></p>
-      </div>
-      <div class="grid" data-grid="selected"></div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="bio">
-        <div class="bio-portrait reveal">
-          <img src="assets/img/works/site/portrait.webp" alt="Junoh Yu" loading="lazy">
-        </div>
-        <div class="reveal">
-          <p class="eyebrow" data-i18n="home.about.eyebrow"></p>
-          <h2 class="section-title" data-i18n="home.about.title" style="margin-bottom:28px"></h2>
-          <div class="prose" data-bio="3"></div>
-          <div class="btn-row">
-            <a class="btn" href="about.html" data-i18n="home.about.more"></a>
-            <a class="btn" href="about.html#cv" data-i18n="nav.cv"></a>
-          </div>
-        </div>
-      </div>
+  <section class="biodiv" id="contact">
+    <h2 class="bioname" data-i18n="nav.contact"></h2>
+    <div class="bioemails">
+      <p><a href="mailto:rebreathe.starground@gmail.com">rebreathe.starground@gmail.com</a></p>
+      <p data-i18n="contact.location"></p>
+      <p><a href="https://jy3266.github.io/Rebreathe_Proposal/" target="_blank" rel="noopener">REBREATHE&nbsp;&#8599;</a></p>
+      <p><a href="https://jy3266.github.io/Teaching_Portfolio/" target="_blank" rel="noopener">TEACHING ARCHIVE&nbsp;&#8599;</a></p>
     </div>
   </section>
 
@@ -118,7 +104,7 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <div>
-      <p class="footer-brand">JUNO</p>
+      <p class="footer-brand">JUNOH YU</p>
       <p><span data-i18n="footer.built"></span> &nbsp;·&nbsp; © 2026 &nbsp;·&nbsp; <span data-i18n="footer.rights"></span></p>
     </div>
     <nav class="footer-links">
@@ -130,7 +116,7 @@
   </div>
 </footer>
 
-<script src="assets/js/data.js?v=17"></script>
-<script src="assets/js/site.js?v=17"></script>
+<script src="assets/js/data.js?v=18"></script>
+<script src="assets/js/site.js?v=18"></script>
 </body>
 </html>

@@ -8,7 +8,8 @@ Live: https://jy3266.github.io/Junoh_Yu_Artist_Portfolio/
 ## Structure
 
 ```
-index.html            Home — hero, categories, selected works, short bio
+index.html            Home — intro, every work as a photo tile, categories, bio, contact
+work.html             One work: caption column + every photo (work.html?w=<slug>)
 interactive.html      Interactive Media (2021—)
 installation.html     Installation (2014—)
 performance.html      Performance (2014—)
@@ -21,7 +22,7 @@ contact.html          Contact
 
 assets/css/style.css  All styling
 assets/js/data.js     ALL CONTENT — works, bio, CV, UI strings (ko + en)
-assets/js/site.js     Language switching, grid rendering, lightbox
+assets/js/site.js     Language switching, tiles, work page, full-screen swipe viewer
 assets/img/works/     Artwork photography, one folder per work
 assets/docs/          Downloadable portfolio PDF
 ```
@@ -35,7 +36,7 @@ Everything editable lives in **`assets/js/data.js`**. Nothing else needs to chan
 ### Add a new work
 
 1. Create `assets/img/works/<slug>/` and add images named `01.jpg`, `02.jpg`, …
-   (JPEG, max 1600px on the long edge keeps pages fast).
+   (JPEG, max 2000px on the long edge — the viewer shows them full screen).
 2. Add an entry to the `works` array:
 
 ```js
