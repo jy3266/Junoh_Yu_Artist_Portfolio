@@ -718,7 +718,7 @@ window.SITE = (function () {
           { title: { ko: "애니메이션 스튜디오", en: "Animation Studio" }, teams: 8, tab: "dyu-anim",
             note: { ko: "〈Reality Threshold〉 — 서로 독립된 두 공간을 통로가 아닌 ‘전환의 임계 공간’으로 잇는 작업. 거리 · 연결 · 서사 · 긴장감을 설계 변수로 두고 언리얼로 구축 (개인 과제 8명)",
                     en: "⟨Reality Threshold⟩ — joining two independent spaces with a threshold rather than a passage, built in Unreal around distance, connection, narrative, and tension (8 individual projects)" } },
-          { title: { ko: "레벨 디자인", en: "Level Design" }, teams: 18, tab: "dyu-ld",
+          { title: { ko: "레벨 디자인 2025", en: "Level Design 2025" }, teams: 18, tab: "dyu-ld",
             note: { ko: "〈Simulated Experience〉 — 치유, 기다림, 숭고함, 향수, 어둠, 리듬, 환영, 정체성 중 하나를 골라, 설명 없이도 무엇을 해야 할지 알 수 있는 공간으로 최소 요소만 남겨 재구성 (이틀에 걸친 최종 크리틱 · 20명)",
                     en: "⟨Simulated Experience⟩ — healing, waiting, the sublime, nostalgia, darkness, rhythm, illusion, or identity, rebuilt from the fewest possible elements into a space a user can read without being told (two-day final critique · 20 students)" } }
         ]

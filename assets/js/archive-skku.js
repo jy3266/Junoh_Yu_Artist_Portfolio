@@ -3012,8 +3012,8 @@
       {
        "k": "p",
        "text": {
-        "ko": "\u0001현재 진행 중인 수업이므로 결과물 기록은 아직 이 아카이브에 올리지 않았습니다.\u0002 16주 일정 · 과제 · 레퍼런스 등 자세한 내용은 아래 수업 사이트에서 볼 수 있습니다.",
-        "en": "\u0001The course is still running, so no outcome record has been added to this archive yet.\u0002 The sixteen-week schedule, the assignment briefs and the reference works all live on the course site linked below."
+        "ko": "\u0001현재 진행 중인 수업으로, 8주차 중간발표(10.19)까지의 기록을 올렸습니다.\u0002 4주차 미니 프로젝트는 각자의 시간 개념을 채팅창만으로(Ver.1), 그리고 API · 서브에이전트 · MCP · 스킬을 서로 연결해(Ver.2) 두 번 구현하는 개인 습작이고, 중간 과제 Time Machine은 팀이 그중 하나의 개념을 관객 입력에 반응하는 물리 장치로 옮긴 결과입니다. 16주 일정 · 과제 · 레퍼런스는 아래 수업 사이트에서 볼 수 있습니다.",
+        "en": "\u0001The course is still running; this archive now covers it up to the week-8 midterm review (19 Oct).\u0002 The week-4 mini project is an individual study that builds one’s own idea of time twice — once from a chat window alone (Ver.1), once with the API, subagents, MCP and skills wired together (Ver.2). The midterm, Time Machine, is what each team made when it carried one of those ideas into a physical device that answers the audience. The schedule, briefs and references are on the course site below."
        }
       },
       {
@@ -3059,6 +3059,1293 @@
           "ko": "중간 Time Machine · 기말 Immersive Time",
           "en": "Midterm — Time Machine · Final — Immersive Time"
          }
+        },
+        {
+         "label": {
+          "ko": "기록",
+          "en": "Recorded so far"
+         },
+         "value": {
+          "ko": "4주차 미니 프로젝트 7건 · 중간발표 7팀 (2026.10.19)",
+          "en": "7 week-4 mini projects · 7 midterm teams (19 Oct 2026)"
+         }
+        }
+       ]
+      },
+      {
+       "k": "works",
+       "heading": {
+        "ko": "중간발표 · Time Machine · 2026.10.19",
+        "en": "Midterm — Time Machine · 19 Oct 2026"
+       },
+       "items": [
+        {
+         "tag": "Mid · 01",
+         "title": {
+          "ko": "서행",
+          "en": "Seohaeng — Slow Down"
+         },
+         "people": {
+          "ko": "김영서 · 최준원 · 박성주",
+          "en": "김영서 · 최준원 · 박성주 — Kim Youngseo, Choi Junwon, Park Seongju"
+         },
+         "body": [
+          {
+           "ko": "속도를 줄여야만 보이는 시간 — 관객의 움직임이 느려질 때 반응하는 장치",
+           "en": "Time that only shows when you slow down — a device that answers when the visitor’s movement slows"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1gTW0ryrmcDd1PeqkhUHg56J2HwoHWg60/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mid-01-1.jpg",
+           "alt": "Demo video",
+           "label": {
+            "ko": "시연 영상",
+            "en": "Demo video"
+           },
+           "type": "Video"
+          },
+          {
+           "href": "https://drive.google.com/file/d/1GlbicD2rLLHjNIHb65P6XYjsLaZRehEd/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mid-01-2.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          }
+         ]
+        },
+        {
+         "tag": "Mid · 02",
+         "title": {
+          "ko": "기억이 머무는 자리",
+          "en": "Where Memory Stays"
+         },
+         "people": {
+          "ko": "김재권 · 박호윤",
+          "en": "김재권 · 박호윤 — Kim Jaekwon, Park Hoyoon"
+         },
+         "body": [
+          {
+           "ko": "빈집에 쌓인 시간과 생활의 흔적을 관람객의 움직임으로 되살리는 인터랙티브 공간",
+           "en": "An interactive space in which the visitor’s movement brings back the time and traces of life left in an empty house"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/19qF78QN9pWiaZxMR5lowwW7wi49Mx91I/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mid-02-1.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          }
+         ]
+        },
+        {
+         "tag": "Mid · 03",
+         "title": {
+          "ko": "The Time We Hold — 시간의 손길 아래",
+          "en": "The Time We Hold"
+         },
+         "people": {
+          "ko": "윤서영 · 박민준 · 왕심염",
+          "en": "윤서영 · 박민준 · 왕심염 — Yoon Seoyoung, Park Minjun, Wang Xinyan"
+         },
+         "body": [
+          {
+           "ko": "설계 변수 ‘멈춤’. 세 원판이 저마다의 빠르기로 돌고, 금속판에 손을 올린 관객이 그중 하나의 시간을 대신 받아낸다 — 손은 둘, 원판은 셋",
+           "en": "Design variable: interruption. Three discs turn at their own speeds; a hand on the metal plate takes one disc’s time on itself — two hands, three discs"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1hOf4mMSgVTPFZY_8yVb5L-uMDeuls56j/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mid-03-1.jpg",
+           "alt": "One-page document",
+           "kind": "pdf",
+           "label": {
+            "ko": "1p 문서",
+            "en": "One-page document"
+           },
+           "type": "PDF"
+          },
+          {
+           "href": "https://drive.google.com/file/d/1YjBNvcdbYSPdMnvNt1gSbUczTV1Q7NJj/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mid-03-2.jpg",
+           "alt": "Demo",
+           "label": {
+            "ko": "데모",
+            "en": "Demo"
+           },
+           "type": "Video"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/1OCuZr1vU9FVderUKXu6KqBIVKNZbnT7I/view",
+           "kind": "file",
+           "label": {
+            "ko": "피치",
+            "en": "Pitch"
+           }
+          },
+          {
+           "href": "https://drive.google.com/file/d/1P5zihB2WfS-BfRe_sPkJ3CuR-dmJ0rNJ/view",
+           "kind": "file",
+           "label": {
+            "ko": "테스트 로그",
+            "en": "Test log"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "Mid · 04",
+         "title": {
+          "ko": "모래 한 스쿱, 시간 — Sand of Time",
+          "en": "Sand of Time"
+         },
+         "people": {
+          "ko": "윤이나 · 전유진 · 장화경",
+          "en": "윤이나 · 전유진 · 장화경 — Yoon Ina, Jeon Yujin, Jang Hwakyung"
+         },
+         "body": [
+          {
+           "ko": "“같은 시간을 살아도 같은 무게로 살지 않는다.” 스쿱으로 떠서 흘린 모래의 양이 화면 속 존재의 크기와 수명이 된다",
+           "en": "“We live the same time, but not with the same weight.” The sand a visitor scoops and pours becomes the size and lifespan of a creature on screen"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/173FCjOntgSMERcLPC5d57DBlCblezung/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mid-04-1.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          }
+         ]
+        },
+        {
+         "tag": "Mid · 05",
+         "title": {
+          "ko": "시간의 단면",
+          "en": "A Cross-section of Time"
+         },
+         "people": {
+          "ko": "이영범 · 주커이 · 김다영",
+          "en": "이영범 · 주커이 · 김다영 — Lee Youngbeom, Zhu Keyi, Kim Dayoung"
+         },
+         "body": [
+          {
+           "ko": "3분 영상 · 초당 24프레임. 관객이 중요하다고 고른 순간마다 프레임이 쌓여 하나의 단면이 된다 — 프레임의 퇴적과 기억의 압축",
+           "en": "A three-minute film at 24 fps; each moment the visitor marks as important is stacked into a cross-section — frames sedimented, memory compressed"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1Ntii8VLY5GT3Npg2SZVHVyvM3ylFJ3Lm/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mid-05-1.jpg",
+           "alt": "Raw footage",
+           "label": {
+            "ko": "작동 영상",
+            "en": "Raw footage"
+           },
+           "type": "Video"
+          },
+          {
+           "href": "https://drive.google.com/file/d/1O18Pujl-9NOSDs40toNFlik-0Bq3uc70/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mid-05-2.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/drive/folders/141hPZOcNa-Mpjlg9niLAKJ9HoUgVI4lm",
+           "kind": "dir",
+           "label": {
+            "ko": "TouchDesigner · Arduino 소스",
+            "en": "TouchDesigner & Arduino source"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "Mid · 06",
+         "title": {
+          "ko": "Your Type",
+          "en": "Your Type"
+         },
+         "people": {
+          "ko": "한민택 · 홍준서",
+          "en": "한민택 · 홍준서 — Han Mintaek, Hong Junseo"
+         },
+         "body": [
+          {
+           "ko": "QR로 접속해 참여하는 인터랙티브 인사 장치",
+           "en": "An interactive greeting device the audience joins through a QR code"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1_NTtPT9oJI6C9EaIPO0G5XSnQDughC7Z/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mid-06-1.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          },
+          {
+           "href": "https://your-type-greetings.sweetwasp128.chatgpt.site",
+           "kind": "blank",
+           "label": {
+            "ko": "웹 체험",
+            "en": "Live site"
+           },
+           "type": "Web"
+          }
+         ]
+        },
+        {
+         "tag": "Mid · 07",
+         "title": {
+          "ko": "머무는 동안",
+          "en": "While You Stay"
+         },
+         "people": {
+          "ko": "황민협",
+          "en": "황민협 — Hwang Minhyub"
+         },
+         "body": [
+          {
+           "ko": "4면 투사 공간. 빈백에 머무는 시간이 길어질수록 작은 변화가 공간 전체로 번지는, 흘러가는 순간을 바라보는 휴식의 시간",
+           "en": "A four-wall projection room: the longer you stay in the beanbag, the further a small change spreads through the space — a rest spent watching time pass"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1iiasE8xE5KXwK0YS4Uq1_hw7qz22v74-/view",
+           "kind": "blank",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PPTX"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "k": "works",
+       "heading": {
+        "ko": "4주차 미니 프로젝트 · 시간 개념 프로토타입",
+        "en": "Week 4 — time-concept prototypes"
+       },
+       "items": [
+        {
+         "tag": "W4 · 01",
+         "title": {
+          "ko": "Weather OOTD",
+          "en": "Weather OOTD"
+         },
+         "people": {
+          "ko": "김영서",
+          "en": "김영서 — Kim Youngseo"
+         },
+         "body": [
+          {
+           "ko": "날씨와 그날의 옷차림을 잇는 시간 개념 프로토타입",
+           "en": "A time-concept prototype linking the day’s weather to what to wear"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1hwluJEs8W85paf1uIuKDiRXX2g-YhC4X/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mini-01-1.jpg",
+           "alt": "Mini-project deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "미니 프로젝트 발표",
+            "en": "Mini-project deck"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/1L-pdEXQd7HolB6LBZJrJlZdHdxoRkqxB/view",
+           "kind": "file",
+           "label": {
+            "ko": "포트폴리오",
+            "en": "Portfolio"
+           }
+          },
+          {
+           "href": "https://drive.google.com/drive/folders/1dn4yEwXsvtpNmwrlc3qbTw_lW2IQ6igD",
+           "kind": "dir",
+           "label": {
+            "ko": "전체 자료",
+            "en": "All files"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "W4 · 02",
+         "title": {
+          "ko": "Living CMF 레퍼런스 리서치 툴",
+          "en": "Living CMF Reference Research Tool"
+         },
+         "people": {
+          "ko": "김재권 · 박호윤",
+          "en": "김재권 · 박호윤 — Kim Jaekwon, Park Hoyoon"
+         },
+         "body": [
+          {
+           "ko": "리빙 디자인 CMF 개발 초기의 이미지 리서치를 텍스트 검색 대신 색 · 소재 · 마감 기준으로 정리하는 도구",
+           "en": "A tool that sorts early-stage living-design CMF research by colour, material and finish instead of by text search"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1GwKx5ifjDG6LrksyqzrHu5EkIgZ0oMf0/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mini-02-1.jpg",
+           "alt": "Mini-project deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "미니 프로젝트 발표",
+            "en": "Mini-project deck"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/1ZRq9_lIeRvv4l4kxoaFDnx3HXK2eC9wy/view",
+           "kind": "pdf",
+           "label": {
+            "ko": "김재권 포트폴리오",
+            "en": "Portfolio — Kim Jaekwon"
+           }
+          },
+          {
+           "href": "https://drive.google.com/file/d/1s6Y_FlCl5jenzor6EWL2y3GnP7yGSZkh/view",
+           "kind": "pdf",
+           "label": {
+            "ko": "박호윤 프로젝트",
+            "en": "Project — Park Hoyoon"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "W4 · 03",
+         "title": {
+          "ko": "D-day — 나에게 남은 시간",
+          "en": "D-day — The Time I Have Left"
+         },
+         "people": {
+          "ko": "윤서영 · 박민준 · 왕심염",
+          "en": "윤서영 · 박민준 · 왕심염 — Yoon Seoyoung, Park Minjun, Wang Xinyan"
+         },
+         "body": [
+          {
+           "ko": "남은 시간 · 남은 하루 · 남은 한 해를 한눈에 보여 주는 개인용 카운트다운",
+           "en": "A personal countdown that shows the time left in the hour, the day and the year at a glance"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/14OdhHtgVXlCgvL5ZhT4ZI8As2Zo7kaP4/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mini-03-1.jpg",
+           "alt": "Mini-project deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "미니 프로젝트 발표",
+            "en": "Mini-project deck"
+           },
+           "type": "PDF"
+          }
+         ]
+        },
+        {
+         "tag": "W4 · 04",
+         "title": {
+          "ko": "Sand of Time · DayToon",
+          "en": "Sand of Time · DayToon"
+         },
+         "people": {
+          "ko": "윤이나 · 전유진 · 장화경",
+          "en": "윤이나 · 전유진 · 장화경 — Yoon Ina, Jeon Yujin, Jang Hwakyung"
+         },
+         "body": [
+          {
+           "ko": "하루를 웹툰 컷으로 남기는 DayToon에서 출발해, 중간 과제의 모래 장치로 이어진 습작",
+           "en": "Studies that began with DayToon — a day kept as webtoon panels — and led into the midterm’s sand device"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1iRYOoZlqxtVdQwjppjGWI8DY90VXVmo9/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mini-04-1.jpg",
+           "alt": "Sand of Time deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "Sand of Time 발표",
+            "en": "Sand of Time deck"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/1-1llRR6mOYCZFrIVaGRG7Zv7yUQe4eg9/view",
+           "kind": "file",
+           "label": {
+            "ko": "DayToon",
+            "en": "DayToon"
+           }
+          },
+          {
+           "href": "https://drive.google.com/drive/folders/1U99CDJ1B7u_IfZRoSt6-cu25LslXJNMQ",
+           "kind": "dir",
+           "label": {
+            "ko": "전체 자료",
+            "en": "All files"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "W4 · 05",
+         "title": {
+          "ko": "시간을 인식하는 방법",
+          "en": "Ways of Perceiving Time"
+         },
+         "people": {
+          "ko": "주커이 · 김동희",
+          "en": "주커이 · 김동희 — Zhu Keyi, Kim Donghee"
+         },
+         "body": [
+          {
+           "ko": "Perceived Time Lab과 Conical Calendar — 체감 시간과 달력을 다시 그리는 두 개의 웹 프로토타입",
+           "en": "Perceived Time Lab and Conical Calendar — two web prototypes that redraw felt time and the calendar"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1F4tXa5aCBB_94OUDI-1f4htegINkpFLb/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mini-05-1.jpg",
+           "alt": "Mini-project deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "미니 프로젝트 발표",
+            "en": "Mini-project deck"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/1rKw95HoTBNeI4MmUObzcxOwUb6CLrn5d/view",
+           "kind": "ppt",
+           "label": {
+            "ko": "발표 원본",
+            "en": "Source deck"
+           }
+          },
+          {
+           "href": "https://drive.google.com/drive/folders/1XrPpJOVjrPp5_TJ2rvZaXBVHwML-34vD",
+           "kind": "dir",
+           "label": {
+            "ko": "전체 자료",
+            "en": "All files"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "W4 · 06",
+         "title": {
+          "ko": "시간 — 몰입",
+          "en": "Time — Immersion"
+         },
+         "people": {
+          "ko": "최준원",
+          "en": "최준원 — Choi Junwon"
+         },
+         "body": [
+          {
+           "ko": "“시간”을 주제로 한 개인 발표와 GitHub 웹사이트",
+           "en": "A solo presentation on time, published as a GitHub website"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1V6wNz6P4WZnPxuaJuyECcRqa6TREou8w/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mini-06-1.jpg",
+           "alt": "Mini-project deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "미니 프로젝트 발표",
+            "en": "Mini-project deck"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/1s9eyD2myjvb1n34AJWt-IuQFnJ3m5JDA/view",
+           "kind": "doc",
+           "label": {
+            "ko": "웹사이트 링크",
+            "en": "Website link"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "W4 · 07",
+         "title": {
+          "ko": "Harmony of Seconds",
+          "en": "Harmony of Seconds"
+         },
+         "people": {
+          "ko": "한민택 · 홍준서",
+          "en": "한민택 · 홍준서 — Han Mintaek, Hong Junseo"
+         },
+         "body": [
+          {
+           "ko": "사람마다 다른 ‘1초’를 버튼 박자로 기록하고, 서로의 리듬을 들으며 공동의 박자를 만드는 참여형 작품",
+           "en": "Each visitor taps out what one second feels like; listening to each other’s rhythm, they arrive at a shared beat"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1avQmihCy8QigVMrKZ0SnZlUp8vAoEjOo/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mini-07-1.jpg",
+           "alt": "Mini-project deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "미니 프로젝트 발표",
+            "en": "Mini-project deck"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/1AmzgyGAPXVsmsTi33IOj1945VMEuaeH7/view",
+           "kind": "ppt",
+           "label": {
+            "ko": "발표 원본",
+            "en": "Source deck"
+           }
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "aivideo",
+     "short": {
+      "ko": "AI 기반 영상 제작 워크숍",
+      "en": "AI Video Production Workshop"
+     },
+     "count": "NOW",
+     "blocks": [
+      {
+       "k": "live",
+       "text": {
+        "ko": "진행 중인 수업",
+        "en": "Course in progress"
+       }
+      },
+      {
+       "k": "title",
+       "text": {
+        "ko": "AI 기반 영상 제작 워크숍",
+        "en": "AI Video Production Workshop"
+       }
+      },
+      {
+       "k": "p",
+       "text": {
+        "ko": "생성형 AI를 영상 한 편을 뽑아내는 도구가 아니라, \u0001매일 쌓이는 제작 파이프라인\u0002으로 다루는 워크숍입니다. 학기 전반부의 중심은 \u000130 Days Project\u0002 — 팀이 하나의 세계관과 시각 기준을 정한 뒤, 9월 21일부터 10월 18일까지 팀원 각자가 매일 하나의 에셋 · 클립 · 인터랙션을 만들어 개인 GitHub 웹 아카이브에 인증합니다. 중간발표에서는 이 30일의 조각을 모아 팀 단편 영상이나 인터랙티브 월드로 조립합니다.",
+        "en": "A workshop that treats generative AI not as a machine for producing one film but as \u0001a production pipeline that accumulates daily\u0002. The first half of the semester turns on the \u000130 Days Project\u0002: each team fixes one world and one visual standard, and from 21 September to 18 October every member makes one asset, clip or interaction a day and logs it in a personal GitHub web archive. At the midterm the thirty days of fragments are assembled into a team short or an interactive world."
+       }
+      },
+      {
+       "k": "p",
+       "text": {
+        "ko": "4주차 미니 프로젝트에서는 Claude 등으로 PRD를 쓰고 직접 작동하는 작은 도구 · 웹 앱 · 게임을 만들어 보았고, 그 경험이 30일 프로젝트의 제작 방식으로 이어졌습니다. 중간발표 결과물은 로그라인 · 캐릭터 시트 · 키프레임 · 샷리스트를 갖춘 2분 안팎의 단편부터, 1인칭 인터랙티브 월드와 트레일러, 데스크톱 펫 같은 화면 밖으로 나오는 영상까지 형식이 갈립니다. 「비가 그치기 전까지」 팀은 회상 장면의 전환에서 \u0001AI가 약한 지점\u0002이 드러나자 회상을 빼고 하루를 순서대로 따라가도록 구조 자체를 고친 과정을 발표에 담았습니다.",
+        "en": "In the week-4 mini project students wrote PRDs with Claude and other tools and built small working tools, web apps and games — the habits that then carried into the thirty-day project. Midterm outcomes range from shorts of about two minutes, complete with logline, character sheets, keyframes and shot list, to first-person interactive worlds with trailers and films that climb out of the screen as desktop pets. The \u0001Until the Rain Stops\u0002 team showed how flashback transitions exposed \u0001where the AI was weak\u0002, and how they rebuilt the film to follow the day in order instead."
+       }
+      },
+      {
+       "k": "p",
+       "text": {
+        "ko": "\u0001현재 진행 중인 수업으로, 중간발표(10.19)까지의 기록입니다.\u0002",
+        "en": "\u0001The course is still running; this is the record up to the midterm review (19 Oct).\u0002"
+       }
+      },
+      {
+       "k": "facts",
+       "items": [
+        {
+         "label": {
+          "ko": "학기",
+          "en": "Term"
+         },
+         "value": {
+          "ko": "2026학년도 2학기",
+          "en": "Fall 2026"
+         }
+        },
+        {
+         "label": {
+          "ko": "30 Days Project",
+          "en": "30 Days Project"
+         },
+         "value": {
+          "ko": "2026.9.21 – 10.18 · 매일 개인 인증",
+          "en": "21 Sep – 18 Oct 2026 · a daily individual log"
+         }
+        },
+        {
+         "label": {
+          "ko": "중간발표",
+          "en": "Midterm review"
+         },
+         "value": {
+          "ko": "2026.10.19 · 10개 팀",
+          "en": "19 Oct 2026 · 10 teams"
+         }
+        },
+        {
+         "label": {
+          "ko": "주요 도구",
+          "en": "Tools seen"
+         },
+         "value": {
+          "ko": "Claude · Higgsfield · GitHub Pages · Unreal Engine · MadMapper",
+          "en": "Claude · Higgsfield · GitHub Pages · Unreal Engine · MadMapper"
+         }
+        }
+       ]
+      },
+      {
+       "k": "works",
+       "heading": {
+        "ko": "중간발표 · 30 Days Project · 2026.10.19",
+        "en": "Midterm — 30 Days Project · 19 Oct 2026"
+       },
+       "items": [
+        {
+         "tag": "Team 01",
+         "title": {
+          "ko": "Generated World",
+          "en": "Generated World"
+         },
+         "people": {
+          "ko": "홍준서 · 정희성 · 유주영",
+          "en": "홍준서 · 정희성 · 유주영 — Hong Junseo, Jung Heeseong, Yoo Jooyoung"
+         },
+         "body": [
+          {
+           "ko": "30일 동안 생성한 세계를 하나의 웹 아카이브로 엮은 중간 프로젝트",
+           "en": "A midterm that strings thirty days of generated worlds into one web archive"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1-jP0TyK4ZQTziHJBBGCn2MVWa-RwqBx_/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-01-1.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          },
+          {
+           "href": "https://tiifosia.github.io/Mid_project/",
+           "kind": "blank",
+           "label": {
+            "ko": "웹 아카이브",
+            "en": "Web archive"
+           },
+           "type": "Web"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/17xMaRgwns3ZWDe8EEw89OsOAobXeXFBQ/view",
+           "kind": "pdf",
+           "label": {
+            "ko": "4주차 미니 프로젝트",
+            "en": "Week-4 mini project"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "Team 03",
+         "title": {
+          "ko": "동심의 세계",
+          "en": "The World of Childhood"
+         },
+         "people": {
+          "ko": "이조안 · 서은진 · 김예림",
+          "en": "이조안 · 서은진 · 김예림 — Lee Joan, Seo Eunjin, Kim Yerim"
+         },
+         "body": [
+          {
+           "ko": "“어린 시절은 왜 행복했을까?” 지친 청춘이 죽어버린 동심의 섬을 되살리는 1인칭 인터랙티브 월드와 게임플레이 트레일러. 매일 다른 그림체로 쌓은 30일의 도시 조각이 출발점",
+           "en": "“Why was childhood happy?” A first-person world in which a worn-out young adult revives an island of childhood, with a gameplay trailer — grown from thirty days of city fragments, each in a different style"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1aauMDvIUMiiFON9b-iiUNUoVg43wI5tp/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-02-1.jpg",
+           "alt": "Trailer",
+           "label": {
+            "ko": "트레일러 영상",
+            "en": "Trailer"
+           },
+           "type": "Video"
+          },
+          {
+           "href": "https://drive.google.com/file/d/1qmX_fNjTev3s422fwyaG05rX0D_G6vru/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-02-2.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/10iDD8wQWsHnE91ic30W8aJILnWeP57vn/view",
+           "kind": "pdf",
+           "label": {
+            "ko": "미니 — 공동 창작 도시 프로젝트",
+            "en": "Mini — co-created city"
+           }
+          },
+          {
+           "href": "https://city-project-archive.vercel.app/",
+           "kind": "web",
+           "label": {
+            "ko": "30 Days 아카이브",
+            "en": "30 Days archive"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "Team 04",
+         "title": {
+          "ko": "Take the Wheel",
+          "en": "Take the Wheel"
+         },
+         "people": {
+          "ko": "여율하 · 이서중 · 김현우",
+          "en": "여율하 · 이서중 · 김현우 — Yeo Yulha, Lee Seojung, Kim Hyunwoo"
+         },
+         "body": [
+          {
+           "ko": "인터랙티브 힐링 여정. Glitchhikers와 「드라이브 마이 카」를 레퍼런스로 한 3막 구조의 인터랙티브 영상. 게임 개발 · 영상 기획 · 시나리오/에셋으로 역할을 나눴다",
+           "en": "An interactive healing journey: a three-act piece referencing Glitchhikers and Drive My Car, split into game development, film direction, and script and assets"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1rQc9Rpd_TkOUaIP16g-nsHFUa0QrPfag/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-03-1.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/1zNHNoiqFCTnACma5WH7ngQkjj1JhUfMw/view",
+           "kind": "pdf",
+           "label": {
+            "ko": "미니 — AI 공감 다이어리",
+            "en": "Mini — AI empathy diary"
+           }
+          },
+          {
+           "href": "https://30days-project-tau.vercel.app/wheel",
+           "kind": "web",
+           "label": {
+            "ko": "30 Days 아카이브",
+            "en": "30 Days archive"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "Team 05",
+         "title": {
+          "ko": "비가 그치기 전까지",
+          "en": "Until the Rain Stops"
+         },
+         "people": {
+          "ko": "정지원 · 서지오 · 최아원",
+          "en": "정지원 · 서지오 · 최아원 — Jung Jiwon, Seo Jio, Choi Ahwon"
+         },
+         "body": [
+          {
+           "ko": "보고서 실수로 혼난 신입 사원이 낯선 할머니의 작은 우산 아래에서 다시 고개를 드는 2분 단편. 회상 구조에서 AI의 약점이 드러나자, 회상을 빼고 하루를 순서대로 따라가도록 고쳤다",
+           "en": "A two-minute short: a new hire scolded over a report looks up again under a stranger’s small umbrella. When flashbacks exposed the AI’s weak spots, the team cut them and told the day in order"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/15b8KKlR5KO5Njy2_9pgPz1TdT6KaZWp3/view",
+           "kind": "blank",
+           "label": {
+            "ko": "최종 영상",
+            "en": "Final film"
+           },
+           "type": "Video"
+          },
+          {
+           "href": "https://drive.google.com/file/d/1qK732mtHKjgDHX0aaWZsgq4OFVyElgy7/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-04-2.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/1bjTotL9GJJ0q-hBDIhEhqdGPfCF1TjJ2/view",
+           "kind": "file",
+           "label": {
+            "ko": "캐릭터 시트",
+            "en": "Character sheets"
+           }
+          },
+          {
+           "href": "https://drive.google.com/file/d/1dKd7ihoS8yV-2Odr7wMl4UU4ZH4e6dmx/view",
+           "kind": "file",
+           "label": {
+            "ko": "키프레임",
+            "en": "Keyframes"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "Team 06",
+         "title": {
+          "ko": "여러분을 초대합니다",
+          "en": "You Are Invited"
+         },
+         "people": {
+          "ko": "김태희 · 박성준 · 유현지 · 유혜인",
+          "en": "김태희 · 박성준 · 유현지 · 유혜인 — Kim Taehee, Park Seongjun, Yoo Hyunji, Yoo Hyein"
+         },
+         "body": [
+          {
+           "ko": "AI 영상 특유의 어색함에서 비롯되는 기괴함을 소재로 삼은 단편",
+           "en": "A short that takes the uncanny awkwardness peculiar to AI video as its material"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1WtLidXEMqb1GojyKsEdegbTK22vf0T4i/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-05-1.jpg",
+           "alt": "Mid-term film",
+           "label": {
+            "ko": "중간발표 영상",
+            "en": "Mid-term film"
+           },
+           "type": "Video"
+          },
+          {
+           "href": "https://drive.google.com/file/d/1P_-CdvKKC8UMh81DTiFHicrtqgC5MEsb/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-05-2.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/17ALOxK9IXDNUMTpAojeXyjXR5_5NBgQs/view",
+           "kind": "pdf",
+           "label": {
+            "ko": "4주차 미니 프로젝트",
+            "en": "Week-4 mini project"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "Team 07",
+         "title": {
+          "ko": "Lost and (Found)",
+          "en": "Lost and (Found)"
+         },
+         "people": {
+          "ko": "오세령 · 우민선 · 조단비 · 팜뚜안끼엣",
+          "en": "오세령 · 우민선 · 조단비 · 팜뚜안끼엣 — Oh Seryung, Woo Minseon, Cho Danbi, Pham Tuan Kiet"
+         },
+         "body": [
+          {
+           "ko": "잃어버린 수집품을 따라 잊고 지낸 꿈을 찾아가는 인터랙티브 AI 영상",
+           "en": "An interactive AI film that follows lost keepsakes back to a dream long forgotten"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://docs.google.com/presentation/d/1i3BtHSuPAxj_QzraQ_V_8f7izI9bv2CADDhhT1wXa8M/edit",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-06-1.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "Slides"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://docs.google.com/document/d/1GNdduEuMRlznsXVniaZoS63OXoFrbCjQ4gZnyN6j5DI/edit",
+           "kind": "doc",
+           "label": {
+            "ko": "시연 링크",
+            "en": "Demo link"
+           }
+          },
+          {
+           "href": "https://drive.google.com/drive/folders/1-kmQ4etBKfd3Z6JToVRPdXX0fSitVOhy",
+           "kind": "dir",
+           "label": {
+            "ko": "개인 포트폴리오",
+            "en": "Portfolios"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "Team 08",
+         "title": {
+          "ko": "드림 딜리버리",
+          "en": "Dream Delivery"
+         },
+         "people": {
+          "ko": "강민주 · 변지민 · 이혜령 · 황정걸",
+          "en": "강민주 · 변지민 · 이혜령 · 황정걸 — Kang Minju, Byun Jimin, Lee Hyeryung, Hwang Jeonggeol"
+         },
+         "body": [
+          {
+           "ko": "꿈을 배달하는 이야기의 AI 단편",
+           "en": "An AI short about delivering dreams"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1o5Sqe0R3BI6mRRC3s7hOsUYH4cJPTL5o/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-07-1.jpg",
+           "alt": "Final film",
+           "label": {
+            "ko": "최종 영상",
+            "en": "Final film"
+           },
+           "type": "Video"
+          },
+          {
+           "href": "https://drive.google.com/file/d/1IXzThJjqlvPLXonlrgnF7uDSI8hHf98o/view",
+           "kind": "blank",
+           "label": {
+            "ko": "발표 자료",
+            "en": "Deck"
+           },
+           "type": "File"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/1QZtcN71fqLzWC7roPKiHg0vw-QbEyoqJ/view",
+           "kind": "ppt",
+           "label": {
+            "ko": "4주차 미니 · 개인 포트폴리오",
+            "en": "Week-4 mini & portfolios"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "Team 09",
+         "title": {
+          "ko": "귤이 — 화면 위에서, 늘 곁에",
+          "en": "Gyuri — On Screen, Always Near"
+         },
+         "people": {
+          "ko": "김이진 · 오현수 · 이화잉 · 장건",
+          "en": "김이진 · 오현수 · 이화잉 · 장건 — Kim Yijin, Oh Hyunsu, Li Huaying, Zhang Jian"
+         },
+         "body": [
+          {
+           "ko": "밤샘 과제하는 주인을 쉬게 하려고 화면 속 주황색 아기 고양이가 장난을 키운다. 대사 없이 빗소리 · 타자 소리 · 골골송으로 — 다섯 장면 30컷 120초. Claude · Higgsfield · MadMapper",
+           "en": "To make its owner rest from an all-nighter, an orange kitten on the screen escalates its mischief. No dialogue — rain, typing, purring. Five scenes, 30 cuts, 120 s, made with Claude, Higgsfield and MadMapper"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1AdCeA1a36gkYXGYOBuyeH85xJuWVVEp7/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-08-1.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PPTX"
+          },
+          {
+           "href": "https://drive.google.com/file/d/1AHtaHPn2fcocqmOfqaBjUuKlIj9_tsZY/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-08-2.jpg",
+           "alt": "Process clip",
+           "label": {
+            "ko": "제작 과정 클립",
+            "en": "Process clip"
+           },
+           "type": "Video"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/1ODHMhRBIGfiKGHf0M276s_XTkY8kRHlI/view",
+           "kind": "pdf",
+           "label": {
+            "ko": "30 Days 팀 실행 계획서",
+            "en": "30 Days team plan"
+           }
+          },
+          {
+           "href": "https://drive.google.com/file/d/1wXdiOFCnYIvbrKxNkNgGl7vJLyib9OrR/view",
+           "kind": "pdf",
+           "label": {
+            "ko": "미니 — AI 고양이 데스크톱 펫",
+            "en": "Mini — AI desktop cat"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "Team 10",
+         "title": {
+          "ko": "A Dozen Heady Distractions",
+          "en": "A Dozen Heady Distractions"
+         },
+         "people": {
+          "ko": "이유민 · 이청하 · 최도준",
+          "en": "이유민 · 이청하 · 최도준 — Lee Yumin, Lee Chungha, Choi Dojun"
+         },
+         "body": [
+          {
+           "ko": "잡생각과 초조함으로 하루를 망친 주인공이 자책하던 밤, ADHD의 산만함 속에 숨은 잠재력을 발견한다",
+           "en": "After a day wrecked by stray thoughts and nerves, the protagonist finds, that night, the potential hidden inside ADHD distraction"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1PzeCiP6MVg4-CtOW92xtWa2wP2uZ6a0j/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-09-1.jpg",
+           "alt": "Short film",
+           "label": {
+            "ko": "단편 영상",
+            "en": "Short film"
+           },
+           "type": "Video"
+          },
+          {
+           "href": "https://drive.google.com/file/d/1z1d5heiiB6goy0Jy4-FTQR-d_XN_AUql/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-09-2.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          }
+         ]
+        },
+        {
+         "tag": "Team 11",
+         "title": {
+          "ko": "토닥이 프로젝트",
+          "en": "Todak — A Pat on the Back"
+         },
+         "people": {
+          "ko": "김나연 · 박진혁 · 박채민 · 정윤근",
+          "en": "김나연 · 박진혁 · 박채민 · 정윤근 — Kim Nayeon, Park Jinhyuk, Park Chaemin, Jung Yungeun"
+         },
+         "body": [
+          {
+           "ko": "대학생 토끼 ‘토닥이’의 일상 속 작은 사건으로 공감과 치유를 전하는 프로젝트 — 프롬프트 제작 도구와 인터랙티브 웹 게임",
+           "en": "Small everyday incidents in the life of Todak, a rabbit at university, carrying empathy and comfort — a prompt-building tool and an interactive web game"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1XGDcxqJr3JWZbUz3Wah0Sp2UsAbhDNqi/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-10-1.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/1rdYUOmqSW-kpVYISvqoWlUDJeouruNyl/view",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간 사전 발표",
+            "en": "Pre-crit deck"
+           }
+          },
+          {
+           "href": "https://docs.google.com/document/d/1fXBK45hWvWH-jMfHrhYNaJ4bB-fqzMTAfVnO1Fm1OgA/edit",
+           "kind": "doc",
+           "label": {
+            "ko": "작업물 링크",
+            "en": "Work links"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "k": "works",
+       "heading": {
+        "ko": "4주차 미니 프로젝트 · 개인",
+        "en": "Week 4 — individual mini projects"
+       },
+       "items": [
+        {
+         "tag": "W4 · Solo",
+         "title": {
+          "ko": "안미룬이",
+          "en": "Anmirun-i — No More Putting Off"
+         },
+         "people": {
+          "ko": "김나연",
+          "en": "김나연 — Kim Nayeon"
+         },
+         "body": [
+          {
+           "ko": "마감일을 적으면 일주일 전 → 3일 전 → 하루 전 → n시간 전에 독촉 팝업을 띄우는 앱. Claude로 PRD를 쓰고 세 단계로 나눠 실행",
+           "en": "An app that nags with pop-ups a week, three days, a day and n hours before a deadline — PRD written with Claude, built in three stages"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1O-oG5wSVCqEmiHGXlPRf9rZWlGrqpmdg/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-solo-01-1.jpg",
+           "alt": "Mini-project deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "미니 프로젝트 발표",
+            "en": "Mini-project deck"
+           },
+           "type": "PDF"
+          }
+         ]
+        },
+        {
+         "tag": "W4 · Solo",
+         "title": {
+          "ko": "ShotBrief",
+          "en": "ShotBrief"
+         },
+         "people": {
+          "ko": "이청하 · 최도준",
+          "en": "이청하 · 최도준 — Lee Chungha, Choi Dojun"
+         },
+         "body": [
+          {
+           "ko": "AI 영상 생성 프롬프트를 샷 단위로 정리하는 도구 — PRD 작성부터 디자인 · 기능 점검까지",
+           "en": "A tool that organises AI-video prompts shot by shot — from PRD to design and function checks"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1-cdun0yXh8dXD4jS0JJeTmR2FKewTKBx/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-solo-02-1.jpg",
+           "alt": "Demo",
+           "label": {
+            "ko": "데모",
+            "en": "Demo"
+           },
+           "type": "Video"
+          },
+          {
+           "href": "https://drive.google.com/file/d/1lwPkSpaE4oI9fYqOZcQlYlQI2OmdGG1i/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-solo-02-2.jpg",
+           "alt": "Deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "발표 자료",
+            "en": "Deck"
+           },
+           "type": "PDF"
+          }
+         ]
         }
        ]
       }

@@ -528,8 +528,8 @@
     {
      "id": "dyu-ld",
      "short": {
-      "ko": "레벨 디자인",
-      "en": "Level Design"
+      "ko": "레벨 디자인 2025",
+      "en": "Level Design 2025"
      },
      "count": "18",
      "blocks": [
@@ -1715,6 +1715,558 @@
           "ko": "레벨 디자인 — 발표 재생목록 ②",
           "en": "Level Design — presentations, playlist 2"
          }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "dyu-ld26",
+     "short": {
+      "ko": "레벨 디자인 2026",
+      "en": "Level Design 2026"
+     },
+     "count": "NOW",
+     "blocks": [
+      {
+       "k": "live",
+       "text": {
+        "ko": "진행 중인 수업",
+        "en": "Course in progress"
+       }
+      },
+      {
+       "k": "title",
+       "text": {
+        "ko": "레벨 디자인 — 2026",
+        "en": "Level Design — 2026"
+       }
+      },
+      {
+       "k": "p",
+       "text": {
+        "ko": "2025년 「레벨 디자인」의 두 번째 해입니다. 올해 중간 과제는 대부분 \u00012–3인 팀\u0002으로 진행되었고, 열 개 팀이 기획서 한 장을 실제로 걸어 다닐 수 있는 레벨로 옮긴 결과를 발표했습니다. 시간에 쫓기는 사람을 위한 우주, 감각을 잃고 되찾는 계단, 4년 산 자취방을 비우는 하루처럼 작은 개인적 경험에서 출발한 작업이 많고, 잠입 탈출 · 러너처럼 장르 문법 위에서 공간 배치를 검증한 작업도 있습니다.",
+        "en": "The second year of \u0001Level Design\u0002. This year’s midterm was run mostly in \u0001teams of two or three\u0002, and ten teams presented a page of design turned into a level you can actually walk. Many began from a small personal experience — a universe for someone chased by time, a stairwell where the senses fade and return, the day you empty the flat you lived in for four years — while others tested spatial layout on top of a genre’s grammar, in a stealth escape or a runner."
+       }
+      },
+      {
+       "k": "p",
+       "text": {
+        "ko": "눈에 띄는 변화는 \u0001제작 방식\u0002입니다. 「잔류」와 「DINO RUN」 팀은 Python 스크립트로 블록아웃 · 조명 · 플레이테스트를 자동화하고, 버전마다 백업과 검증 로그를 남겼습니다. Twinmotion에서 공간을 잡고 Datasmith로 언리얼에 넘겨 인터랙션을 붙이는 파이프라인도 자리를 잡았습니다. 플레이 영상과 함께 \u0001프로젝트 파일 · 빌드 · 스크립트까지\u0002 원본 그대로 연결해 두었습니다.",
+        "en": "The visible change is \u0001how the work gets made\u0002. The \u0001Remanence\u0002 and \u0001Dino Run\u0002 teams automated blockout, lighting and playtesting with Python scripts, keeping backups and verification logs for every version. A pipeline of laying out space in Twinmotion, moving it to Unreal through Datasmith and adding interaction there has settled in. Alongside the play-throughs, the \u0001project files, builds and scripts\u0002 are linked as they were submitted."
+       }
+      },
+      {
+       "k": "p",
+       "text": {
+        "ko": "\u0001현재 진행 중인 수업으로, 중간발표(10.20)까지의 기록입니다.\u0002",
+        "en": "\u0001The course is still running; this is the record up to the midterm review (20 Oct).\u0002"
+       }
+      },
+      {
+       "k": "facts",
+       "items": [
+        {
+         "label": {
+          "ko": "학기",
+          "en": "Term"
+         },
+         "value": {
+          "ko": "2026학년도 2학기",
+          "en": "Fall 2026"
+         }
+        },
+        {
+         "label": {
+          "ko": "중간발표",
+          "en": "Midterm review"
+         },
+         "value": {
+          "ko": "2026.10.20 · 10개 팀 · 23명",
+          "en": "20 Oct 2026 · 10 teams · 23 students"
+         }
+        },
+        {
+         "label": {
+          "ko": "핵심 툴",
+          "en": "Core tools"
+         },
+         "value": {
+          "ko": "Unreal Engine 5.4 · Twinmotion · Datasmith · Python",
+          "en": "Unreal Engine 5.4 · Twinmotion · Datasmith · Python"
+         }
+        }
+       ]
+      },
+      {
+       "k": "works",
+       "heading": {
+        "ko": "중간발표 · 2026.10.20 · 10팀",
+        "en": "Midterm review · 20 Oct 2026 · 10 teams"
+       },
+       "items": [
+        {
+         "tag": "Mid · 01",
+         "title": {
+          "ko": "시간이 멈추는 곳 — Event Horizon",
+          "en": "Where Time Stops — Event Horizon"
+         },
+         "people": {
+          "ko": "강민우 · 박우림",
+          "en": "강민우 · 박우림 — Kang Minwoo, Park Woorim"
+         },
+         "body": [
+          {
+           "ko": "시간에 쫓기는 사람에게 가장 큰 휴식은 시간이 멈추는 곳. 중력에 의한 시간 지연에서 착안해, 무서운 블랙홀을 안기는 우주로 바꾼 레벨",
+           "en": "For someone chased by time, the deepest rest is a place where time stops. Taking gravitational time dilation as its cue, the level turns a frightening black hole into a universe that holds you"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1qb9aqMep8g1iYLF2JnvlJAtCzYC58vRQ/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-01-1.jpg",
+           "alt": "Play-through",
+           "label": {
+            "ko": "플레이 영상",
+            "en": "Play-through"
+           },
+           "type": "Video"
+          },
+          {
+           "href": "https://drive.google.com/file/d/1iqCLJR9KjxWjWZswURszLyCedg6WC7P-/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-01-2.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/drive/folders/1Ci_nJCI-3QAxkjiY2I3D6EbNQGW4ynef",
+           "kind": "dir",
+           "label": {
+            "ko": "빌드 포함 전체 자료",
+            "en": "All files incl. build"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "Mid · 02",
+         "title": {
+          "ko": "The Meaninglessness of War",
+          "en": "The Meaninglessness of War"
+         },
+         "people": {
+          "ko": "강민정 · 김은아",
+          "en": "강민정 · 김은아 — Kang Minjeong, Kim Euna"
+         },
+         "body": [
+          {
+           "ko": "전쟁의 무의미함을 숲과 폐허를 지나는 동선으로 옮긴 레벨",
+           "en": "A level that carries the futility of war along a path through forest and ruin"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1yaM48Ds5LGJ8QislOkQ3MFUFrqyyDJ4l/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-02-1.jpg",
+           "alt": "Play-through",
+           "label": {
+            "ko": "플레이 영상",
+            "en": "Play-through"
+           },
+           "type": "Video"
+          },
+          {
+           "href": "https://drive.google.com/file/d/1l-iV8ohZgJRQF1rmn5rQ1uh02pNHx2CM/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-02-2.jpg",
+           "alt": "Level design overview",
+           "kind": "pdf",
+           "label": {
+            "ko": "레벨 디자인 개요",
+            "en": "Level design overview"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/1BqI9WwE_fnV0aH2GM2G4AMf8bBvgODzt/view",
+           "kind": "pdf",
+           "label": {
+            "ko": "기획서",
+            "en": "Design document"
+           }
+          },
+          {
+           "href": "https://drive.google.com/file/d/1baBQFxPtYKa0PKf_PDHzIKwbPMLdqYvX/view",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "Mid · 03",
+         "title": {
+          "ko": "잔류 — Remanence",
+          "en": "Remanence"
+         },
+         "people": {
+          "ko": "김규담 · 박상민 · 서민규",
+          "en": "김규담 · 박상민 · 서민규 — Kim Gyudam, Park Sangmin, Seo Mingyu"
+         },
+         "body": [
+          {
+           "ko": "기억과 감각의 흔적을 따라 걷는 미디어아트 체험. 마지막 정류장 → 계단(색과 소리가 사라짐) → 잔향의 공간(청각 · 색채 회복) → 경계. 파이썬 자동화로 블록아웃을 여덟 번 고쳐 쌓았다 — UE 5.4",
+           "en": "A media-art walk along traces of memory and sense: the last stop → a stairwell where colour and sound drain away → a room of echoes where hearing and colour return → the threshold. Rebuilt eight times through Python-scripted blockouts in UE 5.4"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1xSuWEr1kSKBKgjhPPJcLpoagHULelrRg/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-03-1.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/1ry2HMvryF4NA-8_ZVgkAvEhECoEnBDoU/view",
+           "kind": "ppt",
+           "label": {
+            "ko": "발표 원본",
+            "en": "Source deck"
+           }
+          },
+          {
+           "href": "https://drive.google.com/drive/folders/15iAD2cpThr2xjdlu2zxXw8eir_dd0WUE",
+           "kind": "dir",
+           "label": {
+            "ko": "언리얼 프로젝트",
+            "en": "Unreal project"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "Mid · 04",
+         "title": {
+          "ko": "Lost Color",
+          "en": "Lost Color"
+         },
+         "people": {
+          "ko": "김대현",
+          "en": "김대현 — Kim Daehyun"
+         },
+         "body": [
+          {
+           "ko": "타인의 기대 속에서 잊은 자신을 찾아가는 여정. 무채색 도시 복도 → 어린 시절의 방 → 호수와 숲으로, 빛 · 색 · 공간의 변화로 감정을 전한다",
+           "en": "A journey back to a self lost to other people’s expectations — from a colourless city corridor to a childhood room to a lake and forest, told through changes in light, colour and space"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1Y_hW59ZEvtocAad6naKNnL_bOZ6_omEq/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-04-1.jpg",
+           "alt": "Play-through",
+           "label": {
+            "ko": "플레이 영상",
+            "en": "Play-through"
+           },
+           "type": "Video"
+          },
+          {
+           "href": "https://drive.google.com/file/d/1W_lTERd-OsUbxKRuSPrd3xfYeW3qdKPR/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-04-2.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          }
+         ]
+        },
+        {
+         "tag": "Mid · 05",
+         "title": {
+          "ko": "나이트 시프트",
+          "en": "Night Shift"
+         },
+         "people": {
+          "ko": "김영훈 · 이태훈 · 홍민웅",
+          "en": "김영훈 · 이태훈 · 홍민웅 — Kim Younghoon, Lee Taehoon, Hong Minwoong"
+         },
+         "body": [
+          {
+           "ko": "감시 카메라를 피해 카드키를 모아 창고를 빠져나오는 3D 잠입 탈출 레벨. 기획서 한 장을 창고 1동 · 4개 구역의 레벨 하나로 옮기고, 구역마다 통과 방식이 다르게 설계했다 — UE 5.4.4",
+           "en": "A 3D stealth-escape level: dodge the cameras, collect key cards, get out of the warehouse. One page of design became one building in four zones, each crossed a different way — UE 5.4.4"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1koQZ5LGQQK5FY0pQfb9Nr7LqyMjgHHaP/view",
+           "kind": "blank",
+           "label": {
+            "ko": "플레이 영상",
+            "en": "Play-through"
+           },
+           "type": "Video"
+          },
+          {
+           "href": "https://drive.google.com/file/d/1EYeKjrCdfl90g2XXVk3vtkqspoK_leqO/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-05-2.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PPTX"
+          }
+         ]
+        },
+        {
+         "tag": "Mid · 06",
+         "title": {
+          "ko": "금의환향",
+          "en": "Homecoming"
+         },
+         "people": {
+          "ko": "김유찬 · 이재현",
+          "en": "김유찬 · 이재현 — Kim Yuchan, Lee Jaehyun"
+         },
+         "body": [
+          {
+           "ko": "졸업 후 4년을 산 자취방을 비우는 하루. 청소하고 짐을 싸며 곳곳의 추억을 감상하는 1인칭 청소 · 정리 내러티브 게임 — 한국식 빌라",
+           "en": "The day you empty the flat you lived in for four years: a first-person cleaning-and-packing narrative game set in a Korean villa, with memories tucked into every corner"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1M8mlgYuJ2LnD02LklbeHBN6hl1iYIJxo/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-06-1.jpg",
+           "alt": "Editor play-through",
+           "label": {
+            "ko": "에디터 플레이 영상",
+            "en": "Editor play-through"
+           },
+           "type": "Video"
+          },
+          {
+           "href": "https://drive.google.com/file/d/18lI1nmPuBOMZycaPX2UJ9G554RxQCgu9/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-06-2.jpg",
+           "alt": "Progress deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "개발 현황 발표",
+            "en": "Progress deck"
+           },
+           "type": "PPTX"
+          }
+         ]
+        },
+        {
+         "tag": "Mid · 07",
+         "title": {
+          "ko": "HalfSpan — 반 뼘",
+          "en": "HalfSpan"
+         },
+         "people": {
+          "ko": "유경무 · 강우진 · 이지강",
+          "en": "유경무 · 강우진 · 이지강 — Yoo Kyungmoo, Kang Woojin, Lee Jigang"
+         },
+         "body": [
+          {
+           "ko": "바다와 등대를 마주한 비 오는 밤의 실내 쉼터. 창을 열수록 빗소리가 커지고, 비가 그치면 소파에 앉아 등대를 바라본다 — 안내 UI 없이. Twinmotion → Datasmith → UE 5.4",
+           "en": "An indoor shelter on a rainy night, facing the sea and a lighthouse. The wider you open the window the louder the rain; when it stops, sit on the sofa and watch the beam — no guiding UI. Twinmotion → Datasmith → UE 5.4"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1hBjPMNdrwqT4bDkwsJFOlxoKEByPdc0V/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-07-1.jpg",
+           "alt": "Lighthouse beam",
+           "label": {
+            "ko": "등대 빔 회전",
+            "en": "Lighthouse beam"
+           },
+           "type": "Video"
+          },
+          {
+           "href": "https://drive.google.com/file/d/1lTyIOpGeQOMWchdc-CWpikRL50E7bRn9/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-07-2.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PPTX"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/drive/folders/11fXx8pp1F1rC3A1mWLmUrwcQJvXkhUdm",
+           "kind": "dir",
+           "label": {
+            "ko": "빌드 포함 전체 자료",
+            "en": "All files incl. build"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "Mid · 08",
+         "title": {
+          "ko": "DINO RUN",
+          "en": "Dino Run"
+         },
+         "people": {
+          "ko": "최원빈 · 심범경 · 최현호",
+          "en": "최원빈 · 심범경 · 최현호 — Choi Wonbin, Shim Beomkyung, Choi Hyunho"
+         },
+         "body": [
+          {
+           "ko": "변하는 자연 속에서 길을 찾아 나아가는 공룡 러너. 숲에서 빙하기까지 바이옴이 바뀌고, 기획 의도에 맞춰 시점 연출을 확장했다",
+           "en": "A dinosaur runner finding its way through changing nature, from forest to ice age, with the camera direction extended to fit the design intent"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1HOqgwGxtT1RvDdaSy8G1hSUemmIylAo3/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-08-1.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/drive/folders/1QX0yjbyS9nmo_6BkFacTURNh1jFdql2c",
+           "kind": "dir",
+           "label": {
+            "ko": "언리얼 프로젝트",
+            "en": "Unreal project"
+           }
+          }
+         ]
+        },
+        {
+         "tag": "Mid · 09",
+         "title": {
+          "ko": "구름 위의 쉼터",
+          "en": "A Shelter Above the Clouds"
+         },
+         "people": {
+          "ko": "최원영",
+          "en": "최원영 — Choi Wonyoung"
+         },
+         "body": [
+          {
+           "ko": "자연 힐링을 주제로 한 공중섬 레벨. 물길을 기준으로 초원과 건물을 나누고 붉은 다리로 잇고, 높이 솟은 나무집을 중심에 두었다 — Twinmotion",
+           "en": "A floating-island level about healing in nature: a stream divides meadow from buildings, a red bridge joins them, and a tall treehouse anchors the centre — Twinmotion"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1p9adwpkJSeazsilz44LfCDqAf3bWZxHG/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-09-1.jpg",
+           "alt": "Play-through",
+           "label": {
+            "ko": "플레이 영상",
+            "en": "Play-through"
+           },
+           "type": "Video"
+          },
+          {
+           "href": "https://drive.google.com/file/d/16_8DJXSvkU3zirlyLzqScXhG4eLgdDiT/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-09-2.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          }
+         ]
+        },
+        {
+         "tag": "Mid · 10",
+         "title": {
+          "ko": "세계수의 잔광",
+          "en": "Afterglow of the World Tree"
+         },
+         "people": {
+          "ko": "최지연 · 박건호 · 김수현",
+          "en": "최지연 · 박건호 · 김수현 — Choi Jiyeon, Park Geonho, Kim Suhyun"
+         },
+         "body": [
+          {
+           "ko": "북적이는 도시를 벗어나 숲속 세계수에게 위로받고, 돌아온 도시가 세계수의 잔광으로 아름답게 보이게 되는 여정. 버스에서 내려 빛을 따라 걷는 세 개의 공간",
+           "en": "Leaving the crowded city, being comforted by a world tree in the forest, and returning to find the city lit by its afterglow — three spaces walked by following the light from a bus stop"
+          }
+         ],
+         "media": [
+          {
+           "href": "https://drive.google.com/file/d/1-Msv_DU335oFWZKjCPR6EwNjspbsudwi/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-10-1.jpg",
+           "alt": "Presentation — Park Geonho",
+           "label": {
+            "ko": "박건호 발표 영상",
+            "en": "Presentation — Park Geonho"
+           },
+           "type": "Video"
+          },
+          {
+           "href": "https://drive.google.com/file/d/1r5o40UzyGg0VZKwl1ok6G4dKj7bOJj8p/view",
+           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-10-2.jpg",
+           "alt": "Mid-term deck",
+           "kind": "pdf",
+           "label": {
+            "ko": "중간발표 자료",
+            "en": "Mid-term deck"
+           },
+           "type": "PDF"
+          }
+         ],
+         "files": [
+          {
+           "href": "https://drive.google.com/file/d/12om-8pOaXlEZWa3_57SO0hzyqeufLkYw/view",
+           "kind": "clip",
+           "label": {
+            "ko": "김수현 발표 영상",
+            "en": "Presentation — Kim Suhyun"
+           }
+          },
+          {
+           "href": "https://drive.google.com/file/d/1yg2emG-BPiehXMDzTUQTECTEEekbHlY5/view",
+           "kind": "file",
+           "label": {
+            "ko": "최지연 발표 영상",
+            "en": "Presentation — Choi Jiyeon"
+           }
+          }
+         ]
         }
        ]
       }
