@@ -651,9 +651,39 @@
     return row;
   }
 
-  function shotRow(shots) {
-    var row = el("div", "a-shots");
-    shots.forEach(function (sh, i) {
+  /* a project leads with one large still; whatever else there is follows
+     underneath at a single, even size however many there are */
+  function shotGallery(shots) {
+    var box = el("div", "a-gallery");
+    box.appendChild(shotRow(shots, 0, 1, "a-shots a-shots-hero"));
+    if (shots.length > 1) box.appendChild(shotRow(shots, 1, shots.length, "a-shots a-shots-rest"));
+    return box;
+  }
+
+  /* with no stills, the first video's frame stands in as the lead image */
+  function heroLink(m) {
+    var a = el("a", "a-hero-link");
+    a.href = m.href;
+    a.target = "_blank";
+    a.rel = "noopener";
+    var img = el("img");
+    img.src = m.img;
+    img.alt = m.alt || "";
+    img.loading = "lazy";
+    img.decoding = "async";
+    a.appendChild(img);
+    var cap = el("span", "a-hero-cap");
+    if (m.label) rich(cap.appendChild(el("b")), f(m.label));
+    if (m.type) cap.appendChild(el("em", null, m.type));
+    a.appendChild(cap);
+    return a;
+  }
+
+  /* shots[from..to) as buttons; the lightbox still steps through them all */
+  function shotRow(shots, from, to, cls) {
+    var row = el("div", cls || "a-shots");
+    from = from || 0;
+    shots.slice(from, to == null ? shots.length : to).forEach(function (sh, i) {
       var btn = el("button", "a-shot");
       btn.type = "button";
       var img = el("img");
@@ -662,7 +692,7 @@
       img.loading = "lazy";
       img.decoding = "async";
       btn.appendChild(img);
-      btn.addEventListener("click", function () { lb.showShots(shots, i + 1); });
+      btn.addEventListener("click", function () { lb.showShots(shots, from + i + 1); });
       row.appendChild(btn);
     });
     return row;
@@ -822,8 +852,17 @@
     lead.forEach(function (n) { art.appendChild(richEl("p", "a-note", f(n))); });
 
     (w.body || []).forEach(function (para) { art.appendChild(richEl("p", "a-blurb", f(para))); });
-    if (w.shots) art.appendChild(shotRow(w.shots));
-    if (w.media) art.appendChild(mediaRow(w.media));
+    var media = w.media || [];
+    if (w.shots && w.shots.length) {
+      art.appendChild(shotGallery(w.shots));
+    } else {
+      var still = media.filter(function (m) { return m.img && !m.kind; })[0];
+      if (still) {
+        art.appendChild(heroLink(still));
+        media = media.filter(function (m) { return m !== still; });
+      }
+    }
+    if (media.length) art.appendChild(mediaRow(media));
     if (w.files) art.appendChild(chipRow(w.files));
     trail.forEach(function (n) { art.appendChild(richEl("p", "a-note a-note-end", f(n))); });
 

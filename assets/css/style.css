@@ -1689,6 +1689,56 @@ html[lang="ko"] .a-work-head h4 { font-family: var(--font-sans); font-weight: 50
 .a-shot:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
 .a-shot-poster img { aspect-ratio: auto; object-fit: contain; }
 
+/* the lead still runs the full width; the rest sit beneath it in an even
+   row of three that does not stretch when there are only one or two */
+.a-gallery { margin-bottom: 16px; }
+.a-gallery .a-shots { margin-bottom: 0; }
+.a-shots-hero { grid-template-columns: 1fr; }
+.a-shots-rest {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 8px;
+}
+@media (max-width: 560px) {
+  .a-shots-rest { grid-template-columns: repeat(2, 1fr); }
+}
+
+.a-hero-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 16px;
+  background: var(--bg-elev);
+}
+.a-hero-link img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  opacity: 0.9;
+  transition: opacity 0.35s var(--ease), transform 1s var(--ease);
+}
+.a-hero-link:hover img { opacity: 1; transform: scale(1.02); }
+.a-hero-link:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
+.a-hero-cap {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 9px 14px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+}
+.a-hero-cap::before { content: "\25B6"; font-size: 9px; }
+.a-hero-cap b { font-size: 12.5px; font-weight: 400; }
+.a-hero-cap em {
+  font-style: normal;
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
 /* linked material — a deck, a demo video, a recording */
 
 .a-media {
