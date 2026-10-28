@@ -118,7 +118,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1swq-kNUOE4hfadaoSiZ3QH3ljiXMeeap/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/202-umpha-prototype.jpg",
+           "img": "assets/img/teaching/archive/202-umpha-prototype.jpg",
            "alt": "Prototype test video",
            "label": {
             "ko": "프로토타입 시연",
@@ -176,7 +176,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1NuLN1JXH7RUWM9Xa-sdtKBermG88zPK1/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/205-focusty-demo.jpg",
+           "img": "assets/img/teaching/archive/205-focusty-demo.jpg",
            "alt": "Build video",
            "label": {
             "ko": "구현 영상",
@@ -242,7 +242,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1JiIvQDAg57TwBDZnl1pdAiLc-4h-I8U2/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/208-jiji-game.jpg",
+           "img": "assets/img/teaching/archive/208-jiji-game.jpg",
            "alt": "Gameplay video",
            "label": {
             "ko": "게임 플레이 영상",
@@ -264,7 +264,7 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/322-cju-comma-light.jpg",
+           "src": "assets/img/teaching/archive/322-cju-comma-light.jpg",
            "alt": "comma, Light — project board"
           }
          ],
@@ -302,7 +302,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1ltErnub5_dJ_4h9Zk7G3ez1aaf1oO13B/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/211-kcheerland-test.jpg",
+           "img": "assets/img/teaching/archive/211-kcheerland-test.jpg",
            "alt": "Test video",
            "label": {
             "ko": "테스트 영상",
@@ -334,7 +334,7 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/331-cju-dadada.jpg",
+           "src": "assets/img/teaching/archive/331-cju-dadada.jpg",
            "alt": "Dadada Hangul Village — project board"
           }
          ],
@@ -350,7 +350,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1WH7RhutbAHXB8g0iv5EvNEae1f2zaI7B/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/213-dadada-test.jpg",
+           "img": "assets/img/teaching/archive/213-dadada-test.jpg",
            "alt": "Test video",
            "label": {
             "ko": "테스트 영상 (중간)",
@@ -505,7 +505,7 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/324-cju-the-gaze.jpg",
+           "src": "assets/img/teaching/archive/324-cju-the-gaze.jpg",
            "alt": "The Gaze — project board"
           }
          ],
@@ -521,7 +521,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1kG2xypVsvjkNBLWADpyjjptYX81FYInV/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/235-the-gaze-recording.jpg",
+           "img": "assets/img/teaching/archive/235-the-gaze-recording.jpg",
            "alt": "Recording",
            "label": {
             "ko": "기록 영상",
@@ -543,7 +543,7 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/330-cju-moony.jpg",
+           "src": "assets/img/teaching/archive/330-cju-moony.jpg",
            "alt": "MOONY — project board"
           }
          ],
@@ -571,7 +571,7 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/320-cju-re43.jpg",
+           "src": "assets/img/teaching/archive/320-cju-re43.jpg",
            "alt": "RE: 4·3 — project board"
           }
          ],
@@ -587,7 +587,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/11laGtxRTVLkw-4URJmOprqOoml5JY4kD/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/236-re43-vr-footage.jpg",
+           "img": "assets/img/teaching/archive/236-re43-vr-footage.jpg",
            "alt": "VR footage",
            "label": {
             "ko": "VR 영상",
@@ -619,7 +619,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1Cc40j6uXXmDhnjDdy71IN1t7d4NRor5K/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/239-wrp-screen-capture.jpg",
+           "img": "assets/img/teaching/archive/239-wrp-screen-capture.jpg",
            "alt": "Screen capture",
            "label": {
             "ko": "화면 녹화 (10.22)",
@@ -629,7 +629,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1VJuuP8BErfbAUyyr2wp2QSvz728YfmlC/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/242-wrp-clip.jpg",
+           "img": "assets/img/teaching/archive/242-wrp-clip.jpg",
            "alt": "Short clip",
            "label": {
             "ko": "짧은 클립",
@@ -651,7 +651,7 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/325-cju-gaonkyeol.jpg",
+           "src": "assets/img/teaching/archive/325-cju-gaonkyeol.jpg",
            "alt": "Gaonkyeol — project board"
           }
          ],
@@ -679,7 +679,7 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/326-cju-d49.jpg",
+           "src": "assets/img/teaching/archive/326-cju-d49.jpg",
            "alt": "D49 — project board"
           }
          ],
@@ -695,7 +695,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/10NpHFHyjvsT0lEx5du096EGrxHPYXdOF/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/241-d49-screen-recording.jpg",
+           "img": "assets/img/teaching/archive/241-d49-screen-recording.jpg",
            "alt": "Screen recording",
            "label": {
             "ko": "화면 기록 (10.22)",
@@ -717,7 +717,7 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/327-cju-zero.jpg",
+           "src": "assets/img/teaching/archive/327-cju-zero.jpg",
            "alt": "zero — project board"
           }
          ],
@@ -733,7 +733,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/10MCObMpN8459uDx6uPoIE4zb17cvzEwW/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/227-zero-demo.jpg",
+           "img": "assets/img/teaching/archive/227-zero-demo.jpg",
            "alt": "Demo video",
            "label": {
             "ko": "시연 영상",
@@ -755,7 +755,7 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/321-cju-flomo.jpg",
+           "src": "assets/img/teaching/archive/321-cju-flomo.jpg",
            "alt": "FLOMO — project board"
           }
          ],
@@ -771,7 +771,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/16ktC81NAsd-K2aELDVLssufg4yku-VTo/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/238-flomo-butterfly-game.jpg",
+           "img": "assets/img/teaching/archive/238-flomo-butterfly-game.jpg",
            "alt": "Butterfly game build",
            "label": {
             "ko": "나비 게임 구현",
@@ -781,7 +781,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/13-o0H0t8umTxjMWHPe9el77CpqzjUocx/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/237-flomo-flower-build.jpg",
+           "img": "assets/img/teaching/archive/237-flomo-flower-build.jpg",
            "alt": "Flower build",
            "label": {
             "ko": "꽃 구현",
@@ -791,7 +791,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1-anZObhhGneJeIdQVER8pbPZOQHIefBh/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/240-flomo-motion-data.jpg",
+           "img": "assets/img/teaching/archive/240-flomo-motion-data.jpg",
            "alt": "Motion data",
            "label": {
             "ko": "모션 데이터",
@@ -801,7 +801,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1Yv8Ka6NgjoY1sHn1ydQTGxnvHa-SxmCf/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/217-flomo-prototype-test.jpg",
+           "img": "assets/img/teaching/archive/217-flomo-prototype-test.jpg",
            "alt": "Prototype test recording",
            "label": {
             "ko": "프로토타입 테스트 (10.20)",
@@ -823,7 +823,7 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/328-cju-your-view.jpg",
+           "src": "assets/img/teaching/archive/328-cju-your-view.jpg",
            "alt": "Your Viewpoint, Mine — project board"
           }
          ],
@@ -839,7 +839,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1orXAz1VId6g8-hqTT5N_qZZwiNwyP7MK/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/230-your-view-blob.jpg",
+           "img": "assets/img/teaching/archive/230-your-view-blob.jpg",
            "alt": "Build video",
            "label": {
             "ko": "구현 영상 (blob)",
@@ -871,7 +871,7 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/323-cju-najeon.jpg",
+           "src": "assets/img/teaching/archive/323-cju-najeon.jpg",
            "alt": "Najeon Hourstory — project board"
           }
          ],
@@ -887,7 +887,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1ultw2tTUWwtEXR5K7ZfFcZIfhDzNd7ka/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/232-najeon-video.jpg",
+           "img": "assets/img/teaching/archive/232-najeon-video.jpg",
            "alt": "Mid-term video",
            "label": {
             "ko": "중간발표 영상",
@@ -909,7 +909,7 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/329-cju-death-service.jpg",
+           "src": "assets/img/teaching/archive/329-cju-death-service.jpg",
            "alt": "The Death You Ordered — project board"
           }
          ],
@@ -925,7 +925,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/17cRHcoaAOqzuhfXQj9iR1aSG_2XZY89T/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/234-death-service-box.jpg",
+           "img": "assets/img/teaching/archive/234-death-service-box.jpg",
            "alt": "Box interaction video",
            "label": {
             "ko": "박스 인터랙션 1",
@@ -1116,7 +1116,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1jH3eXQTca-nGOeenq0w61Sb8tVrF4Raq/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/cju-fs-am-01-1.jpg",
+           "img": "assets/img/teaching/archive/cju-fs-am-01-1.jpg",
            "alt": "Build video",
            "label": {
             "ko": "구현 영상",
@@ -1126,7 +1126,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1clAELrWbsFAASIxssaJis3tEgqrhpZ9D/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/cju-fs-am-01-2.jpg",
+           "img": "assets/img/teaching/archive/cju-fs-am-01-2.jpg",
            "alt": "Build video — our universe",
            "label": {
             "ko": "구현 영상 — 우리의 우주",
@@ -1173,7 +1173,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1nO-n-m9tZa4SkyK-m65A_FYV8fGKkm22/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/cju-fs-am-02-1.jpg",
+           "img": "assets/img/teaching/archive/cju-fs-am-02-1.jpg",
            "alt": "Work video",
            "label": {
             "ko": "작품 영상",
@@ -1279,7 +1279,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1xDFwUBwwDKW8KqkCUH3WzQiW1FBafDyB/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/cju-fs-am-04-1.jpg",
+           "img": "assets/img/teaching/archive/cju-fs-am-04-1.jpg",
            "alt": "Build video",
            "label": {
             "ko": "구현 영상",
@@ -1369,7 +1369,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1wY7osC4g2XIl7LOL6iOFbzbqTR9mw1qd/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/cju-fs-am-06-1.jpg",
+           "img": "assets/img/teaching/archive/cju-fs-am-06-1.jpg",
            "alt": "Build video",
            "label": {
             "ko": "실현 영상",
@@ -1449,7 +1449,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1Ymq_l2dkLqi_vB1tJ6Z0T6Qeyn2v4RXI/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/cju-fs-am-08-1.jpg",
+           "img": "assets/img/teaching/archive/cju-fs-am-08-1.jpg",
            "alt": "Build video",
            "label": {
             "ko": "실현 영상",
@@ -1573,7 +1573,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1w7KFrZh8CAnvYvJAVInF0I8LswTrgFvG/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/cju-fs-pm-02-2.jpg",
+           "img": "assets/img/teaching/archive/cju-fs-pm-02-2.jpg",
            "alt": "Mini — Pieces of Memory screen capture",
            "label": {
             "ko": "미니 — 기억의 조각 화면 기록",
@@ -1612,7 +1612,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1EhaGSu7Kw_tM6TDyEsVFDpaaWcyyPRHp/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/cju-fs-pm-03-1.jpg",
+           "img": "assets/img/teaching/archive/cju-fs-pm-03-1.jpg",
            "alt": "Work video",
            "label": {
             "ko": "작품 영상",
@@ -1670,7 +1670,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1lCX2kLH88Qie6dSDx6VgN8rmAWtPamsx/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/cju-fs-pm-04-1.jpg",
+           "img": "assets/img/teaching/archive/cju-fs-pm-04-1.jpg",
            "alt": "Demo video",
            "label": {
             "ko": "시연 영상",
@@ -1739,7 +1739,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/16KHQOBCxXy3P71oOJqqdvSLnsNgcNLnl/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/cju-fs-pm-05-2.jpg",
+           "img": "assets/img/teaching/archive/cju-fs-pm-05-2.jpg",
            "alt": "Mini — screen capture",
            "label": {
             "ko": "미니 — 시간 공방 화면 기록",

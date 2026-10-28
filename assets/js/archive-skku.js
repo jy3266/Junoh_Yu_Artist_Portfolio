@@ -327,7 +327,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1gyzQeCPn8NoozTYqy7xK0FUFtlEj1avC/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/002-demo-video.jpg",
+           "img": "assets/img/teaching/archive/002-demo-video.jpg",
            "alt": "Demo video",
            "label": {
             "ko": "시연 영상",
@@ -337,7 +337,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1oeyPeuw0c27tFrahQtBVZWu8HllC7G9-/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/003-screen-recording.jpg",
+           "img": "assets/img/teaching/archive/003-screen-recording.jpg",
            "alt": "Screen recording",
            "label": {
             "ko": "콘텐츠 화면 녹화",
@@ -377,23 +377,23 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/004-grada-installation-still-1.jpg",
+           "src": "assets/img/teaching/archive/004-grada-installation-still-1.jpg",
            "alt": "Grada installation still 1"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/005-grada-installation-still-2.jpg",
+           "src": "assets/img/teaching/archive/005-grada-installation-still-2.jpg",
            "alt": "Grada installation still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/006-grada-installation-still-3.jpg",
+           "src": "assets/img/teaching/archive/006-grada-installation-still-3.jpg",
            "alt": "Grada installation still 3"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/007-exhibition-layout-draft.jpg",
+           "src": "assets/img/teaching/archive/007-exhibition-layout-draft.jpg",
            "alt": "Exhibition layout, draft"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/008-exhibition-layout-final.jpg",
+           "src": "assets/img/teaching/archive/008-exhibition-layout-final.jpg",
            "alt": "Exhibition layout, final"
           }
          ],
@@ -411,7 +411,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1SUUlpe9u7KgFzssz702Z97CZMt07iDG8/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/010-demo-video-1.jpg",
+           "img": "assets/img/teaching/archive/010-demo-video-1.jpg",
            "alt": "Demo video 1",
            "label": {
             "ko": "시연 영상 1",
@@ -421,7 +421,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1UQtT8yZvTqdr6yE6qJHe_Yd7SQ_IHw_X/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/011-demo-video-2.jpg",
+           "img": "assets/img/teaching/archive/011-demo-video-2.jpg",
            "alt": "Demo video 2",
            "label": {
             "ko": "시연 영상 2",
@@ -440,7 +440,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1ZK4ly6r6QKyhtzQ-GYpDWOoRr6BwzcP5/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/013-exhibition-screen.jpg",
+           "img": "assets/img/teaching/archive/013-exhibition-screen.jpg",
            "alt": "Exhibition screen",
            "label": {
             "ko": "전시 화면",
@@ -450,7 +450,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1d0UVboB3k4LSjxyNLicnD7WeMPDARYMd/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/014-touchdesigner-screen.jpg",
+           "img": "assets/img/teaching/archive/014-touchdesigner-screen.jpg",
            "alt": "TouchDesigner screen",
            "label": {
             "ko": "TouchDesigner",
@@ -498,23 +498,23 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/015-501-still-1.jpg",
+           "src": "assets/img/teaching/archive/015-501-still-1.jpg",
            "alt": "501 still 1"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/016-501-still-2.jpg",
+           "src": "assets/img/teaching/archive/016-501-still-2.jpg",
            "alt": "501 still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/017-501-still-3.jpg",
+           "src": "assets/img/teaching/archive/017-501-still-3.jpg",
            "alt": "501 still 3"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/018-501-still-4.jpg",
+           "src": "assets/img/teaching/archive/018-501-still-4.jpg",
            "alt": "501 still 4"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/019-501-still-5.jpg",
+           "src": "assets/img/teaching/archive/019-501-still-5.jpg",
            "alt": "501 still 5"
           }
          ],
@@ -532,7 +532,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/16g4w321uf8oLVN3qofR5rMk1f4-yqtns/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/021-demo-video.jpg",
+           "img": "assets/img/teaching/archive/021-demo-video.jpg",
            "alt": "Demo video",
            "label": {
             "ko": "시연 영상",
@@ -542,7 +542,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/19wlx_IWslICFhJIlTYzYXJuKJ_c1Vv6S/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/022-presentation-recording.jpg",
+           "img": "assets/img/teaching/archive/022-presentation-recording.jpg",
            "alt": "Presentation recording",
            "label": {
             "ko": "발표 녹화",
@@ -552,7 +552,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1r9-mI2M5IJwtMoUnVf3dmeirQCiClu0H/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/023-content-screen.jpg",
+           "img": "assets/img/teaching/archive/023-content-screen.jpg",
            "alt": "Content screen",
            "label": {
             "ko": "콘텐츠 화면",
@@ -585,15 +585,15 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/025-sand-documentation-1.jpg",
+           "src": "assets/img/teaching/archive/025-sand-documentation-1.jpg",
            "alt": "Sand documentation 1"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/026-sand-documentation-2.jpg",
+           "src": "assets/img/teaching/archive/026-sand-documentation-2.jpg",
            "alt": "Sand documentation 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/027-sand-documentation-3.jpg",
+           "src": "assets/img/teaching/archive/027-sand-documentation-3.jpg",
            "alt": "Sand documentation 3"
           }
          ],
@@ -611,7 +611,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1fm36xjNL6fTECho2p9jr5RsCqWlgU-wx/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/029-demo-video.jpg",
+           "img": "assets/img/teaching/archive/029-demo-video.jpg",
            "alt": "Demo video",
            "label": {
             "ko": "데모 영상",
@@ -643,23 +643,23 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/030-tuning-still-1.jpg",
+           "src": "assets/img/teaching/archive/030-tuning-still-1.jpg",
            "alt": "Tuning still 1"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/031-tuning-still-2.jpg",
+           "src": "assets/img/teaching/archive/031-tuning-still-2.jpg",
            "alt": "Tuning still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/032-tuning-still-3.jpg",
+           "src": "assets/img/teaching/archive/032-tuning-still-3.jpg",
            "alt": "Tuning still 3"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/033-tuning-still-4.jpg",
+           "src": "assets/img/teaching/archive/033-tuning-still-4.jpg",
            "alt": "Tuning still 4"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/034-tuning-still-5.jpg",
+           "src": "assets/img/teaching/archive/034-tuning-still-5.jpg",
            "alt": "Tuning still 5"
           }
          ],
@@ -677,7 +677,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1LzgKYzfYJ2ZJcLENCQKFm1SfpnqD-6U4/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/036-demo-video.jpg",
+           "img": "assets/img/teaching/archive/036-demo-video.jpg",
            "alt": "Demo video",
            "label": {
             "ko": "프로젝트 시연 영상",
@@ -987,7 +987,7 @@
          ],
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/037-installation-photograph.jpg",
+           "src": "assets/img/teaching/archive/037-installation-photograph.jpg",
            "alt": "Installation photograph"
           }
          ],
@@ -1005,7 +1005,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1hdNaHG8yZSOKtT32i2pvsmP_nXm35VHS/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/039-demo-video.jpg",
+           "img": "assets/img/teaching/archive/039-demo-video.jpg",
            "alt": "Demo video",
            "label": {
             "ko": "시연 영상",
@@ -1056,7 +1056,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1EJVM9SLH8ZNrMf_PMpsK9EPRuud8FDlC/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/042-work-video.jpg",
+           "img": "assets/img/teaching/archive/042-work-video.jpg",
            "alt": "Work video",
            "label": {
             "ko": "작품 영상",
@@ -1066,7 +1066,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1fBublvuSh1mTbS8Y0YIy7FSUEH5Lu715/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/043-drone-documentation.jpg",
+           "img": "assets/img/teaching/archive/043-drone-documentation.jpg",
            "alt": "Drone documentation",
            "label": {
             "ko": "드론 기록 (6.11)",
@@ -1094,15 +1094,15 @@
          ],
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/044-breath-installation-view.jpg",
+           "src": "assets/img/teaching/archive/044-breath-installation-view.jpg",
            "alt": "Breath installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/045-breath-still-2.jpg",
+           "src": "assets/img/teaching/archive/045-breath-still-2.jpg",
            "alt": "Breath still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/046-breath-still-3.jpg",
+           "src": "assets/img/teaching/archive/046-breath-still-3.jpg",
            "alt": "Breath still 3"
           }
          ],
@@ -1120,7 +1120,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1UQMYDR19VozS-ePKSa_hokc2cOWuteYX/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/048-work-video.jpg",
+           "img": "assets/img/teaching/archive/048-work-video.jpg",
            "alt": "Work video",
            "label": {
             "ko": "작품 영상",
@@ -1157,15 +1157,15 @@
          ],
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/049-whorl-installation-view.jpg",
+           "src": "assets/img/teaching/archive/049-whorl-installation-view.jpg",
            "alt": "Whorl installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/050-whorl-still-2.jpg",
+           "src": "assets/img/teaching/archive/050-whorl-still-2.jpg",
            "alt": "Whorl still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/051-whorl-still-3.jpg",
+           "src": "assets/img/teaching/archive/051-whorl-still-3.jpg",
            "alt": "Whorl still 3"
           }
          ],
@@ -1183,7 +1183,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1H_oKCDAeCeAkovtGDg1v2NaCUn-vz5Gh/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/053-demo-video.jpg",
+           "img": "assets/img/teaching/archive/053-demo-video.jpg",
            "alt": "Demo video",
            "label": {
             "ko": "데모 영상",
@@ -1193,7 +1193,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1biqEFCI4ac4PJ0h2-VmUSozsu7xb1wAp/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/054-on-site-demo.jpg",
+           "img": "assets/img/teaching/archive/054-on-site-demo.jpg",
            "alt": "On-site demo",
            "label": {
             "ko": "현장 시연",
@@ -1233,7 +1233,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1OFxMFHwUb2MY5odOttHIak6eLDvF4-tb/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/056-demo-video.jpg",
+           "img": "assets/img/teaching/archive/056-demo-video.jpg",
            "alt": "Demo video",
            "label": {
             "ko": "시연 영상",
@@ -1261,15 +1261,15 @@
          ],
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/057-josh-installation-view.jpg",
+           "src": "assets/img/teaching/archive/057-josh-installation-view.jpg",
            "alt": "Josh installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/058-josh-still-2.jpg",
+           "src": "assets/img/teaching/archive/058-josh-still-2.jpg",
            "alt": "Josh still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/059-josh-still-3.jpg",
+           "src": "assets/img/teaching/archive/059-josh-still-3.jpg",
            "alt": "Josh still 3"
           }
          ],
@@ -1287,7 +1287,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1DNh55-tUf7gCQM63nsQOC-kqw-KHOEnC/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/061-demo-video.jpg",
+           "img": "assets/img/teaching/archive/061-demo-video.jpg",
            "alt": "Demo video",
            "label": {
             "ko": "시연 영상",
@@ -1315,15 +1315,15 @@
          ],
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/062-back-installation-view.jpg",
+           "src": "assets/img/teaching/archive/062-back-installation-view.jpg",
            "alt": "Back installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/063-back-still-2.jpg",
+           "src": "assets/img/teaching/archive/063-back-still-2.jpg",
            "alt": "Back still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/064-back-still-3.jpg",
+           "src": "assets/img/teaching/archive/064-back-still-3.jpg",
            "alt": "Back still 3"
           }
          ],
@@ -1341,7 +1341,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1RuHse06kgfefBUGb8XmZqNiE_OvdBdDc/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/066-demo-video.jpg",
+           "img": "assets/img/teaching/archive/066-demo-video.jpg",
            "alt": "Demo video",
            "label": {
             "ko": "시연 영상",
@@ -1375,7 +1375,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1RQ1HJ3CJRVn8gmqHdpZR9hJaM1fpwgbt/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/068-demo-video.jpg",
+           "img": "assets/img/teaching/archive/068-demo-video.jpg",
            "alt": "Demo video",
            "label": {
             "ko": "시현 영상",
@@ -1403,15 +1403,15 @@
          ],
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/069-pond-installation-view.jpg",
+           "src": "assets/img/teaching/archive/069-pond-installation-view.jpg",
            "alt": "Pond installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/070-pond-still-2.jpg",
+           "src": "assets/img/teaching/archive/070-pond-still-2.jpg",
            "alt": "Pond still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/071-pond-still-3.jpg",
+           "src": "assets/img/teaching/archive/071-pond-still-3.jpg",
            "alt": "Pond still 3"
           }
          ],
@@ -1429,7 +1429,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1GQ9hrBfWSgQDcnSjgZUU53P-lD-FlEAN/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/073-work-video.jpg",
+           "img": "assets/img/teaching/archive/073-work-video.jpg",
            "alt": "Work video",
            "label": {
             "ko": "작품 영상",
@@ -1439,7 +1439,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1irN_cew5clPTyWTJwFOMq9_DKnVj-Xkh/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/074-drone-documentation.jpg",
+           "img": "assets/img/teaching/archive/074-drone-documentation.jpg",
            "alt": "Drone documentation",
            "label": {
             "ko": "드론 기록 (6.18)",
@@ -1793,7 +1793,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1EMFzwuFDOYcijn10axqQySf2h3o-zWyY/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/076-final-demo-video.jpg",
+           "img": "assets/img/teaching/archive/076-final-demo-video.jpg",
            "alt": "Final demo video",
            "label": {
             "ko": "최종 시현 영상",
@@ -1833,7 +1833,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1M3_8wqDJKUVr5tCTLLYveeJ0MbrckJlB/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/078-work-video.jpg",
+           "img": "assets/img/teaching/archive/078-work-video.jpg",
            "alt": "Work video",
            "label": {
             "ko": "작품 영상",
@@ -1896,15 +1896,15 @@
          ],
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/081-overlap-installation-view.jpg",
+           "src": "assets/img/teaching/archive/081-overlap-installation-view.jpg",
            "alt": "Overlap installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/082-overlap-still-2.jpg",
+           "src": "assets/img/teaching/archive/082-overlap-still-2.jpg",
            "alt": "Overlap still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/083-overlap-still-3.jpg",
+           "src": "assets/img/teaching/archive/083-overlap-still-3.jpg",
            "alt": "Overlap still 3"
           }
          ],
@@ -1946,7 +1946,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1S43TJgTQVcllYDDg-p2jFc88UoiOzHMy/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/086-work-video.jpg",
+           "img": "assets/img/teaching/archive/086-work-video.jpg",
            "alt": "Work video",
            "label": {
             "ko": "작품 영상",
@@ -1974,15 +1974,15 @@
          ],
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/087-inflection-point-installation-view.jpg",
+           "src": "assets/img/teaching/archive/087-inflection-point-installation-view.jpg",
            "alt": "Inflection Point installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/088-inflection-point-still-2.jpg",
+           "src": "assets/img/teaching/archive/088-inflection-point-still-2.jpg",
            "alt": "Inflection Point still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/089-inflection-point-still-3.jpg",
+           "src": "assets/img/teaching/archive/089-inflection-point-still-3.jpg",
            "alt": "Inflection Point still 3"
           }
          ],
@@ -2000,7 +2000,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1pJv5Jaa9Qbq7Dql0zHiAzp-sFomy9YBK/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/091-work-video.jpg",
+           "img": "assets/img/teaching/archive/091-work-video.jpg",
            "alt": "Work video",
            "label": {
             "ko": "작품 영상",
@@ -2034,7 +2034,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1wfnwqjtUkovoim3nNsyX0e-dSgCDyIRr/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/093-work-video.jpg",
+           "img": "assets/img/teaching/archive/093-work-video.jpg",
            "alt": "Work video",
            "label": {
             "ko": "작품 영상",
@@ -2069,7 +2069,7 @@
      "blocks": [
       {
        "k": "poster",
-       "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/095-n-i-m-a-2026-new-interfaces-for-moving-arts-post.jpg",
+       "src": "assets/img/teaching/archive/095-n-i-m-a-2026-new-interfaces-for-moving-arts-post.jpg",
        "alt": "N.I.M.A. 2026 — New Interfaces for Moving Arts poster"
       },
       {
@@ -2207,15 +2207,15 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/057-josh-installation-view.jpg",
+           "src": "assets/img/teaching/archive/057-josh-installation-view.jpg",
            "alt": "Josh installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/058-josh-still-2.jpg",
+           "src": "assets/img/teaching/archive/058-josh-still-2.jpg",
            "alt": "Josh still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/059-josh-still-3.jpg",
+           "src": "assets/img/teaching/archive/059-josh-still-3.jpg",
            "alt": "Josh still 3"
           }
          ],
@@ -2259,15 +2259,15 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/049-whorl-installation-view.jpg",
+           "src": "assets/img/teaching/archive/049-whorl-installation-view.jpg",
            "alt": "Whorl installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/050-whorl-still-2.jpg",
+           "src": "assets/img/teaching/archive/050-whorl-still-2.jpg",
            "alt": "Whorl still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/051-whorl-still-3.jpg",
+           "src": "assets/img/teaching/archive/051-whorl-still-3.jpg",
            "alt": "Whorl still 3"
           }
          ],
@@ -2311,15 +2311,15 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/087-inflection-point-installation-view.jpg",
+           "src": "assets/img/teaching/archive/087-inflection-point-installation-view.jpg",
            "alt": "Inflection Point installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/088-inflection-point-still-2.jpg",
+           "src": "assets/img/teaching/archive/088-inflection-point-still-2.jpg",
            "alt": "Inflection Point still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/089-inflection-point-still-3.jpg",
+           "src": "assets/img/teaching/archive/089-inflection-point-still-3.jpg",
            "alt": "Inflection Point still 3"
           }
          ],
@@ -2363,15 +2363,15 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/114-when-you-tilt-the-glass-installation-view.jpg",
+           "src": "assets/img/teaching/archive/114-when-you-tilt-the-glass-installation-view.jpg",
            "alt": "When You Tilt the Glass installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/115-when-you-tilt-the-glass-still-2.jpg",
+           "src": "assets/img/teaching/archive/115-when-you-tilt-the-glass-still-2.jpg",
            "alt": "When You Tilt the Glass still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/116-when-you-tilt-the-glass-still-3.jpg",
+           "src": "assets/img/teaching/archive/116-when-you-tilt-the-glass-still-3.jpg",
            "alt": "When You Tilt the Glass still 3"
           }
          ],
@@ -2433,7 +2433,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1OFxMFHwUb2MY5odOttHIak6eLDvF4-tb/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/056-demo-video.jpg",
+           "img": "assets/img/teaching/archive/056-demo-video.jpg",
            "alt": "Becoming Pearl demo video",
            "label": {
             "ko": "시연 영상",
@@ -2464,15 +2464,15 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/081-overlap-installation-view.jpg",
+           "src": "assets/img/teaching/archive/081-overlap-installation-view.jpg",
            "alt": "Overlap installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/082-overlap-still-2.jpg",
+           "src": "assets/img/teaching/archive/082-overlap-still-2.jpg",
            "alt": "Overlap still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/083-overlap-still-3.jpg",
+           "src": "assets/img/teaching/archive/083-overlap-still-3.jpg",
            "alt": "Overlap still 3"
           }
          ],
@@ -2516,15 +2516,15 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/062-back-installation-view.jpg",
+           "src": "assets/img/teaching/archive/062-back-installation-view.jpg",
            "alt": "Back to Back installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/063-back-still-2.jpg",
+           "src": "assets/img/teaching/archive/063-back-still-2.jpg",
            "alt": "Back to Back still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/064-back-still-3.jpg",
+           "src": "assets/img/teaching/archive/064-back-still-3.jpg",
            "alt": "Back to Back still 3"
           }
          ],
@@ -2602,7 +2602,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1EJVM9SLH8ZNrMf_PMpsK9EPRuud8FDlC/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/042-work-video.jpg",
+           "img": "assets/img/teaching/archive/042-work-video.jpg",
            "alt": "Elsewhere work video",
            "label": {
             "ko": "작품 영상",
@@ -2612,7 +2612,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1fBublvuSh1mTbS8Y0YIy7FSUEH5Lu715/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/043-drone-documentation.jpg",
+           "img": "assets/img/teaching/archive/043-drone-documentation.jpg",
            "alt": "Elsewhere drone documentation",
            "label": {
             "ko": "드론 기록",
@@ -2649,7 +2649,7 @@
          ],
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/037-installation-photograph.jpg",
+           "src": "assets/img/teaching/archive/037-installation-photograph.jpg",
            "alt": "I’m Here Too installation photograph"
           }
          ],
@@ -2667,7 +2667,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1hdNaHG8yZSOKtT32i2pvsmP_nXm35VHS/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/039-demo-video.jpg",
+           "img": "assets/img/teaching/archive/039-demo-video.jpg",
            "alt": "I’m Here Too demo video",
            "label": {
             "ko": "시연 영상",
@@ -2698,15 +2698,15 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/044-breath-installation-view.jpg",
+           "src": "assets/img/teaching/archive/044-breath-installation-view.jpg",
            "alt": "Breath installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/045-breath-still-2.jpg",
+           "src": "assets/img/teaching/archive/045-breath-still-2.jpg",
            "alt": "Breath still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/046-breath-still-3.jpg",
+           "src": "assets/img/teaching/archive/046-breath-still-3.jpg",
            "alt": "Breath still 3"
           }
          ],
@@ -2750,15 +2750,15 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/108-will-you-walk-with-installation-view.jpg",
+           "src": "assets/img/teaching/archive/108-will-you-walk-with-installation-view.jpg",
            "alt": "Will you walk with installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/109-will-you-walk-with-still-2.jpg",
+           "src": "assets/img/teaching/archive/109-will-you-walk-with-still-2.jpg",
            "alt": "Will you walk with still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/110-will-you-walk-with-still-3.jpg",
+           "src": "assets/img/teaching/archive/110-will-you-walk-with-still-3.jpg",
            "alt": "Will you walk with still 3"
           }
          ],
@@ -2802,15 +2802,15 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/105-way-back-home-installation-view.jpg",
+           "src": "assets/img/teaching/archive/105-way-back-home-installation-view.jpg",
            "alt": "Way Back Home installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/106-way-back-home-still-2.jpg",
+           "src": "assets/img/teaching/archive/106-way-back-home-still-2.jpg",
            "alt": "Way Back Home still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/107-way-back-home-still-3.jpg",
+           "src": "assets/img/teaching/archive/107-way-back-home-still-3.jpg",
            "alt": "Way Back Home still 3"
           }
          ],
@@ -2862,15 +2862,15 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/069-pond-installation-view.jpg",
+           "src": "assets/img/teaching/archive/069-pond-installation-view.jpg",
            "alt": "Pond installation view"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/070-pond-still-2.jpg",
+           "src": "assets/img/teaching/archive/070-pond-still-2.jpg",
            "alt": "Pond still 2"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/071-pond-still-3.jpg",
+           "src": "assets/img/teaching/archive/071-pond-still-3.jpg",
            "alt": "Pond still 3"
           }
          ],
@@ -3098,7 +3098,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1gTW0ryrmcDd1PeqkhUHg56J2HwoHWg60/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mid-01-1.jpg",
+           "img": "assets/img/teaching/archive/skku-uw-mid-01-1.jpg",
            "alt": "Demo video",
            "label": {
             "ko": "시연 영상",
@@ -3179,7 +3179,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1YjBNvcdbYSPdMnvNt1gSbUczTV1Q7NJj/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mid-03-2.jpg",
+           "img": "assets/img/teaching/archive/skku-uw-mid-03-2.jpg",
            "alt": "Demo",
            "label": {
             "ko": "데모",
@@ -3256,7 +3256,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1Ntii8VLY5GT3Npg2SZVHVyvM3ylFJ3Lm/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-uw-mid-05-1.jpg",
+           "img": "assets/img/teaching/archive/skku-uw-mid-05-1.jpg",
            "alt": "Raw footage",
            "label": {
             "ko": "작동 영상",
@@ -3832,7 +3832,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1aauMDvIUMiiFON9b-iiUNUoVg43wI5tp/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-02-1.jpg",
+           "img": "assets/img/teaching/archive/skku-av-mid-02-1.jpg",
            "alt": "Trailer",
            "label": {
             "ko": "트레일러 영상",
@@ -3995,7 +3995,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1WtLidXEMqb1GojyKsEdegbTK22vf0T4i/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-05-1.jpg",
+           "img": "assets/img/teaching/archive/skku-av-mid-05-1.jpg",
            "alt": "Mid-term film",
            "label": {
             "ko": "중간발표 영상",
@@ -4093,7 +4093,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1o5Sqe0R3BI6mRRC3s7hOsUYH4cJPTL5o/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-07-1.jpg",
+           "img": "assets/img/teaching/archive/skku-av-mid-07-1.jpg",
            "alt": "Final film",
            "label": {
             "ko": "최종 영상",
@@ -4152,7 +4152,7 @@
           },
           {
            "href": "https://drive.google.com/file/d/1AHtaHPn2fcocqmOfqaBjUuKlIj9_tsZY/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-08-2.jpg",
+           "img": "assets/img/teaching/archive/skku-av-mid-08-2.jpg",
            "alt": "Process clip",
            "label": {
             "ko": "제작 과정 클립",
@@ -4199,7 +4199,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1PzeCiP6MVg4-CtOW92xtWa2wP2uZ6a0j/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-mid-09-1.jpg",
+           "img": "assets/img/teaching/archive/skku-av-mid-09-1.jpg",
            "alt": "Short film",
            "label": {
             "ko": "단편 영상",
@@ -4326,7 +4326,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1-cdun0yXh8dXD4jS0JJeTmR2FKewTKBx/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/skku-av-solo-02-1.jpg",
+           "img": "assets/img/teaching/archive/skku-av-solo-02-1.jpg",
            "alt": "Demo",
            "label": {
             "ko": "데모",

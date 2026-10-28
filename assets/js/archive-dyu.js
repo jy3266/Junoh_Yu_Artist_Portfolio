@@ -277,7 +277,7 @@
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=1hV4kEC8tpQ&list=PLg66zvyRfeIDZAEARQR6QGx5Vq76yqS_4",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-anim-01-yun-jaeyeong.jpg",
+           "img": "assets/img/teaching/archive/dyu-anim-01-yun-jaeyeong.jpg",
            "alt": "Presentation recording",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -306,7 +306,7 @@
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=r0wpTxYJlvI&list=PLg66zvyRfeIDZAEARQR6QGx5Vq76yqS_4",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-anim-02-lee-hyunmin.jpg",
+           "img": "assets/img/teaching/archive/dyu-anim-02-lee-hyunmin.jpg",
            "alt": "Presentation recording",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -335,7 +335,7 @@
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=GOqKI1YW0wg&list=PLg66zvyRfeIDZAEARQR6QGx5Vq76yqS_4",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-anim-03-jo-yushin.jpg",
+           "img": "assets/img/teaching/archive/dyu-anim-03-jo-yushin.jpg",
            "alt": "Presentation recording",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -370,7 +370,7 @@
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=4dKJEK-rI_8&list=PLg66zvyRfeIDZAEARQR6QGx5Vq76yqS_4",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-anim-04-baek-sujin.jpg",
+           "img": "assets/img/teaching/archive/dyu-anim-04-baek-sujin.jpg",
            "alt": "Presentation recording",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -399,7 +399,7 @@
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=rU6gMmQNt4Y&list=PLg66zvyRfeIDZAEARQR6QGx5Vq76yqS_4",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-anim-05-lee-suyeon.jpg",
+           "img": "assets/img/teaching/archive/dyu-anim-05-lee-suyeon.jpg",
            "alt": "Presentation recording",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -428,7 +428,7 @@
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=TKQksOLVQ7g&list=PLg66zvyRfeIDZAEARQR6QGx5Vq76yqS_4",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-anim-06-lee-yujin.jpg",
+           "img": "assets/img/teaching/archive/dyu-anim-06-lee-yujin.jpg",
            "alt": "Presentation recording",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -463,7 +463,7 @@
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=zqYj_UvJodQ&list=PLg66zvyRfeIDZAEARQR6QGx5Vq76yqS_4",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-anim-07-yeo-jewan.jpg",
+           "img": "assets/img/teaching/archive/dyu-anim-07-yeo-jewan.jpg",
            "alt": "Presentation recording",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -492,7 +492,7 @@
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=E7kbK6AhOPY&list=PLg66zvyRfeIDZAEARQR6QGx5Vq76yqS_4",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-anim-08-kim-hoseung.jpg",
+           "img": "assets/img/teaching/archive/dyu-anim-08-kim-hoseung.jpg",
            "alt": "Presentation recording",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -802,22 +802,22 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-kim-yongwon-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld1-kim-yongwon-3.jpg",
            "alt": "Bookshelves and paper scattered against a bright sky"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-kim-yongwon-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld1-kim-yongwon-1.jpg",
            "alt": "Spiral staircase inside the library"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-kim-yongwon-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld1-kim-yongwon-2.jpg",
            "alt": "Repeating shelves seen from below"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=GYIpQgmYhC4&list=PLRHYZHLWrJeQ",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-kim-yongwon-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld1-kim-yongwon-clip.jpg",
            "alt": "Kim Yongwon — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -851,22 +851,22 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-kim-jeongmi-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld1-kim-jeongmi-1.jpg",
            "alt": "Dark gallery corridor, space A"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-kim-jeongmi-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld1-kim-jeongmi-2.jpg",
            "alt": "Forest path with a great tree, space B"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-kim-jeongmi-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld1-kim-jeongmi-3.jpg",
            "alt": "The protagonist's room, space C"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=mky1TMOlWjY&list=PLRHYZHLWrJeQ",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-kim-jeongmi-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld1-kim-jeongmi-clip.jpg",
            "alt": "Kim Jeongmi — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -900,18 +900,18 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-oh-seojin-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld1-oh-seojin-1.jpg",
            "alt": "Blueprint-spawned pillars in the dark"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-oh-seojin-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld1-oh-seojin-2.jpg",
            "alt": "Pillars rising near the player"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=p34CO-Qld3o&list=PLRHYZHLWrJeQ",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-oh-seojin-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld1-oh-seojin-clip.jpg",
            "alt": "Oh Seojin — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -945,22 +945,22 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-yoon-taehee-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld1-yoon-taehee-2.jpg",
            "alt": "Maze built from oversized books"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-yoon-taehee-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld1-yoon-taehee-3.jpg",
            "alt": "Concrete room with a table and a note"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-yoon-taehee-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld1-yoon-taehee-1.jpg",
            "alt": "Presentation slide on the megastructure concept"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=VdXy-uFueX4&list=PLRHYZHLWrJeQ",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-yoon-taehee-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld1-yoon-taehee-clip.jpg",
            "alt": "Yoon Taehee — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -994,22 +994,22 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-ko-gwangseo-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld1-ko-gwangseo-2.jpg",
            "alt": "Repeating office interior"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-ko-gwangseo-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld1-ko-gwangseo-3.jpg",
            "alt": "Empty corridor toward the framed picture"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-ko-gwangseo-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld1-ko-gwangseo-1.jpg",
            "alt": "Slide: healing and mirage"
           }
          ],
          "media": [
           {
            "href": "https://drive.google.com/file/d/1Wj2r6hSCRZfxfRHsXxoSxgdFBGk2me78/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld1-ko-gwangseo-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld1-ko-gwangseo-clip.jpg",
            "alt": "Ko Gwangseo — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -1062,22 +1062,22 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-jo-yushin-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-jo-yushin-1.jpg",
            "alt": "Figure on floating blocks against a night sky"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-jo-yushin-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-jo-yushin-2.jpg",
            "alt": "School desks suspended in mid-air"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-jo-yushin-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-jo-yushin-3.jpg",
            "alt": "Temple with oversized objects"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=KfftXjyMOU8&list=PLLG0aNCZuShE",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-jo-yushin-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld2-jo-yushin-clip.jpg",
            "alt": "Jo Yushin — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -1111,26 +1111,26 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-team-a-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-team-a-1.jpg",
            "alt": "Dark stairway toward a lit door, space A"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-team-a-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-team-a-2.jpg",
            "alt": "Blue-lit staircase"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-team-a-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-team-a-3.jpg",
            "alt": "Cold-lit desk interior, space B"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-team-a-4.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-team-a-4.jpg",
            "alt": "The world tree, space C"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=1thmy6alvaA&list=PLRHYZHLWrJeQ",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-team-a-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld2-team-a-clip.jpg",
            "alt": "Choi/Ji/Lee — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -1164,22 +1164,22 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-kim-gahyeon-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-kim-gahyeon-2.jpg",
            "alt": "Subway platform interior"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-kim-gahyeon-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-kim-gahyeon-1.jpg",
            "alt": "Slide: the station, and what waiting feels like"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-kim-gahyeon-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-kim-gahyeon-3.jpg",
            "alt": "Slide: what was learned, what fell short"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=URZ55GHwgJU&list=PLRHYZHLWrJeQ",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-kim-gahyeon-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld2-kim-gahyeon-clip.jpg",
            "alt": "Kim Gahyeon — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -1213,22 +1213,22 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-jeon-minwoo-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-jeon-minwoo-1.jpg",
            "alt": "Blue subway platform with a guiding light"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-jeon-minwoo-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-jeon-minwoo-2.jpg",
            "alt": "Warm café interior"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-jeon-minwoo-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-jeon-minwoo-3.jpg",
            "alt": "Forest clearing with flowers"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=ooOzwr-qGrM&list=PLLG0aNCZuShE",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-jeon-minwoo-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld2-jeon-minwoo-clip.jpg",
            "alt": "Jeon Minwoo — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -1262,22 +1262,22 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-lee-junyeong-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-lee-junyeong-2.jpg",
            "alt": "Gallery room with projected effects"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-lee-junyeong-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-lee-junyeong-3.jpg",
            "alt": "Green-lit room with drifting particles"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-lee-junyeong-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-lee-junyeong-1.jpg",
            "alt": "Slide: the Simon Manus reference"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=FUlXJukstcg&list=PLRHYZHLWrJeQ",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-lee-junyeong-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld2-lee-junyeong-clip.jpg",
            "alt": "Lee Junyeong — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -1311,22 +1311,22 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-choi-eunho-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-choi-eunho-2.jpg",
            "alt": "Empty McDonald's counter, anomaly 0"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-choi-eunho-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-choi-eunho-3.jpg",
            "alt": "Empty McDonald's seating, anomaly 1"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-choi-eunho-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-choi-eunho-1.jpg",
            "alt": "Slide: the uncanny in the familiar"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=Nh84h_PbzEY&list=PLLG0aNCZuShE",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-choi-eunho-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld2-choi-eunho-clip.jpg",
            "alt": "Choi Eunho — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -1360,22 +1360,22 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-park-jiyoung-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-park-jiyoung-3.jpg",
            "alt": "Slide: the room and studio he meant to build"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-park-jiyoung-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-park-jiyoung-2.jpg",
            "alt": "Slide: story"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-park-jiyoung-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-park-jiyoung-1.jpg",
            "alt": "Title slide"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=sCs3R6_vWPw&list=PLRHYZHLWrJeQ",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-park-jiyoung-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld2-park-jiyoung-clip.jpg",
            "alt": "Park Jiyoung — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -1409,22 +1409,22 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-team-b-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-team-b-1.jpg",
            "alt": "Reed field at dusk"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-team-b-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-team-b-2.jpg",
            "alt": "Snow field with snowmen"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-team-b-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-team-b-3.jpg",
            "alt": "Hand-built blockout of the station"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=DW1UGdSMMAI&list=PLLG0aNCZuShE",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-team-b-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld2-team-b-clip.jpg",
            "alt": "Park Seojeong — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -1458,22 +1458,22 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-park-hyunwoo-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-park-hyunwoo-2.jpg",
            "alt": "Slide: the strange corridor"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-park-hyunwoo-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-park-hyunwoo-3.jpg",
            "alt": "The room, before the corridor"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-park-hyunwoo-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-park-hyunwoo-1.jpg",
            "alt": "Slide: subject and intent"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=56elDJqgBCk&list=PLRHYZHLWrJeQ",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-park-hyunwoo-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld2-park-hyunwoo-clip.jpg",
            "alt": "Park Hyunwoo — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -1507,26 +1507,26 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-lee-yujin-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-lee-yujin-2.jpg",
            "alt": "Flower meadow under a wide sky"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-lee-yujin-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-lee-yujin-1.jpg",
            "alt": "Island and shipwreck in the editor"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-lee-yujin-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-lee-yujin-3.jpg",
            "alt": "Moving through the meadow"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-lee-yujin-4.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-lee-yujin-4.jpg",
            "alt": "Slide: data layers, landscape, water plugin"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=rzGjACw3Q5E&list=PLRHYZHLWrJeQ",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-lee-yujin-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld2-lee-yujin-clip.jpg",
            "alt": "Lee Yujin — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -1560,22 +1560,22 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-ha-jiwon-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-ha-jiwon-2.jpg",
            "alt": "Mushroom island floating in the sky"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-ha-jiwon-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-ha-jiwon-3.jpg",
            "alt": "Low-poly forest path"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-ha-jiwon-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-ha-jiwon-1.jpg",
            "alt": "Slide: the open ending"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=oUtGM4xapkM&list=PLLG0aNCZuShE",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-ha-jiwon-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld2-ha-jiwon-clip.jpg",
            "alt": "Ha Jiwon — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -1609,22 +1609,22 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-han-yeongung-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-han-yeongung-2.jpg",
            "alt": "Mecha inside a dark hangar"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-han-yeongung-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-han-yeongung-3.jpg",
            "alt": "Slide: Blender and Substance Painter work"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-han-yeongung-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-han-yeongung-1.jpg",
            "alt": "Slide: the story"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=9m9Mq-_87fk&list=PLLG0aNCZuShE",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-han-yeongung-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld2-han-yeongung-clip.jpg",
            "alt": "Han Yeongung — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -1658,22 +1658,22 @@
          },
          "shots": [
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-kim-gyumin-2.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-kim-gyumin-2.jpg",
            "alt": "Brick corridor with stairs and light"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-kim-gyumin-3.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-kim-gyumin-3.jpg",
            "alt": "Corridor toward the roof door"
           },
           {
-           "src": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-kim-gyumin-1.jpg",
+           "src": "assets/img/teaching/archive/dyu-ld2-kim-gyumin-1.jpg",
            "alt": "Slide: intent, the abandoned school"
           }
          ],
          "media": [
           {
            "href": "https://www.youtube.com/watch?v=wylF9kdf5H8&list=PLRHYZHLWrJeQ",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld2-kim-gyumin-clip.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld2-kim-gyumin-clip.jpg",
            "alt": "Kim Gyumin — clip",
            "label": {
             "ko": "발표 · 크리틱 전체",
@@ -1824,7 +1824,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1qb9aqMep8g1iYLF2JnvlJAtCzYC58vRQ/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-01-1.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld26-01-1.jpg",
            "alt": "Play-through",
            "label": {
             "ko": "플레이 영상",
@@ -1874,7 +1874,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1yaM48Ds5LGJ8QislOkQ3MFUFrqyyDJ4l/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-02-1.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld26-02-1.jpg",
            "alt": "Play-through",
            "label": {
             "ko": "플레이 영상",
@@ -1980,7 +1980,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1Y_hW59ZEvtocAad6naKNnL_bOZ6_omEq/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-04-1.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld26-04-1.jpg",
            "alt": "Play-through",
            "label": {
             "ko": "플레이 영상",
@@ -2059,7 +2059,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1M8mlgYuJ2LnD02LklbeHBN6hl1iYIJxo/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-06-1.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld26-06-1.jpg",
            "alt": "Editor play-through",
            "label": {
             "ko": "에디터 플레이 영상",
@@ -2099,7 +2099,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1hBjPMNdrwqT4bDkwsJFOlxoKEByPdc0V/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-07-1.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld26-07-1.jpg",
            "alt": "Lighthouse beam",
            "label": {
             "ko": "등대 빔 회전",
@@ -2189,7 +2189,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1p9adwpkJSeazsilz44LfCDqAf3bWZxHG/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-09-1.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld26-09-1.jpg",
            "alt": "Play-through",
            "label": {
             "ko": "플레이 영상",
@@ -2229,7 +2229,7 @@
          "media": [
           {
            "href": "https://drive.google.com/file/d/1-Msv_DU335oFWZKjCPR6EwNjspbsudwi/view",
-           "img": "https://jy3266.github.io/Teaching_Portfolio/assets/img/dyu-ld26-10-1.jpg",
+           "img": "assets/img/teaching/archive/dyu-ld26-10-1.jpg",
            "alt": "Presentation — Park Geonho",
            "label": {
             "ko": "박건호 발표 영상",
